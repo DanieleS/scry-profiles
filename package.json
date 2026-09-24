@@ -1,0 +1,16 @@
+{
+  "name": "scry-profiles",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Contracts and profiles for scry: which values a game offers, and how to read them from each build.",
+  "scripts": {
+    "check": "node tools/check.mjs",
+    "test": "node --test tools/*.test.mjs",
+    "ci": "npm run check && npm test",
+    "new-contract": "node tools/new-contract.mjs"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1"
+  }
+}

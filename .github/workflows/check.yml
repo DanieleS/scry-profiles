@@ -1,0 +1,54 @@
+# Every check in this repository, on every push and pull request.
+#
+# The schemas are regenerated with a real scry build, so this job builds scry first. It is pinned to
+# a ref rather than following scry's default branch: a new scry that changed what `scry schema`
+# emits would otherwise turn every profile here red without anything here having changed. Bump
+# SCRY_REF deliberately, in its own commit.
+name: check
+
+on:
+  push:
+  pull_request:
+
+env:
+  # `scry schema` first appears on this branch. Replace with the release tag that ships it.
+  SCRY_REF: feat/contract-identity
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check out scry
+        uses: actions/checkout@v4
+        with:
+          repository: DanieleS/scry
+          ref: ${{ env.SCRY_REF }}
+          path: .scry
+
+      - uses: dtolnay/rust-toolchain@stable
+
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: .scry
+
+      - name: Build scry
+        run: cargo build --release --bin scry --manifest-path .scry/Cargo.toml
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Profiles match their contracts, minors only add, fixtures validate
+        run: npm run check
+        env:
+          SCRY: ${{ github.workspace }}/.scry/target/release/scry
+
+      - name: Each check can fail
+        run: npm test
+        env:
+          SCRY: ${{ github.workspace }}/.scry/target/release/scry
