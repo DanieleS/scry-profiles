@@ -1,0 +1,1295 @@
+{
+  "$id": "urn:scry:contract:sea-of-stars:2.0",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "properties": {
+    "attack_rating": {
+      "items": {
+        "maximum": 2147483647,
+        "minimum": -2147483648,
+        "type": [
+          "integer",
+          "null"
+        ]
+      },
+      "maxItems": 16,
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "characters": {
+      "items": {
+        "properties": {
+          "armor": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "armor_mdef": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "armor_pdef": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "base_hp": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "base_matk": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "base_mdef": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "base_patk": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "base_pdef": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "base_sp": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "boost_level": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "class_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "group_trinket": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "hp": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "sp": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "trinket_1": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "trinket_2": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "weapon": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "weapon_matk": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "weapon_patk": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "armor",
+          "armor_mdef",
+          "armor_pdef",
+          "base_hp",
+          "base_matk",
+          "base_mdef",
+          "base_patk",
+          "base_pdef",
+          "base_sp",
+          "boost_level",
+          "class_id",
+          "group_trinket",
+          "hp",
+          "id",
+          "sp",
+          "trinket_1",
+          "trinket_2",
+          "weapon",
+          "weapon_matk",
+          "weapon_patk"
+        ],
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "maxItems": 16,
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "combat_party": {
+      "items": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "maxItems": 8,
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "cutscene_count": {
+      "maximum": 2147483647,
+      "minimum": -2147483648,
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "defense_rating": {
+      "items": {
+        "maximum": 2147483647,
+        "minimum": -2147483648,
+        "type": [
+          "integer",
+          "null"
+        ]
+      },
+      "maxItems": 16,
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "dialog_boxes": {
+      "maximum": 2147483647,
+      "minimum": -2147483648,
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "encounter_xp": {
+      "maximum": 2147483647,
+      "minimum": -2147483648,
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "enemies": {
+      "items": {
+        "properties": {
+          "hp": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "label": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "level": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "matk": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "max_hp": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "mdef": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "patk": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "pdef": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "hp",
+          "label",
+          "level",
+          "matk",
+          "max_hp",
+          "mdef",
+          "patk",
+          "pdef"
+        ],
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "maxItems": 16,
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "garl_hp_percent": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "garl_levelups": {
+      "items": {
+        "properties": {
+          "hp": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "matk": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "mdef": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "patk": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "pdef": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "sp": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "hp",
+          "matk",
+          "mdef",
+          "patk",
+          "pdef",
+          "sp"
+        ],
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "maxItems": 40,
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "garl_max_hp": {
+      "maximum": 2147483647,
+      "minimum": -2147483648,
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "garl_max_sp": {
+      "maximum": 2147483647,
+      "minimum": -2147483648,
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "garl_trinket0_mods": {
+      "items": {
+        "properties": {
+          "amount": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "kind": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "stat": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "amount",
+          "kind",
+          "stat"
+        ],
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "maxItems": 8,
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "garl_trinket1_mods": {
+      "items": {
+        "properties": {
+          "amount": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "kind": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "stat": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "amount",
+          "kind",
+          "stat"
+        ],
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "maxItems": 8,
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "garl_upgrades": {
+      "items": {
+        "properties": {
+          "count": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "stat": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "count",
+          "stat"
+        ],
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "maxItems": 16,
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "in_combat": {
+      "maximum": 18446744073709551615,
+      "minimum": 0,
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "inventory": {
+      "items": {
+        "properties": {
+          "guid": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "qty": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "guid",
+          "qty"
+        ],
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "maxItems": 256,
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "item_catalog": {
+      "items": {
+        "properties": {
+          "guid": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "kind": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "label": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "guid",
+          "kind",
+          "label"
+        ],
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "maxItems": 512,
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "leader": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "level_guid": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "levels": {
+      "items": {
+        "properties": {
+          "guid": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "label": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "level_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "guid",
+          "label",
+          "level_id"
+        ],
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "maxItems": 256,
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "main_character": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "party": {
+      "items": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "maxItems": 8,
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "party_progress": {
+      "properties": {
+        "level": {
+          "maximum": 2147483647,
+          "minimum": -2147483648,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "total_xp": {
+          "maximum": 2147483647,
+          "minimum": -2147483648,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "unspent_xp": {
+          "maximum": 2147483647,
+          "minimum": -2147483648,
+          "type": [
+            "integer",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "level",
+        "total_xp",
+        "unspent_xp"
+      ],
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "party_resources": {
+      "properties": {
+        "combo_points": {
+          "maximum": 2147483647,
+          "minimum": -2147483648,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "max_combo_points": {
+          "maximum": 2147483647,
+          "minimum": -2147483648,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "ult_points": {
+          "maximum": 2147483647,
+          "minimum": -2147483648,
+          "type": [
+            "integer",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "combo_points",
+        "max_combo_points",
+        "ult_points"
+      ],
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "paused": {
+      "maximum": 2147483647,
+      "minimum": -2147483648,
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "roster_downed": {
+      "maximum": 4294967295,
+      "minimum": 0,
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "roster_hp_total": {
+      "maximum": 2147483647,
+      "minimum": -2147483648,
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "upgrade_step": {
+      "properties": {
+        "hp": {
+          "maximum": 2147483647,
+          "minimum": -2147483648,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "matk": {
+          "maximum": 2147483647,
+          "minimum": -2147483648,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "mdef": {
+          "maximum": 2147483647,
+          "minimum": -2147483648,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "patk": {
+          "maximum": 2147483647,
+          "minimum": -2147483648,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "pdef": {
+          "maximum": 2147483647,
+          "minimum": -2147483648,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "sp": {
+          "maximum": 2147483647,
+          "minimum": -2147483648,
+          "type": [
+            "integer",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "hp",
+        "matk",
+        "mdef",
+        "patk",
+        "pdef",
+        "sp"
+      ],
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "valere_hp_percent": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "valere_levelups": {
+      "items": {
+        "properties": {
+          "hp": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "matk": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "mdef": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "patk": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "pdef": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "sp": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "hp",
+          "matk",
+          "mdef",
+          "patk",
+          "pdef",
+          "sp"
+        ],
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "maxItems": 40,
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "valere_max_hp": {
+      "maximum": 2147483647,
+      "minimum": -2147483648,
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "valere_max_sp": {
+      "maximum": 2147483647,
+      "minimum": -2147483648,
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "valere_trinket0_mods": {
+      "items": {
+        "properties": {
+          "amount": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "kind": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "stat": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "amount",
+          "kind",
+          "stat"
+        ],
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "maxItems": 8,
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "valere_trinket1_mods": {
+      "items": {
+        "properties": {
+          "amount": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "kind": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "stat": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "amount",
+          "kind",
+          "stat"
+        ],
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "maxItems": 8,
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "valere_upgrades": {
+      "items": {
+        "properties": {
+          "count": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "stat": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "count",
+          "stat"
+        ],
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "maxItems": 16,
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "zale_hp_percent": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "zale_levelups": {
+      "items": {
+        "properties": {
+          "hp": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "matk": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "mdef": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "patk": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "pdef": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "sp": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "hp",
+          "matk",
+          "mdef",
+          "patk",
+          "pdef",
+          "sp"
+        ],
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "maxItems": 40,
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "zale_max_hp": {
+      "maximum": 2147483647,
+      "minimum": -2147483648,
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "zale_max_sp": {
+      "maximum": 2147483647,
+      "minimum": -2147483648,
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "zale_trinket0_mods": {
+      "items": {
+        "properties": {
+          "amount": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "kind": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "stat": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "amount",
+          "kind",
+          "stat"
+        ],
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "maxItems": 8,
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "zale_trinket1_mods": {
+      "items": {
+        "properties": {
+          "amount": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "kind": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "stat": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "amount",
+          "kind",
+          "stat"
+        ],
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "maxItems": 8,
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "zale_upgrades": {
+      "items": {
+        "properties": {
+          "count": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "stat": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "count",
+          "stat"
+        ],
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "maxItems": 16,
+      "type": [
+        "array",
+        "null"
+      ]
+    }
+  },
+  "title": "sea-of-stars 2.0",
+  "type": "object",
+  "x-contract": {
+    "id": "sea-of-stars",
+    "version": "2.0"
+  }
+}

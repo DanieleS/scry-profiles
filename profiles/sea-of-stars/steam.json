@@ -1,0 +1,2115 @@
+{
+  "label": "Sea of Stars (Steam) — world, party, gear, derived",
+  "contract": { "id": "sea-of-stars", "version": "2.0" },
+  "match": {
+    "process": "SeaOfStars.exe",
+    "module": "GameAssembly.dll",
+    "probe": "50 6C 61 79 61 62 6C 65 43 68 61 72 61 63 74 65 72 44 61 74 61"
+  },
+  "watches": [
+    {
+      "tier": "tier1",
+      "name": "level_guid",
+      "module": "GameAssembly.dll",
+      "offsets": [
+        59661152,
+        184,
+        16,
+        224,
+        16
+      ],
+      "type": {
+        "string": "il2cpp"
+      },
+      "rate_hz": 2.0
+    },
+    {
+      "tier": "collection",
+      "name": "levels",
+      "base": {
+        "tier": "tier1",
+        "module": "GameAssembly.dll",
+        "offsets": [
+          59661152,
+          184,
+          16,
+          208,
+          0
+        ]
+      },
+      "count": [
+        32
+      ],
+      "items": [
+        24
+      ],
+      "first": 32,
+      "stride": 24,
+      "fields": {
+        "guid": {
+          "offsets": [
+            8
+          ],
+          "type": {
+            "string": "il2cpp"
+          }
+        },
+        "label": {
+          "offsets": [
+            16,
+            40
+          ],
+          "type": {
+            "string": "il2cpp"
+          }
+        },
+        "level_id": {
+          "offsets": [
+            16,
+            24
+          ],
+          "type": {
+            "string": "il2cpp"
+          }
+        }
+      },
+      "max": 256,
+      "rate_hz": 0.05
+    },
+    {
+      "tier": "tier1",
+      "name": "in_combat",
+      "module": "GameAssembly.dll",
+      "offsets": [
+        59660800,
+        184,
+        16,
+        320
+      ],
+      "type": "u64",
+      "rate_hz": 4.0
+    },
+    {
+      "tier": "tier1",
+      "name": "cutscene_count",
+      "module": "GameAssembly.dll",
+      "offsets": [
+        59660608,
+        184,
+        16,
+        72
+      ],
+      "type": "i32",
+      "rate_hz": 4.0
+    },
+    {
+      "tier": "tier1",
+      "name": "dialog_boxes",
+      "module": "GameAssembly.dll",
+      "offsets": [
+        59659456,
+        184,
+        16,
+        88,
+        32
+      ],
+      "type": "i32",
+      "rate_hz": 4.0
+    },
+    {
+      "tier": "tier1",
+      "name": "paused",
+      "module": "GameAssembly.dll",
+      "offsets": [
+        59659360,
+        184,
+        16,
+        64
+      ],
+      "type": "i32",
+      "rate_hz": 4.0
+    },
+    {
+      "tier": "collection",
+      "name": "party",
+      "base": {
+        "tier": "tier1",
+        "module": "GameAssembly.dll",
+        "offsets": [
+          59659776,
+          184,
+          16,
+          152,
+          40,
+          0
+        ]
+      },
+      "count": [
+        24
+      ],
+      "items": [
+        16
+      ],
+      "first": 32,
+      "stride": 8,
+      "element": [
+        0
+      ],
+      "type": {
+        "string": "il2cpp"
+      },
+      "max": 8,
+      "rate_hz": 2.0
+    },
+    {
+      "tier": "collection",
+      "name": "combat_party",
+      "base": {
+        "tier": "tier1",
+        "module": "GameAssembly.dll",
+        "offsets": [
+          59659776,
+          184,
+          16,
+          152,
+          56,
+          0
+        ]
+      },
+      "count": [
+        24
+      ],
+      "items": [
+        16
+      ],
+      "first": 32,
+      "stride": 8,
+      "element": [
+        0
+      ],
+      "type": {
+        "string": "il2cpp"
+      },
+      "max": 8,
+      "rate_hz": 2.0
+    },
+    {
+      "tier": "tier1",
+      "name": "leader",
+      "module": "GameAssembly.dll",
+      "offsets": [
+        59659776,
+        184,
+        16,
+        152,
+        32
+      ],
+      "type": {
+        "string": "il2cpp"
+      },
+      "rate_hz": 2.0
+    },
+    {
+      "tier": "tier1",
+      "name": "main_character",
+      "module": "GameAssembly.dll",
+      "offsets": [
+        59659776,
+        184,
+        16,
+        152,
+        24
+      ],
+      "type": {
+        "string": "il2cpp"
+      },
+      "rate_hz": 2.0
+    },
+    {
+      "tier": "record",
+      "name": "party_progress",
+      "base": {
+        "tier": "tier1",
+        "module": "GameAssembly.dll",
+        "offsets": [
+          59660384,
+          184,
+          16,
+          152,
+          0
+        ]
+      },
+      "fields": {
+        "level": {
+          "offsets": [
+            20
+          ],
+          "type": "i32"
+        },
+        "total_xp": {
+          "offsets": [
+            16
+          ],
+          "type": "i32"
+        },
+        "unspent_xp": {
+          "offsets": [
+            24
+          ],
+          "type": "i32"
+        }
+      },
+      "rate_hz": 1.0
+    },
+    {
+      "tier": "record",
+      "name": "upgrade_step",
+      "base": {
+        "tier": "tier1",
+        "module": "GameAssembly.dll",
+        "offsets": [
+          59660384,
+          184,
+          16,
+          0
+        ]
+      },
+      "fields": {
+        "hp": {
+          "offsets": [
+            64
+          ],
+          "type": "i32"
+        },
+        "matk": {
+          "offsets": [
+            80
+          ],
+          "type": "i32"
+        },
+        "mdef": {
+          "offsets": [
+            84
+          ],
+          "type": "i32"
+        },
+        "patk": {
+          "offsets": [
+            72
+          ],
+          "type": "i32"
+        },
+        "pdef": {
+          "offsets": [
+            76
+          ],
+          "type": "i32"
+        },
+        "sp": {
+          "offsets": [
+            68
+          ],
+          "type": "i32"
+        }
+      },
+      "rate_hz": 0.5
+    },
+    {
+      "tier": "record",
+      "name": "party_resources",
+      "base": {
+        "tier": "tier1",
+        "module": "GameAssembly.dll",
+        "offsets": [
+          59660384,
+          184,
+          16,
+          0
+        ]
+      },
+      "fields": {
+        "combo_points": {
+          "offsets": [
+            176
+          ],
+          "type": "i32"
+        },
+        "max_combo_points": {
+          "offsets": [
+            96
+          ],
+          "type": "i32"
+        },
+        "ult_points": {
+          "offsets": [
+            132
+          ],
+          "type": "i32"
+        }
+      },
+      "rate_hz": 4.0
+    },
+    {
+      "tier": "collection",
+      "name": "characters",
+      "base": {
+        "tier": "tier1",
+        "module": "GameAssembly.dll",
+        "offsets": [
+          59660384,
+          184,
+          16,
+          168,
+          0
+        ]
+      },
+      "count": [
+        24
+      ],
+      "items": [
+        16
+      ],
+      "first": 32,
+      "stride": 8,
+      "element": [
+        0,
+        0
+      ],
+      "fields": {
+        "armor": {
+          "offsets": [
+            120,
+            184,
+            40
+          ],
+          "type": {
+            "string": "il2cpp"
+          }
+        },
+        "armor_mdef": {
+          "offsets": [
+            120,
+            184,
+            148
+          ],
+          "type": "i32"
+        },
+        "armor_pdef": {
+          "offsets": [
+            120,
+            184,
+            144
+          ],
+          "type": "i32"
+        },
+        "base_hp": {
+          "offsets": [
+            120,
+            32
+          ],
+          "type": "i32"
+        },
+        "base_matk": {
+          "offsets": [
+            120,
+            44
+          ],
+          "type": "i32"
+        },
+        "base_mdef": {
+          "offsets": [
+            120,
+            52
+          ],
+          "type": "i32"
+        },
+        "base_patk": {
+          "offsets": [
+            120,
+            40
+          ],
+          "type": "i32"
+        },
+        "base_pdef": {
+          "offsets": [
+            120,
+            48
+          ],
+          "type": "i32"
+        },
+        "base_sp": {
+          "offsets": [
+            120,
+            36
+          ],
+          "type": "i32"
+        },
+        "boost_level": {
+          "offsets": [
+            72
+          ],
+          "type": "i32"
+        },
+        "class_id": {
+          "offsets": [
+            120,
+            88
+          ],
+          "type": {
+            "string": "il2cpp"
+          }
+        },
+        "group_trinket": {
+          "offsets": [
+            120,
+            200,
+            40
+          ],
+          "type": {
+            "string": "il2cpp"
+          }
+        },
+        "hp": {
+          "offsets": [
+            104
+          ],
+          "type": "i32"
+        },
+        "id": {
+          "offsets": [
+            56
+          ],
+          "type": {
+            "string": "il2cpp"
+          }
+        },
+        "sp": {
+          "offsets": [
+            108
+          ],
+          "type": "i32"
+        },
+        "trinket_1": {
+          "offsets": [
+            120,
+            192,
+            16,
+            32,
+            40
+          ],
+          "type": {
+            "string": "il2cpp"
+          }
+        },
+        "trinket_2": {
+          "offsets": [
+            120,
+            192,
+            16,
+            40,
+            40
+          ],
+          "type": {
+            "string": "il2cpp"
+          }
+        },
+        "weapon": {
+          "offsets": [
+            120,
+            176,
+            40
+          ],
+          "type": {
+            "string": "il2cpp"
+          }
+        },
+        "weapon_matk": {
+          "offsets": [
+            120,
+            176,
+            156
+          ],
+          "type": "i32"
+        },
+        "weapon_patk": {
+          "offsets": [
+            120,
+            176,
+            152
+          ],
+          "type": "i32"
+        }
+      },
+      "max": 16,
+      "rate_hz": 4.0
+    },
+    {
+      "tier": "collection",
+      "name": "inventory",
+      "base": {
+        "tier": "tier1",
+        "module": "GameAssembly.dll",
+        "offsets": [
+          59661216,
+          184,
+          16,
+          120,
+          32,
+          0
+        ]
+      },
+      "count": [
+        32
+      ],
+      "items": [
+        24
+      ],
+      "first": 32,
+      "stride": 24,
+      "fields": {
+        "guid": {
+          "offsets": [
+            8
+          ],
+          "type": {
+            "string": "il2cpp"
+          }
+        },
+        "qty": {
+          "offsets": [
+            16
+          ],
+          "type": "i32"
+        }
+      },
+      "max": 256,
+      "rate_hz": 1.0
+    },
+    {
+      "tier": "collection",
+      "name": "item_catalog",
+      "base": {
+        "tier": "tier1",
+        "module": "GameAssembly.dll",
+        "offsets": [
+          59661216,
+          184,
+          16,
+          96,
+          0
+        ]
+      },
+      "count": [
+        32
+      ],
+      "items": [
+        24
+      ],
+      "first": 32,
+      "stride": 24,
+      "fields": {
+        "guid": {
+          "offsets": [
+            8
+          ],
+          "type": {
+            "string": "il2cpp"
+          }
+        },
+        "kind": {
+          "offsets": [
+            16,
+            0,
+            16
+          ],
+          "type": {
+            "string": {
+              "encoding": "utf8",
+              "deref": true
+            }
+          }
+        },
+        "label": {
+          "offsets": [
+            16,
+            40
+          ],
+          "type": {
+            "string": "il2cpp"
+          }
+        }
+      },
+      "max": 512,
+      "rate_hz": 0.05
+    },
+    {
+      "tier": "collection",
+      "name": "enemies",
+      "base": {
+        "tier": "tier1",
+        "module": "GameAssembly.dll",
+        "offsets": [
+          59660800,
+          184,
+          16,
+          320,
+          408,
+          0
+        ]
+      },
+      "count": [
+        24
+      ],
+      "items": [
+        16
+      ],
+      "first": 32,
+      "stride": 8,
+      "element": [
+        0,
+        0
+      ],
+      "fields": {
+        "hp": {
+          "offsets": [
+            156
+          ],
+          "type": "i32"
+        },
+        "label": {
+          "offsets": [
+            128,
+            264,
+            80
+          ],
+          "type": {
+            "string": "il2cpp"
+          }
+        },
+        "level": {
+          "offsets": [
+            128,
+            264,
+            92
+          ],
+          "type": "i32"
+        },
+        "matk": {
+          "offsets": [
+            128,
+            264,
+            64
+          ],
+          "type": "i32"
+        },
+        "max_hp": {
+          "offsets": [
+            128,
+            264,
+            48
+          ],
+          "type": "i32"
+        },
+        "mdef": {
+          "offsets": [
+            128,
+            264,
+            68
+          ],
+          "type": "i32"
+        },
+        "patk": {
+          "offsets": [
+            128,
+            264,
+            60
+          ],
+          "type": "i32"
+        },
+        "pdef": {
+          "offsets": [
+            128,
+            264,
+            56
+          ],
+          "type": "i32"
+        }
+      },
+      "max": 16,
+      "rate_hz": 4.0
+    },
+    {
+      "tier": "tier1",
+      "name": "encounter_xp",
+      "module": "GameAssembly.dll",
+      "offsets": [
+        59660800,
+        184,
+        16,
+        320,
+        336
+      ],
+      "type": "i32",
+      "rate_hz": 2.0
+    },
+    {
+      "tier": "collection",
+      "name": "garl_levelups",
+      "base": {
+        "tier": "tier1",
+        "module": "GameAssembly.dll",
+        "offsets": [
+          59660384,
+          184,
+          16,
+          168,
+          16,
+          48,
+          120,
+          272,
+          32,
+          0
+        ]
+      },
+      "count": [
+        24
+      ],
+      "items": [
+        16
+      ],
+      "first": 32,
+      "stride": 8,
+      "element": [
+        0,
+        0
+      ],
+      "fields": {
+        "hp": {
+          "offsets": [
+            16
+          ],
+          "type": "i32"
+        },
+        "matk": {
+          "offsets": [
+            32
+          ],
+          "type": "i32"
+        },
+        "mdef": {
+          "offsets": [
+            36
+          ],
+          "type": "i32"
+        },
+        "patk": {
+          "offsets": [
+            24
+          ],
+          "type": "i32"
+        },
+        "pdef": {
+          "offsets": [
+            28
+          ],
+          "type": "i32"
+        },
+        "sp": {
+          "offsets": [
+            20
+          ],
+          "type": "i32"
+        }
+      },
+      "max": 40,
+      "rate_hz": 0.5
+    },
+    {
+      "tier": "collection",
+      "name": "garl_upgrades",
+      "base": {
+        "tier": "tier1",
+        "module": "GameAssembly.dll",
+        "offsets": [
+          59660384,
+          184,
+          16,
+          168,
+          16,
+          48,
+          120,
+          296,
+          0
+        ]
+      },
+      "count": [
+        32
+      ],
+      "items": [
+        24
+      ],
+      "first": 32,
+      "stride": 16,
+      "fields": {
+        "count": {
+          "offsets": [
+            12
+          ],
+          "type": "i32"
+        },
+        "stat": {
+          "offsets": [
+            8
+          ],
+          "type": "i32"
+        }
+      },
+      "max": 16,
+      "rate_hz": 1.0
+    },
+    {
+      "tier": "collection",
+      "name": "garl_trinket0_mods",
+      "base": {
+        "tier": "tier1",
+        "module": "GameAssembly.dll",
+        "offsets": [
+          59660384,
+          184,
+          16,
+          168,
+          16,
+          48,
+          120,
+          224,
+          16,
+          32,
+          40,
+          0
+        ]
+      },
+      "count": [
+        24
+      ],
+      "items": [
+        16
+      ],
+      "first": 32,
+      "stride": 8,
+      "element": [
+        0,
+        0
+      ],
+      "fields": {
+        "amount": {
+          "offsets": [
+            68
+          ],
+          "type": "i32"
+        },
+        "kind": {
+          "offsets": [
+            0,
+            16
+          ],
+          "type": {
+            "string": {
+              "encoding": "utf8",
+              "deref": true
+            }
+          }
+        },
+        "stat": {
+          "offsets": [
+            64
+          ],
+          "type": "i32"
+        }
+      },
+      "max": 8,
+      "rate_hz": 1.0
+    },
+    {
+      "tier": "collection",
+      "name": "garl_trinket1_mods",
+      "base": {
+        "tier": "tier1",
+        "module": "GameAssembly.dll",
+        "offsets": [
+          59660384,
+          184,
+          16,
+          168,
+          16,
+          48,
+          120,
+          224,
+          16,
+          40,
+          40,
+          0
+        ]
+      },
+      "count": [
+        24
+      ],
+      "items": [
+        16
+      ],
+      "first": 32,
+      "stride": 8,
+      "element": [
+        0,
+        0
+      ],
+      "fields": {
+        "amount": {
+          "offsets": [
+            68
+          ],
+          "type": "i32"
+        },
+        "kind": {
+          "offsets": [
+            0,
+            16
+          ],
+          "type": {
+            "string": {
+              "encoding": "utf8",
+              "deref": true
+            }
+          }
+        },
+        "stat": {
+          "offsets": [
+            64
+          ],
+          "type": "i32"
+        }
+      },
+      "max": 8,
+      "rate_hz": 1.0
+    },
+    {
+      "tier": "collection",
+      "name": "valere_levelups",
+      "base": {
+        "tier": "tier1",
+        "module": "GameAssembly.dll",
+        "offsets": [
+          59660384,
+          184,
+          16,
+          168,
+          16,
+          56,
+          120,
+          272,
+          32,
+          0
+        ]
+      },
+      "count": [
+        24
+      ],
+      "items": [
+        16
+      ],
+      "first": 32,
+      "stride": 8,
+      "element": [
+        0,
+        0
+      ],
+      "fields": {
+        "hp": {
+          "offsets": [
+            16
+          ],
+          "type": "i32"
+        },
+        "matk": {
+          "offsets": [
+            32
+          ],
+          "type": "i32"
+        },
+        "mdef": {
+          "offsets": [
+            36
+          ],
+          "type": "i32"
+        },
+        "patk": {
+          "offsets": [
+            24
+          ],
+          "type": "i32"
+        },
+        "pdef": {
+          "offsets": [
+            28
+          ],
+          "type": "i32"
+        },
+        "sp": {
+          "offsets": [
+            20
+          ],
+          "type": "i32"
+        }
+      },
+      "max": 40,
+      "rate_hz": 0.5
+    },
+    {
+      "tier": "collection",
+      "name": "valere_upgrades",
+      "base": {
+        "tier": "tier1",
+        "module": "GameAssembly.dll",
+        "offsets": [
+          59660384,
+          184,
+          16,
+          168,
+          16,
+          56,
+          120,
+          296,
+          0
+        ]
+      },
+      "count": [
+        32
+      ],
+      "items": [
+        24
+      ],
+      "first": 32,
+      "stride": 16,
+      "fields": {
+        "count": {
+          "offsets": [
+            12
+          ],
+          "type": "i32"
+        },
+        "stat": {
+          "offsets": [
+            8
+          ],
+          "type": "i32"
+        }
+      },
+      "max": 16,
+      "rate_hz": 1.0
+    },
+    {
+      "tier": "collection",
+      "name": "valere_trinket0_mods",
+      "base": {
+        "tier": "tier1",
+        "module": "GameAssembly.dll",
+        "offsets": [
+          59660384,
+          184,
+          16,
+          168,
+          16,
+          56,
+          120,
+          224,
+          16,
+          32,
+          40,
+          0
+        ]
+      },
+      "count": [
+        24
+      ],
+      "items": [
+        16
+      ],
+      "first": 32,
+      "stride": 8,
+      "element": [
+        0,
+        0
+      ],
+      "fields": {
+        "amount": {
+          "offsets": [
+            68
+          ],
+          "type": "i32"
+        },
+        "kind": {
+          "offsets": [
+            0,
+            16
+          ],
+          "type": {
+            "string": {
+              "encoding": "utf8",
+              "deref": true
+            }
+          }
+        },
+        "stat": {
+          "offsets": [
+            64
+          ],
+          "type": "i32"
+        }
+      },
+      "max": 8,
+      "rate_hz": 1.0
+    },
+    {
+      "tier": "collection",
+      "name": "valere_trinket1_mods",
+      "base": {
+        "tier": "tier1",
+        "module": "GameAssembly.dll",
+        "offsets": [
+          59660384,
+          184,
+          16,
+          168,
+          16,
+          56,
+          120,
+          224,
+          16,
+          40,
+          40,
+          0
+        ]
+      },
+      "count": [
+        24
+      ],
+      "items": [
+        16
+      ],
+      "first": 32,
+      "stride": 8,
+      "element": [
+        0,
+        0
+      ],
+      "fields": {
+        "amount": {
+          "offsets": [
+            68
+          ],
+          "type": "i32"
+        },
+        "kind": {
+          "offsets": [
+            0,
+            16
+          ],
+          "type": {
+            "string": {
+              "encoding": "utf8",
+              "deref": true
+            }
+          }
+        },
+        "stat": {
+          "offsets": [
+            64
+          ],
+          "type": "i32"
+        }
+      },
+      "max": 8,
+      "rate_hz": 1.0
+    },
+    {
+      "tier": "collection",
+      "name": "zale_levelups",
+      "base": {
+        "tier": "tier1",
+        "module": "GameAssembly.dll",
+        "offsets": [
+          59660384,
+          184,
+          16,
+          168,
+          16,
+          96,
+          120,
+          272,
+          32,
+          0
+        ]
+      },
+      "count": [
+        24
+      ],
+      "items": [
+        16
+      ],
+      "first": 32,
+      "stride": 8,
+      "element": [
+        0,
+        0
+      ],
+      "fields": {
+        "hp": {
+          "offsets": [
+            16
+          ],
+          "type": "i32"
+        },
+        "matk": {
+          "offsets": [
+            32
+          ],
+          "type": "i32"
+        },
+        "mdef": {
+          "offsets": [
+            36
+          ],
+          "type": "i32"
+        },
+        "patk": {
+          "offsets": [
+            24
+          ],
+          "type": "i32"
+        },
+        "pdef": {
+          "offsets": [
+            28
+          ],
+          "type": "i32"
+        },
+        "sp": {
+          "offsets": [
+            20
+          ],
+          "type": "i32"
+        }
+      },
+      "max": 40,
+      "rate_hz": 0.5
+    },
+    {
+      "tier": "collection",
+      "name": "zale_upgrades",
+      "base": {
+        "tier": "tier1",
+        "module": "GameAssembly.dll",
+        "offsets": [
+          59660384,
+          184,
+          16,
+          168,
+          16,
+          96,
+          120,
+          296,
+          0
+        ]
+      },
+      "count": [
+        32
+      ],
+      "items": [
+        24
+      ],
+      "first": 32,
+      "stride": 16,
+      "fields": {
+        "count": {
+          "offsets": [
+            12
+          ],
+          "type": "i32"
+        },
+        "stat": {
+          "offsets": [
+            8
+          ],
+          "type": "i32"
+        }
+      },
+      "max": 16,
+      "rate_hz": 1.0
+    },
+    {
+      "tier": "collection",
+      "name": "zale_trinket0_mods",
+      "base": {
+        "tier": "tier1",
+        "module": "GameAssembly.dll",
+        "offsets": [
+          59660384,
+          184,
+          16,
+          168,
+          16,
+          96,
+          120,
+          224,
+          16,
+          32,
+          40,
+          0
+        ]
+      },
+      "count": [
+        24
+      ],
+      "items": [
+        16
+      ],
+      "first": 32,
+      "stride": 8,
+      "element": [
+        0,
+        0
+      ],
+      "fields": {
+        "amount": {
+          "offsets": [
+            68
+          ],
+          "type": "i32"
+        },
+        "kind": {
+          "offsets": [
+            0,
+            16
+          ],
+          "type": {
+            "string": {
+              "encoding": "utf8",
+              "deref": true
+            }
+          }
+        },
+        "stat": {
+          "offsets": [
+            64
+          ],
+          "type": "i32"
+        }
+      },
+      "max": 8,
+      "rate_hz": 1.0
+    },
+    {
+      "tier": "collection",
+      "name": "zale_trinket1_mods",
+      "base": {
+        "tier": "tier1",
+        "module": "GameAssembly.dll",
+        "offsets": [
+          59660384,
+          184,
+          16,
+          168,
+          16,
+          96,
+          120,
+          224,
+          16,
+          40,
+          40,
+          0
+        ]
+      },
+      "count": [
+        24
+      ],
+      "items": [
+        16
+      ],
+      "first": 32,
+      "stride": 8,
+      "element": [
+        0,
+        0
+      ],
+      "fields": {
+        "amount": {
+          "offsets": [
+            68
+          ],
+          "type": "i32"
+        },
+        "kind": {
+          "offsets": [
+            0,
+            16
+          ],
+          "type": {
+            "string": {
+              "encoding": "utf8",
+              "deref": true
+            }
+          }
+        },
+        "stat": {
+          "offsets": [
+            64
+          ],
+          "type": "i32"
+        }
+      },
+      "max": 8,
+      "rate_hz": 1.0
+    },
+    {
+      "tier": "derived",
+      "name": "garl_max_hp",
+      "type": "i32",
+      "value": {
+        "add": [
+          {
+            "watch": "characters",
+            "index": 2,
+            "field": "base_hp"
+          },
+          {
+            "sum": {
+              "watch": "garl_levelups",
+              "field": "hp",
+              "take": {
+                "sub": [
+                  {
+                    "watch": "party_progress",
+                    "field": "level"
+                  },
+                  {
+                    "const": 1.0
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "mul": [
+              {
+                "sum": {
+                  "watch": "garl_upgrades",
+                  "field": "count",
+                  "where": [
+                    {
+                      "field": "stat",
+                      "eq": 0.0
+                    }
+                  ]
+                }
+              },
+              {
+                "watch": "upgrade_step",
+                "field": "hp"
+              }
+            ]
+          },
+          {
+            "sum": {
+              "watch": "garl_trinket0_mods",
+              "field": "amount",
+              "where": [
+                {
+                  "field": "kind",
+                  "eq": "PlayerAddStatModifier"
+                },
+                {
+                  "field": "stat",
+                  "eq": 0.0
+                }
+              ]
+            }
+          },
+          {
+            "sum": {
+              "watch": "garl_trinket1_mods",
+              "field": "amount",
+              "where": [
+                {
+                  "field": "kind",
+                  "eq": "PlayerAddStatModifier"
+                },
+                {
+                  "field": "stat",
+                  "eq": 0.0
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "rate_hz": 2.0
+    },
+    {
+      "tier": "derived",
+      "name": "garl_max_sp",
+      "type": "i32",
+      "value": {
+        "add": [
+          {
+            "watch": "characters",
+            "index": 2,
+            "field": "base_sp"
+          },
+          {
+            "sum": {
+              "watch": "garl_levelups",
+              "field": "sp",
+              "take": {
+                "sub": [
+                  {
+                    "watch": "party_progress",
+                    "field": "level"
+                  },
+                  {
+                    "const": 1.0
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "mul": [
+              {
+                "sum": {
+                  "watch": "garl_upgrades",
+                  "field": "count",
+                  "where": [
+                    {
+                      "field": "stat",
+                      "eq": 1.0
+                    }
+                  ]
+                }
+              },
+              {
+                "watch": "upgrade_step",
+                "field": "sp"
+              }
+            ]
+          },
+          {
+            "sum": {
+              "watch": "garl_trinket0_mods",
+              "field": "amount",
+              "where": [
+                {
+                  "field": "kind",
+                  "eq": "PlayerAddStatModifier"
+                },
+                {
+                  "field": "stat",
+                  "eq": 1.0
+                }
+              ]
+            }
+          },
+          {
+            "sum": {
+              "watch": "garl_trinket1_mods",
+              "field": "amount",
+              "where": [
+                {
+                  "field": "kind",
+                  "eq": "PlayerAddStatModifier"
+                },
+                {
+                  "field": "stat",
+                  "eq": 1.0
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "rate_hz": 2.0
+    },
+    {
+      "tier": "derived",
+      "name": "valere_max_hp",
+      "type": "i32",
+      "value": {
+        "add": [
+          {
+            "watch": "characters",
+            "index": 3,
+            "field": "base_hp"
+          },
+          {
+            "sum": {
+              "watch": "valere_levelups",
+              "field": "hp",
+              "take": {
+                "sub": [
+                  {
+                    "watch": "party_progress",
+                    "field": "level"
+                  },
+                  {
+                    "const": 1.0
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "mul": [
+              {
+                "sum": {
+                  "watch": "valere_upgrades",
+                  "field": "count",
+                  "where": [
+                    {
+                      "field": "stat",
+                      "eq": 0.0
+                    }
+                  ]
+                }
+              },
+              {
+                "watch": "upgrade_step",
+                "field": "hp"
+              }
+            ]
+          },
+          {
+            "sum": {
+              "watch": "valere_trinket0_mods",
+              "field": "amount",
+              "where": [
+                {
+                  "field": "kind",
+                  "eq": "PlayerAddStatModifier"
+                },
+                {
+                  "field": "stat",
+                  "eq": 0.0
+                }
+              ]
+            }
+          },
+          {
+            "sum": {
+              "watch": "valere_trinket1_mods",
+              "field": "amount",
+              "where": [
+                {
+                  "field": "kind",
+                  "eq": "PlayerAddStatModifier"
+                },
+                {
+                  "field": "stat",
+                  "eq": 0.0
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "rate_hz": 2.0
+    },
+    {
+      "tier": "derived",
+      "name": "valere_max_sp",
+      "type": "i32",
+      "value": {
+        "add": [
+          {
+            "watch": "characters",
+            "index": 3,
+            "field": "base_sp"
+          },
+          {
+            "sum": {
+              "watch": "valere_levelups",
+              "field": "sp",
+              "take": {
+                "sub": [
+                  {
+                    "watch": "party_progress",
+                    "field": "level"
+                  },
+                  {
+                    "const": 1.0
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "mul": [
+              {
+                "sum": {
+                  "watch": "valere_upgrades",
+                  "field": "count",
+                  "where": [
+                    {
+                      "field": "stat",
+                      "eq": 1.0
+                    }
+                  ]
+                }
+              },
+              {
+                "watch": "upgrade_step",
+                "field": "sp"
+              }
+            ]
+          },
+          {
+            "sum": {
+              "watch": "valere_trinket0_mods",
+              "field": "amount",
+              "where": [
+                {
+                  "field": "kind",
+                  "eq": "PlayerAddStatModifier"
+                },
+                {
+                  "field": "stat",
+                  "eq": 1.0
+                }
+              ]
+            }
+          },
+          {
+            "sum": {
+              "watch": "valere_trinket1_mods",
+              "field": "amount",
+              "where": [
+                {
+                  "field": "kind",
+                  "eq": "PlayerAddStatModifier"
+                },
+                {
+                  "field": "stat",
+                  "eq": 1.0
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "rate_hz": 2.0
+    },
+    {
+      "tier": "derived",
+      "name": "zale_max_hp",
+      "type": "i32",
+      "value": {
+        "add": [
+          {
+            "watch": "characters",
+            "index": 8,
+            "field": "base_hp"
+          },
+          {
+            "sum": {
+              "watch": "zale_levelups",
+              "field": "hp",
+              "take": {
+                "sub": [
+                  {
+                    "watch": "party_progress",
+                    "field": "level"
+                  },
+                  {
+                    "const": 1.0
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "mul": [
+              {
+                "sum": {
+                  "watch": "zale_upgrades",
+                  "field": "count",
+                  "where": [
+                    {
+                      "field": "stat",
+                      "eq": 0.0
+                    }
+                  ]
+                }
+              },
+              {
+                "watch": "upgrade_step",
+                "field": "hp"
+              }
+            ]
+          },
+          {
+            "sum": {
+              "watch": "zale_trinket0_mods",
+              "field": "amount",
+              "where": [
+                {
+                  "field": "kind",
+                  "eq": "PlayerAddStatModifier"
+                },
+                {
+                  "field": "stat",
+                  "eq": 0.0
+                }
+              ]
+            }
+          },
+          {
+            "sum": {
+              "watch": "zale_trinket1_mods",
+              "field": "amount",
+              "where": [
+                {
+                  "field": "kind",
+                  "eq": "PlayerAddStatModifier"
+                },
+                {
+                  "field": "stat",
+                  "eq": 0.0
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "rate_hz": 2.0
+    },
+    {
+      "tier": "derived",
+      "name": "zale_max_sp",
+      "type": "i32",
+      "value": {
+        "add": [
+          {
+            "watch": "characters",
+            "index": 8,
+            "field": "base_sp"
+          },
+          {
+            "sum": {
+              "watch": "zale_levelups",
+              "field": "sp",
+              "take": {
+                "sub": [
+                  {
+                    "watch": "party_progress",
+                    "field": "level"
+                  },
+                  {
+                    "const": 1.0
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "mul": [
+              {
+                "sum": {
+                  "watch": "zale_upgrades",
+                  "field": "count",
+                  "where": [
+                    {
+                      "field": "stat",
+                      "eq": 1.0
+                    }
+                  ]
+                }
+              },
+              {
+                "watch": "upgrade_step",
+                "field": "sp"
+              }
+            ]
+          },
+          {
+            "sum": {
+              "watch": "zale_trinket0_mods",
+              "field": "amount",
+              "where": [
+                {
+                  "field": "kind",
+                  "eq": "PlayerAddStatModifier"
+                },
+                {
+                  "field": "stat",
+                  "eq": 1.0
+                }
+              ]
+            }
+          },
+          {
+            "sum": {
+              "watch": "zale_trinket1_mods",
+              "field": "amount",
+              "where": [
+                {
+                  "field": "kind",
+                  "eq": "PlayerAddStatModifier"
+                },
+                {
+                  "field": "stat",
+                  "eq": 1.0
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "rate_hz": 2.0
+    },
+    {
+      "tier": "derived",
+      "name": "garl_hp_percent",
+      "type": "f32",
+      "value": {
+        "mul": [
+          {
+            "const": 100.0
+          },
+          {
+            "div": [
+              {
+                "watch": "characters",
+                "index": 2,
+                "field": "hp"
+              },
+              {
+                "watch": "garl_max_hp"
+              }
+            ]
+          }
+        ]
+      },
+      "rate_hz": 4.0
+    },
+    {
+      "tier": "derived",
+      "name": "valere_hp_percent",
+      "type": "f32",
+      "value": {
+        "mul": [
+          {
+            "const": 100.0
+          },
+          {
+            "div": [
+              {
+                "watch": "characters",
+                "index": 3,
+                "field": "hp"
+              },
+              {
+                "watch": "valere_max_hp"
+              }
+            ]
+          }
+        ]
+      },
+      "rate_hz": 4.0
+    },
+    {
+      "tier": "derived",
+      "name": "zale_hp_percent",
+      "type": "f32",
+      "value": {
+        "mul": [
+          {
+            "const": 100.0
+          },
+          {
+            "div": [
+              {
+                "watch": "characters",
+                "index": 8,
+                "field": "hp"
+              },
+              {
+                "watch": "zale_max_hp"
+              }
+            ]
+          }
+        ]
+      },
+      "rate_hz": 4.0
+    },
+    {
+      "tier": "derived",
+      "name": "attack_rating",
+      "type": "i32",
+      "each": "characters",
+      "value": {
+        "add": [
+          {
+            "item": "base_patk"
+          },
+          {
+            "item": "weapon_patk"
+          }
+        ]
+      },
+      "rate_hz": 2.0
+    },
+    {
+      "tier": "derived",
+      "name": "defense_rating",
+      "type": "i32",
+      "each": "characters",
+      "value": {
+        "add": [
+          {
+            "item": "base_pdef"
+          },
+          {
+            "item": "armor_pdef"
+          }
+        ]
+      },
+      "rate_hz": 2.0
+    },
+    {
+      "tier": "derived",
+      "name": "roster_hp_total",
+      "type": "i32",
+      "value": {
+        "sum": {
+          "watch": "characters",
+          "field": "hp"
+        }
+      },
+      "rate_hz": 2.0
+    },
+    {
+      "tier": "derived",
+      "name": "roster_downed",
+      "type": "u32",
+      "value": {
+        "count": {
+          "watch": "characters",
+          "where": [
+            {
+              "field": "hp",
+              "eq": 0.0
+            }
+          ]
+        }
+      },
+      "rate_hz": 2.0
+    }
+  ]
+}

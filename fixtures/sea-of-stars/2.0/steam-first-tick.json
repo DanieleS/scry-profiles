@@ -1,0 +1,4353 @@
+{
+    "contract_version": 2,
+    "event": "attached",
+    "pid": 9780,
+    "pointer_bits": 64,
+    "process": "SeaOfStars.exe",
+    "profile": "Sea of Stars (Steam) — world, party, gear, derived",
+    "profile_file": "seaofstars.gen.json",
+    "scry": "0.1.0-alpha.2",
+    "watches": 43
+}
+{
+    "event": "values",
+    "t_ms": 5,
+    "values": {
+        "attack_rating": [
+            null,
+            null,
+            27,
+            21,
+            null,
+            null,
+            null,
+            null,
+            19
+        ],
+        "characters": [
+            {
+                "armor": null,
+                "armor_mdef": null,
+                "armor_pdef": null,
+                "base_hp": 52,
+                "base_matk": 11,
+                "base_mdef": 5,
+                "base_patk": 11,
+                "base_pdef": 5,
+                "base_sp": 7,
+                "boost_level": 0,
+                "class_id": "ArtificerBaseClass",
+                "group_trinket": null,
+                "hp": 52,
+                "id": "ARTIFICER",
+                "sp": 7,
+                "trinket_1": null,
+                "trinket_2": null,
+                "weapon": null,
+                "weapon_matk": null,
+                "weapon_patk": null
+            },
+            {
+                "armor": null,
+                "armor_mdef": null,
+                "armor_pdef": null,
+                "base_hp": 83,
+                "base_matk": 5,
+                "base_mdef": 6,
+                "base_patk": 15,
+                "base_pdef": 6,
+                "base_sp": 4,
+                "boost_level": 0,
+                "class_id": "BstBaseClass",
+                "group_trinket": null,
+                "hp": 108,
+                "id": "BST",
+                "sp": 6,
+                "trinket_1": null,
+                "trinket_2": null,
+                "weapon": null,
+                "weapon_matk": null,
+                "weapon_patk": null
+            },
+            {
+                "armor": "ARMOR_MINERSSMOCK_NAME",
+                "armor_mdef": 12,
+                "armor_pdef": 18,
+                "base_hp": 52,
+                "base_matk": 10,
+                "base_mdef": 5,
+                "base_patk": 12,
+                "base_pdef": 5,
+                "base_sp": 7,
+                "boost_level": 0,
+                "class_id": "GarlBaseClass",
+                "group_trinket": null,
+                "hp": 98,
+                "id": "GARL",
+                "sp": 10,
+                "trinket_1": "TRINKET_GREEN_LEAF_NAME",
+                "trinket_2": "TRINKET_ARCANE_AMULET_NAME",
+                "weapon": "WEAPON_CALCITELID_NAME",
+                "weapon_matk": 13,
+                "weapon_patk": 15
+            },
+            {
+                "armor": "ARMOR_PIRATEGARB_NAME",
+                "armor_mdef": 15,
+                "armor_pdef": 19,
+                "base_hp": 46,
+                "base_matk": 10,
+                "base_mdef": 0,
+                "base_patk": 10,
+                "base_pdef": 0,
+                "base_sp": 10,
+                "boost_level": 0,
+                "class_id": "MoongirlBaseClass",
+                "group_trinket": "TRINKET_ABACUS_NAME",
+                "hp": 75,
+                "id": "VALERE",
+                "sp": 12,
+                "trinket_1": "TRINKET_LEECHING_THORN_NAME",
+                "trinket_2": "TRINKET_POWER_BELT_NAME",
+                "weapon": "WEAPON_AMBER_STAFF_NAME",
+                "weapon_matk": 6,
+                "weapon_patk": 11
+            },
+            {
+                "armor": null,
+                "armor_mdef": null,
+                "armor_pdef": null,
+                "base_hp": 280,
+                "base_matk": 88,
+                "base_mdef": 110,
+                "base_patk": 65,
+                "base_pdef": 110,
+                "base_sp": 8,
+                "boost_level": 0,
+                "class_id": "MoraineBaseClass",
+                "group_trinket": null,
+                "hp": 280,
+                "id": "MASTER_MORAINE",
+                "sp": 8,
+                "trinket_1": null,
+                "trinket_2": null,
+                "weapon": null,
+                "weapon_matk": null,
+                "weapon_patk": null
+            },
+            {
+                "armor": null,
+                "armor_mdef": null,
+                "armor_pdef": null,
+                "base_hp": 280,
+                "base_matk": 88,
+                "base_mdef": 110,
+                "base_patk": 65,
+                "base_pdef": 110,
+                "base_sp": 8,
+                "boost_level": 0,
+                "class_id": "PrototypeZeroBaseClass",
+                "group_trinket": null,
+                "hp": 280,
+                "id": "PROTOTYPE_ZERO",
+                "sp": 8,
+                "trinket_1": null,
+                "trinket_2": null,
+                "weapon": null,
+                "weapon_matk": null,
+                "weapon_patk": null
+            },
+            {
+                "armor": null,
+                "armor_mdef": null,
+                "armor_pdef": null,
+                "base_hp": 49,
+                "base_matk": 12,
+                "base_mdef": 7,
+                "base_patk": 10,
+                "base_pdef": 3,
+                "base_sp": 10,
+                "boost_level": 0,
+                "class_id": "ReshanBaseClass",
+                "group_trinket": null,
+                "hp": 76,
+                "id": "RESHAN",
+                "sp": 13,
+                "trinket_1": null,
+                "trinket_2": null,
+                "weapon": null,
+                "weapon_matk": null,
+                "weapon_patk": null
+            },
+            {
+                "armor": null,
+                "armor_mdef": null,
+                "armor_pdef": null,
+                "base_hp": 30,
+                "base_matk": 6,
+                "base_mdef": 0,
+                "base_patk": 7,
+                "base_pdef": 0,
+                "base_sp": 6,
+                "boost_level": 0,
+                "class_id": "SeraiBaseClass",
+                "group_trinket": null,
+                "hp": 51,
+                "id": "SERAI",
+                "sp": 9,
+                "trinket_1": null,
+                "trinket_2": null,
+                "weapon": null,
+                "weapon_matk": null,
+                "weapon_patk": null
+            },
+            {
+                "armor": "Armor_BasicArmor_Name",
+                "armor_mdef": 9,
+                "armor_pdef": 13,
+                "base_hp": 45,
+                "base_matk": 10,
+                "base_mdef": 0,
+                "base_patk": 10,
+                "base_pdef": 0,
+                "base_sp": 8,
+                "boost_level": 0,
+                "class_id": "SunboyBaseClass",
+                "group_trinket": "GROUP_TRINKET_SOLSTICE_MAGE_RING_NAME",
+                "hp": 66,
+                "id": "ZALE",
+                "sp": 14,
+                "trinket_1": null,
+                "trinket_2": null,
+                "weapon": "WEAPON_SILVER_BLADE_NAME",
+                "weapon_matk": 7,
+                "weapon_patk": 9
+            }
+        ],
+        "combat_party": [
+            "ZALE",
+            "VALERE",
+            "GARL"
+        ],
+        "cutscene_count": 0,
+        "defense_rating": [
+            null,
+            null,
+            23,
+            19,
+            null,
+            null,
+            null,
+            null,
+            13
+        ],
+        "dialog_boxes": 0,
+        "encounter_xp": null,
+        "enemies": null,
+        "garl_hp_percent": 100.0,
+        "garl_levelups": [
+            {
+                "hp": 3,
+                "matk": 2,
+                "mdef": 1,
+                "patk": 1,
+                "pdef": 2,
+                "sp": 1
+            },
+            {
+                "hp": 4,
+                "matk": 1,
+                "mdef": 2,
+                "patk": 2,
+                "pdef": 1,
+                "sp": 0
+            },
+            {
+                "hp": 6,
+                "matk": 2,
+                "mdef": 3,
+                "patk": 2,
+                "pdef": 3,
+                "sp": 1
+            },
+            {
+                "hp": 6,
+                "matk": 2,
+                "mdef": 3,
+                "patk": 2,
+                "pdef": 3,
+                "sp": 0
+            },
+            {
+                "hp": 6,
+                "matk": 2,
+                "mdef": 3,
+                "patk": 3,
+                "pdef": 3,
+                "sp": 1
+            },
+            {
+                "hp": 6,
+                "matk": 3,
+                "mdef": 3,
+                "patk": 2,
+                "pdef": 3,
+                "sp": 1
+            },
+            {
+                "hp": 6,
+                "matk": 2,
+                "mdef": 3,
+                "patk": 3,
+                "pdef": 3,
+                "sp": 0
+            },
+            {
+                "hp": 6,
+                "matk": 3,
+                "mdef": 3,
+                "patk": 2,
+                "pdef": 3,
+                "sp": 1
+            },
+            {
+                "hp": 6,
+                "matk": 2,
+                "mdef": 3,
+                "patk": 3,
+                "pdef": 3,
+                "sp": 0
+            },
+            {
+                "hp": 6,
+                "matk": 3,
+                "mdef": 3,
+                "patk": 2,
+                "pdef": 3,
+                "sp": 0
+            },
+            {
+                "hp": 6,
+                "matk": 2,
+                "mdef": 3,
+                "patk": 3,
+                "pdef": 3,
+                "sp": 2
+            },
+            {
+                "hp": 6,
+                "matk": 3,
+                "mdef": 3,
+                "patk": 2,
+                "pdef": 3,
+                "sp": 0
+            },
+            {
+                "hp": 7,
+                "matk": 3,
+                "mdef": 3,
+                "patk": 4,
+                "pdef": 3,
+                "sp": 0
+            },
+            {
+                "hp": 7,
+                "matk": 4,
+                "mdef": 3,
+                "patk": 3,
+                "pdef": 3,
+                "sp": 0
+            },
+            {
+                "hp": 7,
+                "matk": 3,
+                "mdef": 2,
+                "patk": 4,
+                "pdef": 3,
+                "sp": 2
+            },
+            {
+                "hp": 7,
+                "matk": 4,
+                "mdef": 2,
+                "patk": 3,
+                "pdef": 3,
+                "sp": 0
+            },
+            {
+                "hp": 7,
+                "matk": 3,
+                "mdef": 2,
+                "patk": 4,
+                "pdef": 3,
+                "sp": 0
+            },
+            {
+                "hp": 7,
+                "matk": 4,
+                "mdef": 0,
+                "patk": 3,
+                "pdef": 0,
+                "sp": 2
+            },
+            {
+                "hp": 7,
+                "matk": 3,
+                "mdef": 0,
+                "patk": 4,
+                "pdef": 2,
+                "sp": 0
+            },
+            {
+                "hp": 7,
+                "matk": 4,
+                "mdef": 2,
+                "patk": 3,
+                "pdef": 0,
+                "sp": 0
+            },
+            {
+                "hp": 7,
+                "matk": 3,
+                "mdef": 1,
+                "patk": 4,
+                "pdef": 2,
+                "sp": 0
+            },
+            {
+                "hp": 7,
+                "matk": 4,
+                "mdef": 0,
+                "patk": 3,
+                "pdef": 0,
+                "sp": 0
+            },
+            {
+                "hp": 7,
+                "matk": 3,
+                "mdef": 2,
+                "patk": 4,
+                "pdef": 2,
+                "sp": 0
+            },
+            {
+                "hp": 8,
+                "matk": 5,
+                "mdef": 0,
+                "patk": 4,
+                "pdef": 0,
+                "sp": 0
+            },
+            {
+                "hp": 8,
+                "matk": 4,
+                "mdef": 1,
+                "patk": 5,
+                "pdef": 1,
+                "sp": 2
+            },
+            {
+                "hp": 8,
+                "matk": 5,
+                "mdef": 0,
+                "patk": 4,
+                "pdef": 0,
+                "sp": 0
+            },
+            {
+                "hp": 8,
+                "matk": 4,
+                "mdef": 2,
+                "patk": 5,
+                "pdef": 2,
+                "sp": 0
+            },
+            {
+                "hp": 8,
+                "matk": 5,
+                "mdef": 0,
+                "patk": 4,
+                "pdef": 0,
+                "sp": 0
+            },
+            {
+                "hp": 8,
+                "matk": 4,
+                "mdef": 3,
+                "patk": 5,
+                "pdef": 3,
+                "sp": 0
+            }
+        ],
+        "garl_max_hp": 98,
+        "garl_max_sp": 10,
+        "garl_trinket0_mods": [
+            {
+                "amount": 15,
+                "kind": "PlayerAddStatModifier",
+                "stat": 0
+            }
+        ],
+        "garl_trinket1_mods": [
+            {
+                "amount": 10,
+                "kind": "PlayerAddStatModifier",
+                "stat": 6
+            }
+        ],
+        "garl_upgrades": [
+            {
+                "count": 1,
+                "stat": 0
+            },
+            {
+                "count": 0,
+                "stat": 1
+            },
+            {
+                "count": 1,
+                "stat": 3
+            },
+            {
+                "count": 1,
+                "stat": 4
+            },
+            {
+                "count": 0,
+                "stat": 5
+            },
+            {
+                "count": 2,
+                "stat": 6
+            }
+        ],
+        "in_combat": 0,
+        "inventory": [
+            {
+                "guid": "a91e6b011845d77418d3bae4766a8a9d",
+                "qty": 1
+            },
+            {
+                "guid": "866778a20ec11da4baad80bbe7540c56",
+                "qty": 1
+            },
+            {
+                "guid": "3295ddb17b4340044bbf4f131c90c1df",
+                "qty": 1
+            },
+            {
+                "guid": "a5ea1b6b42b349444bb6c7ac480ee1df",
+                "qty": 1
+            },
+            {
+                "guid": "1b0313fe821ba7c419b7b443416aa784",
+                "qty": 1
+            },
+            {
+                "guid": "c52a22809bcbb4443916cadd12aa01cd",
+                "qty": 1
+            },
+            {
+                "guid": "08ae384f758e8be4ba4e7d58975838e6",
+                "qty": 1
+            },
+            {
+                "guid": "c7eb103c76a21974c844159ab0f5a0d2",
+                "qty": 1
+            },
+            {
+                "guid": "28e41ac6234015840a9c976425d74ee9",
+                "qty": 1
+            },
+            {
+                "guid": "f8bf6d10c6c6da840883935fa4aa8c9c",
+                "qty": 12
+            },
+            {
+                "guid": "3ac3907f841cc2a40bd0fdce51cd52e2",
+                "qty": 1
+            },
+            {
+                "guid": "841382ac016092346b0cf860a932c3c7",
+                "qty": 14
+            },
+            {
+                "guid": "933db0df85333b341a7d58da22f3b39c",
+                "qty": 1
+            },
+            {
+                "guid": "4a1710ba97ae350428f18704e36fe234",
+                "qty": 1
+            },
+            {
+                "guid": "a17b0505c55affc45a066431eb30c655",
+                "qty": 1
+            },
+            {
+                "guid": "7694b5b801204a74c888d67a49f06d42",
+                "qty": 1
+            },
+            {
+                "guid": "3ad1eaff8549fe94c897ac387f8ae4c9",
+                "qty": 1
+            },
+            {
+                "guid": "bb98188ba554ed240a3161762390017f",
+                "qty": 1
+            },
+            {
+                "guid": "19e478ef186577e489f95767465a1a84",
+                "qty": 1
+            },
+            {
+                "guid": "212f14bab84c08745bbc35b36daa7c77",
+                "qty": 1
+            },
+            {
+                "guid": "64f77efd09e519d4999ffb01b9ff328f",
+                "qty": 1
+            },
+            {
+                "guid": "f7c88b94e1603e446bc3eae61d222a06",
+                "qty": 1
+            },
+            {
+                "guid": "52fb8bad57c795f47b1dc132e5d76744",
+                "qty": 1
+            },
+            {
+                "guid": "1f83e925faef7584b9f34b0723137d76",
+                "qty": 7
+            },
+            {
+                "guid": "74a5e5d26b56b7e429c36d1acb84a120",
+                "qty": 4
+            },
+            {
+                "guid": "b9995b298ada14e4887faf134942b564",
+                "qty": 1
+            },
+            {
+                "guid": "6a39fd9b315b53a4faa9e3736d820eff",
+                "qty": 1
+            },
+            {
+                "guid": "1aafd2f9435698349a63a99837e9104e",
+                "qty": 4
+            },
+            {
+                "guid": "13dea75b6b52c814b939519cb2b0675c",
+                "qty": 11
+            },
+            {
+                "guid": "a31ee5ffc1b693148be7c48150ebff81",
+                "qty": 2
+            },
+            {
+                "guid": "31525df92a16eb94ba068dff6876c562",
+                "qty": 1
+            },
+            {
+                "guid": "9a6abc7114f0eb9409f27b6816830fff",
+                "qty": 10
+            },
+            {
+                "guid": "5b77e66a1d52fce4cbab840d6dd157c4",
+                "qty": 1
+            },
+            {
+                "guid": "5eb73f88e6c96f94797fa11b7d11b061",
+                "qty": 9
+            },
+            {
+                "guid": "3dafda053c9fcb0439e0d5719cc11c8f",
+                "qty": 1
+            },
+            {
+                "guid": "71853a3bd516511428ea6d23bc7eb34f",
+                "qty": 12
+            },
+            {
+                "guid": "0b7efbffd76a27f489ea26df56bbc5ad",
+                "qty": 2
+            },
+            {
+                "guid": "8b102534541d1f24e9f958a5041b139c",
+                "qty": 1
+            },
+            {
+                "guid": "7337dc21759feae4a92aba8200c42898",
+                "qty": 2
+            },
+            {
+                "guid": "154461019876b7741bbd74980276c852",
+                "qty": 2
+            },
+            {
+                "guid": "33e568f23e2581d448041ac97fb8358d",
+                "qty": 3
+            },
+            {
+                "guid": "8a5e759b4475ca04d882e7d2b0c9b47a",
+                "qty": 23
+            },
+            {
+                "guid": "71cfc6d93b292d3499c472b73e9daae1",
+                "qty": 1
+            },
+            {
+                "guid": "7f49bbd04a7b4b84092aec1d8f54d1cb",
+                "qty": 1
+            },
+            {
+                "guid": "88bc64e502aab364f800ff8b94427f5f",
+                "qty": 8
+            },
+            {
+                "guid": "c1866d6de70d4834b951c06d4ae23306",
+                "qty": 6
+            },
+            {
+                "guid": "df724719b2fbf6e40a85e8f9bc4ccae2",
+                "qty": 2
+            },
+            {
+                "guid": "f23fec51c068c00418db6127c54fcc8e",
+                "qty": 1
+            },
+            {
+                "guid": "e27094f36cb7bb140b614b89fde60550",
+                "qty": 1
+            },
+            {
+                "guid": "0ee892db1da195541bcbe578898265b5",
+                "qty": 1
+            },
+            {
+                "guid": "68c337d503ebc7e4a837052ed38452b5",
+                "qty": 6
+            },
+            {
+                "guid": "520e9f55dc3432a498ec389a59d7401f",
+                "qty": 1
+            },
+            {
+                "guid": "6e613ca39c27bff49ae0da1773c6ab03",
+                "qty": 1
+            },
+            {
+                "guid": "7a9b2938fabc5434da21134b18b4e0ee",
+                "qty": 2
+            },
+            {
+                "guid": "32ea2a86f22b90f4989ee64eb06c58a8",
+                "qty": 1
+            },
+            {
+                "guid": "4e0db461b8b133c4ab2536bc1016cf93",
+                "qty": 1
+            },
+            {
+                "guid": "0626cb583af926649b435bcf63c101a7",
+                "qty": 1
+            },
+            {
+                "guid": "76241bd9c19934344a8274665fb67f2b",
+                "qty": 1
+            },
+            {
+                "guid": "e972fad3d8d63a745bdfc1dc7dc6d2f7",
+                "qty": 1
+            },
+            {
+                "guid": "d7f92ecb9e4da7b418070285c25d86e1",
+                "qty": 1
+            },
+            {
+                "guid": "eab7dd1ce97e5f549a124d6508121943",
+                "qty": 1
+            },
+            {
+                "guid": "d8a7bdab9aa9a6e4e95036b0eff55239",
+                "qty": 1
+            },
+            {
+                "guid": "c43421b626574174e9b5156141213250",
+                "qty": 1
+            },
+            {
+                "guid": "76b491199a5df8745a77f2a20ae8bc38",
+                "qty": 6
+            },
+            {
+                "guid": "2cb456c00ee26754895cab1ef09f5024",
+                "qty": 1
+            },
+            {
+                "guid": "4ffc27dc684ae1e48b5a48909f79c3ca",
+                "qty": 5
+            },
+            {
+                "guid": "9151230a300ed934bbd8d6c1c659fc34",
+                "qty": 1
+            },
+            {
+                "guid": "108a40870288c934d94c1661286ff1f0",
+                "qty": 1
+            },
+            {
+                "guid": "21471472fcbc68149b8cf7a9dac2b785",
+                "qty": 4
+            },
+            {
+                "guid": "0b6db9f2ecce979409c833c1d475e651",
+                "qty": 1
+            }
+        ],
+        "item_catalog": [
+            {
+                "guid": "3ac3907f841cc2a40bd0fdce51cd52e2",
+                "kind": "CharacterArmor",
+                "label": "ARMOR_ADVENRURERVEST_NAME"
+            },
+            {
+                "guid": "722415b4304ba6444b3f86b7b277d5c0",
+                "kind": "CharacterArmor",
+                "label": "ARMOR_AZURECAPE_NAME"
+            },
+            {
+                "guid": "a31ee5ffc1b693148be7c48150ebff81",
+                "kind": "CharacterArmor",
+                "label": "Armor_BasicArmor_Name"
+            },
+            {
+                "guid": "581aaf64cd0270b4bbf12d9ce9ea4ec0",
+                "kind": "CharacterArmor",
+                "label": "ARMOR_BONEARMOR_NAME"
+            },
+            {
+                "guid": "a1d886ffc9682c54ebda876deeed58b4",
+                "kind": "CharacterArmor",
+                "label": "ARMOR_BOXERSHORTS_NAME"
+            },
+            {
+                "guid": "2e09170437a631e46ac9b9669464618c",
+                "kind": "CharacterArmor",
+                "label": "ARMOR_CLOUDYSIMULACRUM_NAME"
+            },
+            {
+                "guid": "d1d1bcd5dbc41d648a812fbc7d1861b2",
+                "kind": "CharacterArmor",
+                "label": "ARMOR_COSMICCAPE_NAME"
+            },
+            {
+                "guid": "98223d461dbc41a409926f2a1409f7ec",
+                "kind": "CharacterArmor",
+                "label": "ARMOR_DOCARRIARMOR_NAME"
+            },
+            {
+                "guid": "e26fa36b128e76041938bf3c86ad8eef",
+                "kind": "CharacterArmor",
+                "label": "ARMOR_DULLSIMULACRUM_NAME"
+            },
+            {
+                "guid": "911324cc7daad5b41a0af317180a42db",
+                "kind": "CharacterArmor",
+                "label": "ARMOR_ECLIPSEARMOR_NAME"
+            },
+            {
+                "guid": "86737d6ef697c204187aea8533ec4244",
+                "kind": "CharacterArmor",
+                "label": "ARMOR_GARLSAPRON_NAME"
+            },
+            {
+                "guid": "b441ba29ad2257445a55095e6cb1d537",
+                "kind": "CharacterArmor",
+                "label": "ARMOR_LEAFCAPE_NAME"
+            },
+            {
+                "guid": "1b92e304b4f82144eb3e123ccb755b2c",
+                "kind": "CharacterArmor",
+                "label": "ARMOR_MAGEKNIGHTARMOR_NAME"
+            },
+            {
+                "guid": "f23fec51c068c00418db6127c54fcc8e",
+                "kind": "CharacterArmor",
+                "label": "ARMOR_MINERSSMOCK_NAME"
+            },
+            {
+                "guid": "ebb0e8958a73d394da97e174d0b5b018",
+                "kind": "CharacterArmor",
+                "label": "ARMOR_OAKENARMOR_NAME"
+            },
+            {
+                "guid": "bd7a12ffa698146418723ed43e6a5eea",
+                "kind": "CharacterArmor",
+                "label": "ARMOR_PEARLESCENTAPRON_NAME"
+            },
+            {
+                "guid": "0626cb583af926649b435bcf63c101a7",
+                "kind": "CharacterArmor",
+                "label": "ARMOR_PIRATEGARB_NAME"
+            },
+            {
+                "guid": "7fdba9db0aa4cbd4e8fa3315f94876ab",
+                "kind": "CharacterArmor",
+                "label": "ARMOR_PLIANTSHELLVEST_NAME"
+            },
+            {
+                "guid": "a0890c10ae319b0409d43f08af673ffd",
+                "kind": "CharacterArmor",
+                "label": "ARMOR_REVENANTARMOR_NAME"
+            },
+            {
+                "guid": "e1e3c71bb3b7e034684d195c2fa5968c",
+                "kind": "CharacterArmor",
+                "label": "ARMOR_SKYARMOR_NAME"
+            },
+            {
+                "guid": "ccc69fb007cbda342844f25126c90377",
+                "kind": "CharacterArmor",
+                "label": "ARMOR_SPARKMESHARMOR_NAME"
+            },
+            {
+                "guid": "fe4a8a4cada2d4a4999403d31f73a50a",
+                "kind": "CharacterArmor",
+                "label": "ARMOR_SPARKMESHCAPE_NAME"
+            },
+            {
+                "guid": "d2fd56a9405f9c04fb303795c7840f2f",
+                "kind": "CharacterArmor",
+                "label": "ARMOR_SPECTRALCAPE_NAME"
+            },
+            {
+                "guid": "ecf26467374cebc4b812538e7fbe44a4",
+                "kind": "CharacterArmor",
+                "label": "ARMOR_TATTEREDCAPE_NAME"
+            },
+            {
+                "guid": "0e08751170c68ca4faae2b08ea913275",
+                "kind": "CharacterArmor",
+                "label": "ARMOR_THALASSICCLOAK_NAME"
+            },
+            {
+                "guid": "ebe89a4a81e46c245bd98a337df06eb8",
+                "kind": "CharacterArmor",
+                "label": "ARMOR_VITRICSIMULACRUM_NAME"
+            },
+            {
+                "guid": "0c8b9c021791a734892aaafde3b847b6",
+                "kind": "CharacterArmor",
+                "label": "ARMOR_VOLCANICARMOR_NAME"
+            },
+            {
+                "guid": "67e51219a3a7ea14fa14e9eb4e8643e4",
+                "kind": "CharacterArmor",
+                "label": "ARMOR_WIREPLATEARMOR_NAME"
+            },
+            {
+                "guid": "68ab74a0318d0824fa8f2e0426562469",
+                "kind": "KeyItem",
+                "label": "DEFAULTCHESTCUTSCENE_1"
+            },
+            {
+                "guid": "8c9604711530463408f53774a8c44177",
+                "kind": "Ingredient",
+                "label": "INGREDIENT_TESTINGREDIENT_NAME"
+            },
+            {
+                "guid": "1050b67b61f94084d970b6ae4c33dc01",
+                "kind": "Ingredient",
+                "label": "INGREDIENT_APPLE_NAME"
+            },
+            {
+                "guid": "9a6abc7114f0eb9409f27b6816830fff",
+                "kind": "Ingredient",
+                "label": "INGREDIENT_BONE_NAME"
+            },
+            {
+                "guid": "a17b0505c55affc45a066431eb30c655",
+                "kind": "Ingredient",
+                "label": "INGREDIENT_EGG_NAME"
+            },
+            {
+                "guid": "7f49bbd04a7b4b84092aec1d8f54d1cb",
+                "kind": "Ingredient",
+                "label": "INGREDIENT_FISH_NAME"
+            },
+            {
+                "guid": "841382ac016092346b0cf860a932c3c7",
+                "kind": "Ingredient",
+                "label": "INGREDIENT_GRAINS_NAME"
+            },
+            {
+                "guid": "21471472fcbc68149b8cf7a9dac2b785",
+                "kind": "Ingredient",
+                "label": "INGREDIENT_LETTUCE_NAME"
+            },
+            {
+                "guid": "4b5c4bf16feb4b448bdc3cf8057f2be0",
+                "kind": "Ingredient",
+                "label": "INGREDIENT_MAPLESYRUP_NAME"
+            },
+            {
+                "guid": "0b7efbffd76a27f489ea26df56bbc5ad",
+                "kind": "Ingredient",
+                "label": "INGREDIENT_MEAT_NAME"
+            },
+            {
+                "guid": "b8f81159f93c18740ba72fffdd12a13e",
+                "kind": "Ingredient",
+                "label": "INGREDIENT_MILK_NAME"
+            },
+            {
+                "guid": "8a5e759b4475ca04d882e7d2b0c9b47a",
+                "kind": "Ingredient",
+                "label": "INGREDIENT_MUSHROOM_NAME"
+            },
+            {
+                "guid": "4ffc27dc684ae1e48b5a48909f79c3ca",
+                "kind": "Ingredient",
+                "label": "INGREDIENT_ONION_NAME"
+            },
+            {
+                "guid": "47336b026e675b34f99d949b4c2f67d0",
+                "kind": "Ingredient",
+                "label": "INGREDIENT_PEACH_NAME"
+            },
+            {
+                "guid": "094de5a55e6f5444aaf870aad7e78297",
+                "kind": "Ingredient",
+                "label": "INGREDIENT_PEPPER_NAME"
+            },
+            {
+                "guid": "13dea75b6b52c814b939519cb2b0675c",
+                "kind": "Ingredient",
+                "label": "INGREDIENT_POTATO_NAME"
+            },
+            {
+                "guid": "1f83e925faef7584b9f34b0723137d76",
+                "kind": "Ingredient",
+                "label": "INGREDIENT_REDBERRY_NAME"
+            },
+            {
+                "guid": "76b491199a5df8745a77f2a20ae8bc38",
+                "kind": "Ingredient",
+                "label": "INGREDIENT_SEAFOOD_NAME"
+            },
+            {
+                "guid": "f8bf6d10c6c6da840883935fa4aa8c9c",
+                "kind": "Ingredient",
+                "label": "INGREDIENT_TOMATO_NAME"
+            },
+            {
+                "guid": "3ad1eaff8549fe94c897ac387f8ae4c9",
+                "kind": "RecipeUnlockItem",
+                "label": "RECIPEUNLOCK_BASICSALAD_NAME"
+            },
+            {
+                "guid": "bb98188ba554ed240a3161762390017f",
+                "kind": "RecipeUnlockItem",
+                "label": "RECIPEUNLOCK_BERRYJAM_NAME"
+            },
+            {
+                "guid": "04901995730d6e8459b705872897f088",
+                "kind": "RecipeUnlockItem",
+                "label": "RECIPEUNLOCK_BOUILLABAISSE_NAME"
+            },
+            {
+                "guid": "3088f0f4cd968e34fa3781eb9933ddf8",
+                "kind": "RecipeUnlockItem",
+                "label": "RECIPEUNLOCK_BRAISE_NAME"
+            },
+            {
+                "guid": "3e0d11751c5fcf847ba5adbcbe4e751e",
+                "kind": "RecipeUnlockItem",
+                "label": "RECIPEUNLOCK_CHAMPIONOMELETTE_NAME"
+            },
+            {
+                "guid": "3dafda053c9fcb0439e0d5719cc11c8f",
+                "kind": "RecipeUnlockItem",
+                "label": "RECIPEUNLOCK_CHAUDREE_NAME"
+            },
+            {
+                "guid": "44abbdb24e6269e4781d1d4e4ec3bef3",
+                "kind": "RecipeUnlockItem",
+                "label": "RECIPEUNLOCK_APPLEPIE_NAME"
+            },
+            {
+                "guid": "f5241ef7a0fa1a04ba780e73ac23ea8d",
+                "kind": "RecipeUnlockItem",
+                "label": "RECIPEUNLOCK_FISHPIE_NAME"
+            },
+            {
+                "guid": "acfbbff667ad7ad47a95d82351a64648",
+                "kind": "RecipeUnlockItem",
+                "label": "RECIPEUNLOCK_GOURMETBURGER_NAME"
+            },
+            {
+                "guid": "11e59219302f6b1479a5492650982272",
+                "kind": "RecipeUnlockItem",
+                "label": "RECIPEUNLOCK_HEARTYSTEW_NAME"
+            },
+            {
+                "guid": "19e478ef186577e489f95767465a1a84",
+                "kind": "RecipeUnlockItem",
+                "label": "RECIPEUNLOCK_HERBEDFILET_NAME"
+            },
+            {
+                "guid": "c576cca46c0189d458f53feca4fb131a",
+                "kind": "RecipeUnlockItem",
+                "label": "RECIPEUNLOCK_LASAGNA_NAME"
+            },
+            {
+                "guid": "06ed69ffa96524b47a68fd2fc63e8fd7",
+                "kind": "RecipeUnlockItem",
+                "label": "RECIPEUNLOCK_LEGENDARYFEAST_NAME"
+            },
+            {
+                "guid": "8b102534541d1f24e9f958a5041b139c",
+                "kind": "RecipeUnlockItem",
+                "label": "RECIPEUNLOCK_MUSHROOMSCRAMBLE_NAME"
+            },
+            {
+                "guid": "fe44b430ac413ec4f970e9e908841c55",
+                "kind": "RecipeUnlockItem",
+                "label": "RECIPEUNLOCK_MUSHROOMSOUP_NAME"
+            },
+            {
+                "guid": "88fd9a7fcfbd0854dbc95a58128b09c2",
+                "kind": "RecipeUnlockItem",
+                "label": "RECIPEUNLOCK_PAINDORE_NAME"
+            },
+            {
+                "guid": "32ea2a86f22b90f4989ee64eb06c58a8",
+                "kind": "RecipeUnlockItem",
+                "label": "RECIPEUNLOCK_PAPILLOTTE_NAME"
+            },
+            {
+                "guid": "168fbde19e968eb418b8053c5814637b",
+                "kind": "RecipeUnlockItem",
+                "label": "RECIPEUNLOCK_PARFAIT_NAME"
+            },
+            {
+                "guid": "c203b6eef768b63449d485b7d5779723",
+                "kind": "RecipeUnlockItem",
+                "label": "RECIPEUNLOCK_PEACHSTRUDEL_NAME"
+            },
+            {
+                "guid": "e5cf696cec8c0d5419ce05ed66a8a7c4",
+                "kind": "RecipeUnlockItem",
+                "label": "RECIPEUNLOCK_POUTINE_NAME"
+            },
+            {
+                "guid": "d3931ad465684074e8fd82c32f7498b6",
+                "kind": "RecipeUnlockItem",
+                "label": "RECIPEUNLOCK_PUDDINGCHOMEUR_NAME"
+            },
+            {
+                "guid": "212f14bab84c08745bbc35b36daa7c77",
+                "kind": "RecipeUnlockItem",
+                "label": "RECIPEUNLOCK_ROASTSANDWICH_NAME"
+            },
+            {
+                "guid": "30bdce2e73ebcb140929cad623a54ea2",
+                "kind": "RecipeUnlockItem",
+                "label": "RECIPEUNLOCK_SASHIMI_NAME"
+            },
+            {
+                "guid": "e44fdfcaf1b80d64b9b9e35ab29bddd7",
+                "kind": "RecipeUnlockItem",
+                "label": "RECIPEUNLOCK_SURFANDTURFTATAKI_NAME"
+            },
+            {
+                "guid": "64f77efd09e519d4999ffb01b9ff328f",
+                "kind": "RecipeUnlockItem",
+                "label": "RECIPEUNLOCK_TOMATOCLUB_NAME"
+            },
+            {
+                "guid": "254124e5f00a4734a9802bd36d84b622",
+                "kind": "RecipeUnlockItem",
+                "label": "RECIPEUNLOCK_YAKITORISHRIMP_NAME"
+            },
+            {
+                "guid": "68c337d503ebc7e4a837052ed38452b5",
+                "kind": "Snack",
+                "label": "SNACK_BASICSALAD_NAME"
+            },
+            {
+                "guid": "74a5e5d26b56b7e429c36d1acb84a120",
+                "kind": "Snack",
+                "label": "SNACK_STRAWBERRYJAM_NAME"
+            },
+            {
+                "guid": "f2868459715d3df45ad1da473d197ac6",
+                "kind": "Snack",
+                "label": "SNACK_BOUILLABAISSE_NAME"
+            },
+            {
+                "guid": "512b3f049d35cbd4eb4648aa5a1105f6",
+                "kind": "Snack",
+                "label": "SNACK_BRAISÉ_NAME"
+            },
+            {
+                "guid": "5608bed7407aae34ba3012feba387b00",
+                "kind": "Snack",
+                "label": "SNACK_CHAMPIONOMELETTE_NAME"
+            },
+            {
+                "guid": "71853a3bd516511428ea6d23bc7eb34f",
+                "kind": "Snack",
+                "label": "SNACK_CHAUDRÉE_NAME"
+            },
+            {
+                "guid": "46bfb5ae7593f8f4bb870c9644635a99",
+                "kind": "Snack",
+                "label": "SNACK_APPLEPIE_NAME"
+            },
+            {
+                "guid": "6e613ca39c27bff49ae0da1773c6ab03",
+                "kind": "Snack",
+                "label": "SNACK_MFISHPIE_NAME"
+            },
+            {
+                "guid": "918caccd92d8f7540929427a743d1f15",
+                "kind": "Snack",
+                "label": "SNACK_GOURMETBURGER_NAME"
+            },
+            {
+                "guid": "a4a1c78380553e74bb92899ddcd62440",
+                "kind": "Snack",
+                "label": "SNACK_HEARTYSTEW_NAME"
+            },
+            {
+                "guid": "88bc64e502aab364f800ff8b94427f5f",
+                "kind": "Snack",
+                "label": "SNACK_HERBEDFILET_NAME"
+            },
+            {
+                "guid": "e8908ed6c2bd60f4bb4042067baa2a8c",
+                "kind": "Snack",
+                "label": "SNACK_LASAGNA_NAME"
+            },
+            {
+                "guid": "425a2ecc6c4b87c4d89735500c6c9d95",
+                "kind": "Snack",
+                "label": "SNACK_LEGENDARYFEAST_NAME"
+            },
+            {
+                "guid": "c1866d6de70d4834b951c06d4ae23306",
+                "kind": "Snack",
+                "label": "SNACK_MUSHROOMSCRAMBLE_NAME"
+            },
+            {
+                "guid": "df724719b2fbf6e40a85e8f9bc4ccae2",
+                "kind": "Snack",
+                "label": "SNACK_TPMUSHROOMPIE_NAME"
+            },
+            {
+                "guid": "f6b47783588bed64e9fa44dba59b4a49",
+                "kind": "Snack",
+                "label": "SNACK_PAINDORE_NAME"
+            },
+            {
+                "guid": "9151230a300ed934bbd8d6c1c659fc34",
+                "kind": "Snack",
+                "label": "SNACK_PAPILLOTTE_NAME"
+            },
+            {
+                "guid": "fceb00c496ecb5844b14022ba450de53",
+                "kind": "Snack",
+                "label": "SNACK_PARFAIT_NAME"
+            },
+            {
+                "guid": "d508421fae4fe5549a21d767a5d7d10c",
+                "kind": "Snack",
+                "label": "SNACK_PEACHSTRUDEL_NAME"
+            },
+            {
+                "guid": "8af2d2fccb35a0f43a965bbdd7a993f1",
+                "kind": "Snack",
+                "label": "SNACK_POUTINE_NAME"
+            },
+            {
+                "guid": "52004597d9485634dbd4fca16b151c89",
+                "kind": "Snack",
+                "label": "SNACK_PUDDINGCHÔMEUR_NAME"
+            },
+            {
+                "guid": "520e9f55dc3432a498ec389a59d7401f",
+                "kind": "Snack",
+                "label": "SNACK_ROASTSANDWICH_NAME"
+            },
+            {
+                "guid": "92dbbdececf32284eb6868f3529ff7ac",
+                "kind": "Snack",
+                "label": "SNACK_SASHIMI_NAME"
+            },
+            {
+                "guid": "b504e699b3af5ab4faa0b252ff7d49f6",
+                "kind": "Snack",
+                "label": "SNACK_TATAKI_NAME"
+            },
+            {
+                "guid": "1aafd2f9435698349a63a99837e9104e",
+                "kind": "Snack",
+                "label": "SNACK_TOMATOCLUB_NAME"
+            },
+            {
+                "guid": "547cb5586279b80489ace061c33eb861",
+                "kind": "Snack",
+                "label": "SNACK_YAKITORISHRIMP_NAME"
+            },
+            {
+                "guid": "6a39fd9b315b53a4faa9e3736d820eff",
+                "kind": "CharacterTrinket",
+                "label": "TRINKET_ABACUS_NAME"
+            },
+            {
+                "guid": "b6acbe8e6e78e014d830094e248870af",
+                "kind": "CharacterTrinket",
+                "label": "TRINKET_AMULETONBOARDING_NAME"
+            },
+            {
+                "guid": "fb067e7ba3b744342bbca13afcfb2a50",
+                "kind": "CharacterTrinket",
+                "label": "GROUP_TRINKET_CORNUCOPIA_NAME"
+            },
+            {
+                "guid": "e7e2fc32454eda44d9d93ba6009d8752",
+                "kind": "CharacterTrinket",
+                "label": "TRINKET_EYEYOMARA_NAME"
+            },
+            {
+                "guid": "478d680b15f759d44987b2cef327ce2f",
+                "kind": "CharacterTrinket",
+                "label": "TRINKET_GAMBLEREARRING_NAME"
+            },
+            {
+                "guid": "92e2af189aebd9949a662314b01ab847",
+                "kind": "CharacterTrinket",
+                "label": "TRINKET_LUCENTSHARD_NAME"
+            },
+            {
+                "guid": "8c32a9ec62778cc4f8cef577c6d80812",
+                "kind": "CharacterTrinket",
+                "label": "GROUP_TRINKET_MAGICPOCKET_NAME"
+            },
+            {
+                "guid": "8c4cbe75847cc6249b3bd79cb5a29e8c",
+                "kind": "CharacterTrinket",
+                "label": "GROUP_TRINKET_NANOINJECTOR_NAME"
+            },
+            {
+                "guid": "1d744837c9ee072498a3e668104325ac",
+                "kind": "CharacterTrinket",
+                "label": "GROUP_TRINKET_NINJASPIRIT_NAME"
+            },
+            {
+                "guid": "427eaeae77b247442a8ec3e014542890",
+                "kind": "CharacterTrinket",
+                "label": "GROUP_TRINKET_REAPERSMERCY_NAME"
+            },
+            {
+                "guid": "c7eb103c76a21974c844159ab0f5a0d2",
+                "kind": "CharacterTrinket",
+                "label": "GROUP_TRINKET_SOLSTICE_MAGE_RING_NAME"
+            },
+            {
+                "guid": "d605805dcc79f554faf8af072b133c8e",
+                "kind": "KeyItem",
+                "label": "KEYITEM_AIRELEMENTALHEXAGONALSOCKETKEY_NAME"
+            },
+            {
+                "guid": "91949467e3e270d459a609213183ecaf",
+                "kind": "KeyItem",
+                "label": "KEYITEM_AIRELEMENTALTRIANGULARSOCKETKEY_NAME"
+            },
+            {
+                "guid": "24632686b928dbc42b744f96d59a6cf0",
+                "kind": "KeyItem",
+                "label": "KEYITEM_WINDKEY_NAME"
+            },
+            {
+                "guid": "33547d6f7d3ba254e876b1256e5c6e53",
+                "kind": "KeyItem",
+                "label": "KEYITEM_FISHINGHUTBLUEPRINT_NAME"
+            },
+            {
+                "guid": "c7697b21842b62b41968ca1d03749259",
+                "kind": "KeyItem",
+                "label": "KEYITEM_SHOPBLUEPRINT_NAME"
+            },
+            {
+                "guid": "542f2e8deac123745ab1e57442a956cc",
+                "kind": "KeyItem",
+                "label": "KEYITEM_SPABLUEPRINT_NAME"
+            },
+            {
+                "guid": "bcd71fdd76d64e443b7b47364271b044",
+                "kind": "KeyItem",
+                "label": "KEYITEM_TAVERNBLUEPRINT_NAME"
+            },
+            {
+                "guid": "f3fddcfa74a471740830ff34bbb256d2",
+                "kind": "KeyItem",
+                "label": "KEYITEM_HIDDENMARKETPASS_NAME"
+            },
+            {
+                "guid": "31525df92a16eb94ba068dff6876c562",
+                "kind": "KeyItem",
+                "label": "KEYITEM_HIDDENMARKETPASS_NAME"
+            },
+            {
+                "guid": "20e59602e0dabaf4eb02fc6826cc780b",
+                "kind": "KeyItem",
+                "label": "KEYITEM_FACTORYBLUEPRINTDISC_NAME"
+            },
+            {
+                "guid": "503a7b18abfa01249b986399fe588505",
+                "kind": "KeyItem",
+                "label": "KEYITEM_FACTORYCRANEKEY_NAME"
+            },
+            {
+                "guid": "503f82df95dcc16408b338ebf3974c39",
+                "kind": "KeyItem",
+                "label": "KEYITEM_FACTORYPOWERBLOCK_NAME"
+            },
+            {
+                "guid": "e1bd356c4c92f9b4a9ae9557740a8b7c",
+                "kind": "KeyItem",
+                "label": "KEYITEM_FACTORYRAWMATERIAL_NAME"
+            },
+            {
+                "guid": "01e9b3e17b5f4c647b43afaba1305bc4",
+                "kind": "KeyItem",
+                "label": "KEYITEM_FACTORYWIREPLATESHEET_NAME"
+            },
+            {
+                "guid": "b139bc7db13b9ab4d93f2d1b10816c1d",
+                "kind": "KeyItem",
+                "label": "KEYITEM_DECRYPTEDDATACHIP_NAME"
+            },
+            {
+                "guid": "da09de33b7886b14aa651746c28689d4",
+                "kind": "KeyItem",
+                "label": "KEYITEM_INCOMPLETEDATASTRIP_NAME"
+            },
+            {
+                "guid": "4ca8a003a14a791458c38e8739f32344",
+                "kind": "KeyItem",
+                "label": "KEYITEM_PROBE_NAME"
+            },
+            {
+                "guid": "fc97e4a59d8cf79419322000ce72afb8",
+                "kind": "KeyItem",
+                "label": "KEYITEM_CLOCKWORKGARDENKEY_NAME"
+            },
+            {
+                "guid": "5430316fcbe43364191d2c0ba415e415",
+                "kind": "KeyItem",
+                "label": "KEYITEM_MASTERKEY_NAME"
+            },
+            {
+                "guid": "2b0d434789480b1439e5458f158e5043",
+                "kind": "KeyItem",
+                "label": "KEYITEM_WHEELSTABLE_NAME"
+            },
+            {
+                "guid": "d810ad9125b56864b92ea9b3bdadad51",
+                "kind": "KeyItem",
+                "label": "CONCHITEM_RAINBOWSTAR_NAME"
+            },
+            {
+                "guid": "aae87498b3763054086daf64fec4c1ed",
+                "kind": "KeyItem",
+                "label": "VALUABLEITEM_FLIMSYHAMMER_NAME"
+            },
+            {
+                "guid": "5eb73f88e6c96f94797fa11b7d11b061",
+                "kind": "KeyItem",
+                "label": "KEYITEM_CONCH_NAME"
+            },
+            {
+                "guid": "b391f0c6724c8d443adec6105be71661",
+                "kind": "KeyItem",
+                "label": "KEYITEM_MAGICSEASHELL_NAME"
+            },
+            {
+                "guid": "2295d1bfeec0f8844b477f95c919c74f",
+                "kind": "KeyItem",
+                "label": "KEYITEM_SEASHELL_NAME"
+            },
+            {
+                "guid": "70b52ef97031bd74fa467314fbcb11e6",
+                "kind": "KeyItem",
+                "label": "KEYITEM_GREENFLAME_NAME"
+            },
+            {
+                "guid": "3df62cf7dbeaa4a4ebc243672b8dacb8",
+                "kind": "KeyItem",
+                "label": "KEYITEM_FLESHMANCERLAIR_SOULSTONE_NAME"
+            },
+            {
+                "guid": "ca355ae6b0e5289469961e23ecc819d1",
+                "kind": "KeyItem",
+                "label": "KEYITEM_ROMAYAJOURNAL_NAME"
+            },
+            {
+                "guid": "64bf3ab125f071e4785b7a00150ac1b7",
+                "kind": "KeyItem",
+                "label": "KEYITEM_YELLOWFLAME_NAME"
+            },
+            {
+                "guid": "e6efe37cf14f7114db73cda5972f8da3",
+                "kind": "KeyItem",
+                "label": "KEYITEM_FISHINGDUNGEON_DOORKEY_NAME"
+            },
+            {
+                "guid": "5c63abeb5da9f114ba2c2da954e59d82",
+                "kind": "KeyItem",
+                "label": "KEYITEM_GOLDENFISH_NAME"
+            },
+            {
+                "guid": "8b255d22228b85244a4bb673b2b8586b",
+                "kind": "KeyItem",
+                "label": "KEYITEM_GOLDENFISH_NAME"
+            },
+            {
+                "guid": "7b4c2ced735d9ff41ad7fae6e7dc71d6",
+                "kind": "KeyItem",
+                "label": "KEYITEM_MAGICHOOK_NAME"
+            },
+            {
+                "guid": "174e7b424df474e48a6d65d304b612dd",
+                "kind": "KeyItem",
+                "label": "FISHINGITEM_MAGNETHOOK_NAME"
+            },
+            {
+                "guid": "7ba76f034da41cd4d9de1c4267a031ef",
+                "kind": "KeyItem",
+                "label": "KEYITEM_PASSVIP_NAME"
+            },
+            {
+                "guid": "b6181ca295fc4964da34df0379e5ead0",
+                "kind": "KeyItem",
+                "label": "KEYITEM_FLESHMANCERLAIR_FISH_NAME"
+            },
+            {
+                "guid": "3002629170d8ec448a27d1bfc69bc9b2",
+                "kind": "KeyItem",
+                "label": "KEYITEM_FLESHMANCERLAIR_VASE01_NAME"
+            },
+            {
+                "guid": "349d0c0d0fec3d845bf2dbb16b14b160",
+                "kind": "KeyItem",
+                "label": "KEYITEM_FLESHMANCERLAIR_VASE02_NAME"
+            },
+            {
+                "guid": "ae301ae0d0834f14e8ed770c2c9cfba6",
+                "kind": "KeyItem",
+                "label": "KEYITEM_FLESHMANCERLAIR_VASE03_NAME"
+            },
+            {
+                "guid": "cc1057ec537f0c842bdbb572265b9a17",
+                "kind": "KeyItem",
+                "label": "KEYITEM_FORBIDDENCAVERNKEY_NAME"
+            },
+            {
+                "guid": "970faa3ecbd4a6f4bb50719ba804d3ec",
+                "kind": "KeyItem",
+                "label": "KEYITEM_HAUNTEDMANSION_BAD_SANDWICH_NAME"
+            },
+            {
+                "guid": "d476f6c7455257948854ed1cc65afee7",
+                "kind": "KeyItem",
+                "label": "KEYITEM_HAUNTEDMANSION_CROWN_NAME"
+            },
+            {
+                "guid": "759ad2684304f1f41ab1c7ca59a1ef9f",
+                "kind": "KeyItem",
+                "label": "KEYITEM_HAUNTEDMANSION_KNIGHTHELM_NAME"
+            },
+            {
+                "guid": "e3fb5a2625fe837428d704747054077c",
+                "kind": "KeyItem",
+                "label": "KEYITEM_HAUNTEDMANSION_REGULAR_SANDWICH_NAME"
+            },
+            {
+                "guid": "e94e5414de65af34a810b8f89c117b6b",
+                "kind": "KeyItem",
+                "label": "KEYITEM_HAUNTEDMANSION_SUPREME_SANDWICH_NAME"
+            },
+            {
+                "guid": "28e41ac6234015840a9c976425d74ee9",
+                "kind": "KeyItem",
+                "label": "RELIC_SOLSTICEDIPLOMA_NAME"
+            },
+            {
+                "guid": "d804d17171feb8949927b61e871fc746",
+                "kind": "KeyItem",
+                "label": "RELIC_SOLSTICEDOCTORATE_NAME"
+            },
+            {
+                "guid": "55277ab6cbce74147937da9db8e530f4",
+                "kind": "KeyItem",
+                "label": "KEYITEM_FINEBRUSH_NAME"
+            },
+            {
+                "guid": "f7046c4e3f1a9fa45ae10bb5f7c76013",
+                "kind": "KeyItem",
+                "label": "KEYITEM_MINES_SECRETDOORKEY_NAME"
+            },
+            {
+                "guid": "ba8e4259fdc96ac48aebd98867165d9c",
+                "kind": "KeyItem",
+                "label": "KEYITEM_MORAINE_KEY_NAME"
+            },
+            {
+                "guid": "c5f18f0632cff954eb6a3bc67eb9c7fe",
+                "kind": "KeyItem",
+                "label": "KEYITEM_MORAINEOFFICEKEY_NAME"
+            },
+            {
+                "guid": "1f912127975af7b4f8c7316fe4d6a625",
+                "kind": "KeyItem",
+                "label": "KEYITEM_MOONCRADLEDUNGEONKEY_NAME"
+            },
+            {
+                "guid": "d15dc445af50b0d46b185ca1e3b6d67e",
+                "kind": "KeyItem",
+                "label": "VALUABLEITEM_ALUMNITOKEN_NAME"
+            },
+            {
+                "guid": "08ae384f758e8be4ba4e7d58975838e6",
+                "kind": "KeyItem",
+                "label": "KEYITEM_COOKIEJAR_NAME"
+            },
+            {
+                "guid": "3de9715179fe13d44bf0ac2d38ce5db4",
+                "kind": "KeyItem",
+                "label": "KEYITEM_CORALHAMMER_NAME"
+            },
+            {
+                "guid": "f0faa32c4f2b19e4d9a1c825c5a23771",
+                "kind": "KeyItem",
+                "label": "KEYITEM_CORALHAMMERUPGRADED_NAME"
+            },
+            {
+                "guid": "ccf489d863f5230448566510229333a0",
+                "kind": "KeyItem",
+                "label": "KEYITEM_DIALOCUS_NAME"
+            },
+            {
+                "guid": "c9447122a421a2640b315d36b2562ad2",
+                "kind": "KeyItem",
+                "label": "KEYITEM_GRAPLOU_NAME"
+            },
+            {
+                "guid": "aefb6b3d640e4804d85814203c8baa2c",
+                "kind": "KeyItem",
+                "label": "KEYITEM_COMPASS_NAME"
+            },
+            {
+                "guid": "5b77e66a1d52fce4cbab840d6dd157c4",
+                "kind": "KeyItem",
+                "label": "KEYITEM_PUSHBRACELET_NAME"
+            },
+            {
+                "guid": "4586380c0f09cc943bdacf7acf50a3a2",
+                "kind": "KeyItem",
+                "label": "KEYITEM_SOLSTICEAMULET_NAME"
+            },
+            {
+                "guid": "375a19f5e47b951419795eaf409f3169",
+                "kind": "KeyItem",
+                "label": "KEYITEM_VIALOFTIME_NAME"
+            },
+            {
+                "guid": "92577167b3635ef45b5bb4449e0db946",
+                "kind": "KeyItem",
+                "label": "KEYITEM_QUIZZ_QUESTIONPACK01_NAME"
+            },
+            {
+                "guid": "24ff003b0e4c78047b638dccac197484",
+                "kind": "KeyItem",
+                "label": "KEYITEM_QUIZZ_QUESTIONPACK02_NAME"
+            },
+            {
+                "guid": "dc7c66a209c025f4697e8e8491e098cd",
+                "kind": "KeyItem",
+                "label": "KEYITEM_QUIZZ_QUESTIONPACK03_NAME"
+            },
+            {
+                "guid": "33d4a1a7ec0d9b741a8a175d2c24e8c7",
+                "kind": "KeyItem",
+                "label": "KEYITEM_QUIZZ_QUESTIONPACK04_NAME"
+            },
+            {
+                "guid": "8cae32b464ca8e844b378263d8d34011",
+                "kind": "KeyItem",
+                "label": "KEYITEM_QUIZZ_QUESTIONPACK05_NAME"
+            },
+            {
+                "guid": "1e31e8cf36ae60841a47f3d9f2fce3bf",
+                "kind": "KeyItem",
+                "label": "KEYITEM_QUIZZ_QUESTIONPACK06_NAME"
+            },
+            {
+                "guid": "fe30e0ddff22ff94081ceecff3a5d5fd",
+                "kind": "KeyItem",
+                "label": "KEYITEM_QUIZZ_QUESTIONPACK07_NAME"
+            },
+            {
+                "guid": "b299ede2f42dd2e458fc1fa65fbe3863",
+                "kind": "KeyItem",
+                "label": "KEYITEM_QUIZZ_QUESTIONPACK08_NAME"
+            },
+            {
+                "guid": "08ec181ba4b1e0147be8d62ce1973ab1",
+                "kind": "KeyItem",
+                "label": "KEYITEM_QUIZZ_QUESTIONPACK09_NAME"
+            },
+            {
+                "guid": "98606956383da154fb4c64737d96c898",
+                "kind": "KeyItem",
+                "label": "KEYITEM_QUIZZ_QUESTIONPACK10_NAME"
+            },
+            {
+                "guid": "ace6400b0e4dcd344b58181d9a10994f",
+                "kind": "KeyItem",
+                "label": "KEYITEM_QUIZZ_QUESTIONPACK11_NAME"
+            },
+            {
+                "guid": "8c001ec3683345a4cbc7c43782dacbdd",
+                "kind": "KeyItem",
+                "label": "KEYITEM_AICORE_NAME"
+            },
+            {
+                "guid": "6cdb3cdb6dd53bf488486c7fa7f6bb34",
+                "kind": "KeyItem",
+                "label": "KEYITEM_TOWER3_KEY_NAME"
+            },
+            {
+                "guid": "0e74dbdddec12d64f9bc85152d4331b8",
+                "kind": "KeyItem",
+                "label": "KEYITEM_HYDRALIONPEARL_NAME"
+            },
+            {
+                "guid": "0616ef249bcbe5b42abfd07c541cee31",
+                "kind": "KeyItem",
+                "label": "KEYITEM_SEAOFNIGHTMARE_STORMKEY_NAME"
+            },
+            {
+                "guid": "46742572097b4014fb8da9f198d0942b",
+                "kind": "SheetMusicItem",
+                "label": "KEYITEM_MUSICSHEET1_NAME"
+            },
+            {
+                "guid": "3b000cb7c50ea4a4f85dad1ad78a12a4",
+                "kind": "SheetMusicItem",
+                "label": "KEYITEM_MUSICSHEET2_NAME"
+            },
+            {
+                "guid": "25e534eb1a920ed4897ad72ae4ff9453",
+                "kind": "SheetMusicItem",
+                "label": "KEYITEM_MUSICSHEET3_NAME"
+            },
+            {
+                "guid": "86cd787e0f837ff458f6be93fbb995d3",
+                "kind": "SheetMusicItem",
+                "label": "KEYITEM_MUSICSHEET4_NAME"
+            },
+            {
+                "guid": "43eddaeda003ea148b7dc68a09ef80cc",
+                "kind": "SheetMusicItem",
+                "label": "KEYITEM_MUSICSHEET5_NAME"
+            },
+            {
+                "guid": "e7d15540dc5a0d44ba8b43a1160dc534",
+                "kind": "SheetMusicItem",
+                "label": "KEYITEM_MUSICSHEET6_NAME"
+            },
+            {
+                "guid": "a9c546d8c82f54048a911c909db5bb93",
+                "kind": "SheetMusicItem",
+                "label": "KEYITEM_MUSICSHEET7_NAME"
+            },
+            {
+                "guid": "c995d9ad162508d429af0b0095c11535",
+                "kind": "SheetMusicItem",
+                "label": "KEYITEM_MUSICSHEET8_NAME"
+            },
+            {
+                "guid": "59b95ead3ebff32428770ee29bd3d9f8",
+                "kind": "SheetMusicItem",
+                "label": "KEYITEM_MUSICSHEET9_NAME"
+            },
+            {
+                "guid": "1f0668f5a54bf9044863d9c630048798",
+                "kind": "SheetMusicItem",
+                "label": "KEYITEM_MUSICSHEET10_NAME"
+            },
+            {
+                "guid": "b1c99080db4a2f140ac583fc0c076b71",
+                "kind": "SheetMusicItem",
+                "label": "KEYITEM_MUSICSHEET11_NAME"
+            },
+            {
+                "guid": "fd37f37d826a4424d8ea73e56bf6fd2f",
+                "kind": "SheetMusicItem",
+                "label": "KEYITEM_MUSICSHEET12_NAME"
+            },
+            {
+                "guid": "c906db81c1f44f24fb9637941f870ba6",
+                "kind": "SheetMusicItem",
+                "label": "KEYITEM_MUSICSHEET13_NAME"
+            },
+            {
+                "guid": "42595a0119f967845b9397365508ba64",
+                "kind": "KeyItem",
+                "label": "KEYITEM_SS2_KEYA_NAME"
+            },
+            {
+                "guid": "bc821a537ec005c498861cbea8cffe92",
+                "kind": "KeyItem",
+                "label": "KEYITEM_SS2_KEYB_NAME"
+            },
+            {
+                "guid": "c9e2bf06d9f76f442b45863d8909ced5",
+                "kind": "KeyItem",
+                "label": "KEYITEM_SONGSHROOMMARSH_NAME"
+            },
+            {
+                "guid": "a7eb75ef484df8748a4c507fba097b85",
+                "kind": "StoryArtifactItem",
+                "label": "STORYARTIFACT_GUNGODDESS_NAME"
+            },
+            {
+                "guid": "9fffcbe75bd0a61439e3546edd2d1049",
+                "kind": "StoryArtifactItem",
+                "label": "STORYARTIFACT_CLOCKWORKANDKIDENGINEERS_NAME"
+            },
+            {
+                "guid": "027715b8b6eb986459da52f290a22c45",
+                "kind": "StoryArtifactItem",
+                "label": "STORYARTIFACT_ESTRISTAE_NAME"
+            },
+            {
+                "guid": "2cbaec690b20378448407f18f53c7607",
+                "kind": "StoryArtifactItem",
+                "label": "STORYARTIFACT_LUCENTSHROUDNIGHT_NAME"
+            },
+            {
+                "guid": "a079a093d27333e4e99cd0b4abe3b6a1",
+                "kind": "StoryArtifactItem",
+                "label": "STORYARTIFACT_MOONCRADLEELDERMIST_NAME"
+            },
+            {
+                "guid": "6086a4552abd9ab4dbd76f1cfb4b6812",
+                "kind": "StoryArtifactItem",
+                "label": "STORYARTIFACT_NOMADANDSEA_NAME"
+            },
+            {
+                "guid": "bcedb2e46cfcb9a45a9736062dbd6e47",
+                "kind": "StoryArtifactItem",
+                "label": "STORYARTIFACT_SKYGIANTANDKHUKKAR_NAME"
+            },
+            {
+                "guid": "c7e3009a90c46164e86fd8fb5d08cbce",
+                "kind": "StoryArtifactItem",
+                "label": "STORYARTIFACT_SLEEPERANDMOLEKINS_NAME"
+            },
+            {
+                "guid": "f65753c0374254346afc37b1f75cd0ee",
+                "kind": "StoryArtifactItem",
+                "label": "STORYARTIFACT_THREESISTERS_NAME"
+            },
+            {
+                "guid": "5c4863eb4f266574e937fb34e3031ed4",
+                "kind": "StoryArtifactItem",
+                "label": "STORYARTIFACT_VAMPIREROSE_NAME"
+            },
+            {
+                "guid": "e488a0e3327d6214a9ba85ec2c34a5eb",
+                "kind": "KeyItem",
+                "label": "KEYITEM_SUNKENRUINDISK_A_NAME"
+            },
+            {
+                "guid": "892c6828010cd0442a3393c5dd45e6c6",
+                "kind": "KeyItem",
+                "label": "KEYITEM_SUNKENRUINDISK_B_NAME"
+            },
+            {
+                "guid": "5523dc3139186874695c75c920c337a4",
+                "kind": "KeyItem",
+                "label": "KEYITEM_SUNKENRUINDISK_C_NAME"
+            },
+            {
+                "guid": "2125d95821df6824a828a69bd902bf14",
+                "kind": "KeyItem",
+                "label": "KEYITEM_BLUEPEARL_NAME"
+            },
+            {
+                "guid": "aa4d810d27c12864eb74a976a24a6c5a",
+                "kind": "KeyItem",
+                "label": "KEYITEM_GREENPEARL_NAME"
+            },
+            {
+                "guid": "efa941d37f7e8a741bffda3674865874",
+                "kind": "KeyItem",
+                "label": "KEYITEM_PINKPEARL_NAME"
+            },
+            {
+                "guid": "0aed24b71deeec34689a568297b730ba",
+                "kind": "KeyItem",
+                "label": "KEYITEM_PURPLEPEARL_NAME"
+            },
+            {
+                "guid": "aed455e0a258631408f2694e1de9aea2",
+                "kind": "KeyItem",
+                "label": "KEYITEM_VALVE_A_NAME"
+            },
+            {
+                "guid": "f39ff4369129dde46a0e1fb61dca33ba",
+                "kind": "KeyItem",
+                "label": "KEYITEM_VALVE_B_NAME"
+            },
+            {
+                "guid": "e554a0e60158d6a45a6fbaa76b7a149d",
+                "kind": "KeyItem",
+                "label": "KEYITEM_BOOSTGATEKEY_NAME"
+            },
+            {
+                "guid": "56ddec906232705469ab9a0a52fea8f2",
+                "kind": "KeyItem",
+                "label": "KEYITEM_YELLOWPEARL_NAME"
+            },
+            {
+                "guid": "eab7dd1ce97e5f549a124d6508121943",
+                "kind": "KeyItem",
+                "label": "KEYITEM_WHEELSCHARACTERARCHER_NAME"
+            },
+            {
+                "guid": "b29f7387520ec284aadf210a3d96eeef",
+                "kind": "KeyItem",
+                "label": "KEYITEM_WHEELSCHARACTERASSASSIN_NAME"
+            },
+            {
+                "guid": "1ffdc826f25d33f418925e7a9838e3e1",
+                "kind": "KeyItem",
+                "label": "KEYITEM_WHEELSCHARACTERENGINEER_NAME"
+            },
+            {
+                "guid": "d7f92ecb9e4da7b418070285c25d86e1",
+                "kind": "KeyItem",
+                "label": "KEYITEM_WHEELSCHARACTERMAGE_NAME"
+            },
+            {
+                "guid": "0fba7ae2d8a1d2d4aa49a2c9a6fb61e7",
+                "kind": "KeyItem",
+                "label": "KEYITEM_WHEELSCHARACTERPRIEST_NAME"
+            },
+            {
+                "guid": "57f487d0e7d83dd4293f7d6dec2795aa",
+                "kind": "KeyItem",
+                "label": "KEYITEM_WHEELSCHARACTERWARLOCK_NAME"
+            },
+            {
+                "guid": "e972fad3d8d63a745bdfc1dc7dc6d2f7",
+                "kind": "KeyItem",
+                "label": "KEYITEM_WHEELSCHARACTERWARRIOR_NAME"
+            },
+            {
+                "guid": "a81551d5aa1d0fc419c2023113b5c0ab",
+                "kind": "KeyItem",
+                "label": "KEYITEM_WHEELSRANKBRONZE_NAME"
+            },
+            {
+                "guid": "76241bd9c19934344a8274665fb67f2b",
+                "kind": "KeyItem",
+                "label": "KEYITEM_WHEELSRANKCOPPER_NAME"
+            },
+            {
+                "guid": "56ca0aa8b72609d45a65481a6290ee75",
+                "kind": "KeyItem",
+                "label": "KEYITEM_WHEELSRANKDIAMOND_NAME"
+            },
+            {
+                "guid": "b5e8130725d015140a492ef72e660cd3",
+                "kind": "KeyItem",
+                "label": "KEYITEM_WHEELSRANKGOLD_NAME"
+            },
+            {
+                "guid": "f959b0aa9e4fd9649a096875b81ebe82",
+                "kind": "KeyItem",
+                "label": "KEYITEM_WHEELSRANKPLATINUM_NAME"
+            },
+            {
+                "guid": "e024e3aebc5d1424ea1d69be9df5d4cc",
+                "kind": "KeyItem",
+                "label": "KEYITEM_WHEELSRANKSILVER_NAME"
+            },
+            {
+                "guid": "7072b9fc59fa699458b7acf5597d5d97",
+                "kind": "KeyItem",
+                "label": "KEYITEM_WIZARDLAB_BLUECRYSTAL_NAME"
+            },
+            {
+                "guid": "37ed1b808bebec1458cbb90a2e2021d5",
+                "kind": "KeyItem",
+                "label": "KEYITEM_WIZARDLAB_GREENCRYSTAL_NAME"
+            },
+            {
+                "guid": "791d1b17113c71a42a4b0a08f5be7676",
+                "kind": "KeyItem",
+                "label": "KEYITEM_WIZARDLAB_COIN_NAME"
+            },
+            {
+                "guid": "d0ecc064753be7d48b7818b0113d10f8",
+                "kind": "KeyItem",
+                "label": "KEYITEM_WIZARDLAB_REDCRYSTAL_NAME"
+            },
+            {
+                "guid": "2cb456c00ee26754895cab1ef09f5024",
+                "kind": "KeyItem",
+                "label": "KEYITEM_WELLITEM_NAME"
+            },
+            {
+                "guid": "e9e25324a369a4d4e9331778a4deb8b5",
+                "kind": "KeyItem",
+                "label": "KEYITEM_DUKEKEY_NAME"
+            },
+            {
+                "guid": "b901a02219536cf43af09aa7ae1d7326",
+                "kind": "KeyItem",
+                "label": "KEYITEM_LOCKET_NAME"
+            },
+            {
+                "guid": "5dc17c895fa172b47b22fba330496a8e",
+                "kind": "KeyItem",
+                "label": "KEYITEM_LUCENT_GHOSTCOOKIE_NAME"
+            },
+            {
+                "guid": "db37449de93d8dd4ba50111ced8f89e1",
+                "kind": "KeyItem",
+                "label": "KEYITEM_LUCENT_SHED_KEY_NAME"
+            },
+            {
+                "guid": "4133b72ae404b374987e2b434c7f5c10",
+                "kind": "RelicItem",
+                "label": "RELIC_ADAMANT_SHARD_NAME"
+            },
+            {
+                "guid": "a91e6b011845d77418d3bae4766a8a9d",
+                "kind": "RelicItem",
+                "label": "RELIC_AMULET_OF_STORYTELLING_NAME"
+            },
+            {
+                "guid": "866778a20ec11da4baad80bbe7540c56",
+                "kind": "RelicItem",
+                "label": "RELIC_STORYTELLING_HP_NAME"
+            },
+            {
+                "guid": "884bf88d04075264c98ab588ae5221cf",
+                "kind": "RelicItem",
+                "label": "RELIC_ARTFUL_GAMBIT_NAME"
+            },
+            {
+                "guid": "4e0db461b8b133c4ab2536bc1016cf93",
+                "kind": "RelicItem",
+                "label": "RELIC_CHEF_KNIFE_NAME"
+            },
+            {
+                "guid": "3295ddb17b4340044bbf4f131c90c1df",
+                "kind": "RelicItem",
+                "label": "RELIC_MYSTERYLOCK_NAME"
+            },
+            {
+                "guid": "a153f84abd9ac3b4ab7746c1d43095f2",
+                "kind": "RelicItem",
+                "label": "RELIC_DOUBLE_EDGE_NAME"
+            },
+            {
+                "guid": "5969aba2037e09b46823584da7ee0d15",
+                "kind": "RelicItem",
+                "label": "RELIC_DUBIOUS_DARE_NAME"
+            },
+            {
+                "guid": "a8c2b79eb9a4bb84ba5876ddb96ec55b",
+                "kind": "RelicItem",
+                "label": "RELIC_SUPER_FISHING_LINE_NAME"
+            },
+            {
+                "guid": "662aa1ede20e4a14db1e29e258893a6c",
+                "kind": "RelicItem",
+                "label": "RELIC_SUPER_FISHING_REEL_NAME"
+            },
+            {
+                "guid": "45ab00b468451b949ac17163040925fa",
+                "kind": "RelicItem",
+                "label": "RELIC_SUPER_FISHING_POLE_HANDLE_NAME"
+            },
+            {
+                "guid": "57597d27d25e6f74fb87c572b2b171d2",
+                "kind": "RelicItem",
+                "label": "RELIC_GOLDEN_TOOTH_NAME"
+            },
+            {
+                "guid": "def407b542a5c3d458a8c1fa59815693",
+                "kind": "RelicItem",
+                "label": "RELIC_GUARDIAN_AURA_NAME"
+            },
+            {
+                "guid": "31de888ea125ddf458c85998a8958ef4",
+                "kind": "RelicItem",
+                "label": "RELIC_KNOWLEDGE_TOME_NAME"
+            },
+            {
+                "guid": "a5ea1b6b42b349444bb6c7ac480ee1df",
+                "kind": "RelicItem",
+                "label": "RELIC_LVLUP_AUTOHEAL_NAME"
+            },
+            {
+                "guid": "e388991e8f7c5934993153ef7e50232f",
+                "kind": "RelicItem",
+                "label": "RELIC_PIRATE_PARROT_NAME"
+            },
+            {
+                "guid": "0b6db9f2ecce979409c833c1d475e651",
+                "kind": "RelicItem",
+                "label": "RELIC_RAYSOFSUNSET_NAME"
+            },
+            {
+                "guid": "1554ef53341beea43ab50edbe869f560",
+                "kind": "RelicItem",
+                "label": "RELIC_SALIENT_SAILS_NAME"
+            },
+            {
+                "guid": "1b0313fe821ba7c419b7b443416aa784",
+                "kind": "RelicItem",
+                "label": "RELIC_SEQUENT_FLARE_NAME"
+            },
+            {
+                "guid": "f2e2a73117e6d044d8b0ced0304293d1",
+                "kind": "RelicItem",
+                "label": "RELIC_SIXTH_SENSE_NAME"
+            },
+            {
+                "guid": "caf88d528688b284e80ce8860c9bb2b8",
+                "kind": "RelicItem",
+                "label": "RELIC_SPEEDRUN_NAME"
+            },
+            {
+                "guid": "c52a22809bcbb4443916cadd12aa01cd",
+                "kind": "RelicItem",
+                "label": "RELIC_TACTICIAN_METTLE_NAME"
+            },
+            {
+                "guid": "c1962220eb589a642aa1a5856ef650d4",
+                "kind": "RelicItem",
+                "label": "RELIC_TRUESTRIKE_PENDANT_NAME"
+            },
+            {
+                "guid": "d8a7bdab9aa9a6e4e95036b0eff55239",
+                "kind": "CharacterTrinket",
+                "label": "TRINKET_ARCANE_AMULET_NAME"
+            },
+            {
+                "guid": "88810f8353ed7404bb576582cc39189f",
+                "kind": "CharacterTrinket",
+                "label": "TRINKET_ASSASSINSPIN_NAME"
+            },
+            {
+                "guid": "588f0765e48c5124a8d9f671b57db116",
+                "kind": "CharacterTrinket",
+                "label": "TRINKET_BLUE_LEAF_NAME"
+            },
+            {
+                "guid": "23cd65231a0ab0c45be5987e87455136",
+                "kind": "CharacterTrinket",
+                "label": "TRINKET_CELESTIALRAY_NAME"
+            },
+            {
+                "guid": "f93c6f846bc2f0b4484e896221759b94",
+                "kind": "CharacterTrinket",
+                "label": "TRINKET_DEXTROUS_BANGLE_NAME"
+            },
+            {
+                "guid": "d311de20fa85a5148a7b523f0af76f47",
+                "kind": "CharacterTrinket",
+                "label": "TRINKET_ENCHANTEDCHAINLINK_NAME"
+            },
+            {
+                "guid": "9e03ef3b70751944abae3f3880c733b7",
+                "kind": "CharacterTrinket",
+                "label": "TRINKET_ENCHANTED_SCARF_NAME"
+            },
+            {
+                "guid": "af3e10fe5b7abd940baadad96a4e5e7c",
+                "kind": "CharacterTrinket",
+                "label": "TRINKET_EVERGREEN_LEAF_NAME"
+            },
+            {
+                "guid": "0ee892db1da195541bcbe578898265b5",
+                "kind": "CharacterTrinket",
+                "label": "TRINKET_GREEN_LEAF_NAME"
+            },
+            {
+                "guid": "acadc7386a182444692a4622393aac6b",
+                "kind": "CharacterTrinket",
+                "label": "TRINKET_HELIACALEARRINGS_NAME"
+            },
+            {
+                "guid": "933db0df85333b341a7d58da22f3b39c",
+                "kind": "CharacterTrinket",
+                "label": "TRINKET_LEECHING_THORN_NAME"
+            },
+            {
+                "guid": "4441ac030d9882445867b6ee06fbe941",
+                "kind": "CharacterTrinket",
+                "label": "TRINKET_MOONSTONEBRACER_NAME"
+            },
+            {
+                "guid": "154461019876b7741bbd74980276c852",
+                "kind": "CharacterTrinket",
+                "label": "TRINKET_POWER_BELT_NAME"
+            },
+            {
+                "guid": "71ff97ab95cbcd84985e62255cbca323",
+                "kind": "CharacterTrinket",
+                "label": "TRINKET_SHIMMERING_SHARD_NAME"
+            },
+            {
+                "guid": "62dcbc88129046140a17fb2790ad258b",
+                "kind": "CharacterTrinket",
+                "label": "TRINKET_SIGNETOFCLARITY_NAME"
+            },
+            {
+                "guid": "076aaeb73b8283748accfb24f68a5c64",
+                "kind": "CharacterTrinket",
+                "label": "TRINKET_SOLSTICESASH_NAME"
+            },
+            {
+                "guid": "77a0a1cac957b4b4d8cfbb1ee9b2548c",
+                "kind": "ValuableItem",
+                "label": "VALUABLEITEM_ADAMANTITEORE_NAME"
+            },
+            {
+                "guid": "c067bbcbb9deb85488d779cf334e50db",
+                "kind": "ValuableItem",
+                "label": "VALUABLEITEM_ALUMNITOKEN_NAME"
+            },
+            {
+                "guid": "4717dc86cf98f2d4794b40e910b63e61",
+                "kind": "ValuableItem",
+                "label": "VALUABLEITEM_OBSIDIANINGOT_NAME"
+            },
+            {
+                "guid": "7a9b2938fabc5434da21134b18b4e0ee",
+                "kind": "ValuableItem",
+                "label": "VALUABLEITEM_OBSIDIANORE_NAME"
+            },
+            {
+                "guid": "79b159a1b2b69834a96cd56d5e02058c",
+                "kind": "ValuableItem",
+                "label": "VALUABLEITEM_SAPPHIREINGOT_NAME"
+            },
+            {
+                "guid": "c43421b626574174e9b5156141213250",
+                "kind": "ValuableItem",
+                "label": "VALUABLEITEM_SAPPHIREORE_NAME"
+            },
+            {
+                "guid": "7337dc21759feae4a92aba8200c42898",
+                "kind": "ValuableItem",
+                "label": "VALUABLEITEM_SHINYPEARL_NAME"
+            },
+            {
+                "guid": "33e568f23e2581d448041ac97fb8358d",
+                "kind": "ValuableItem",
+                "label": "VALUABLEITEM_TEALAMBERORE_NAME"
+            },
+            {
+                "guid": "108a40870288c934d94c1661286ff1f0",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_CALCITELID_NAME"
+            },
+            {
+                "guid": "b9995b298ada14e4887faf134942b564",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_GARL_NAME"
+            },
+            {
+                "guid": "0f0053be4fa1bf84db338a626d751eb2",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_MOONCRADLEBOYLID_NAME"
+            },
+            {
+                "guid": "c16988af55e565545b978150228fc5e7",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_OBSIDIAN_LID_NAME"
+            },
+            {
+                "guid": "8df0767e67aa4e34584a5066469765de",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_PHOSPHORITELID_NAME"
+            },
+            {
+                "guid": "7694b5b801204a74c888d67a49f06d42",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_ROCK_LID_NAME"
+            },
+            {
+                "guid": "68d99c8b95dbf7c41a00d562b41b289a",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_STURDYCOG_NAME"
+            },
+            {
+                "guid": "807d9f5c8b8f5514abcf261a36dc1711",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_AETHERWOODCORK_NAME"
+            },
+            {
+                "guid": "1a8eae5901ae6754a8899a58a692a2b3",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_CYPRESSCORK_NAME"
+            },
+            {
+                "guid": "8f50c130484e7c44a8d90860eaaa2806",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_MAPLECORK_NAME"
+            },
+            {
+                "guid": "c2d85fc1508398e4a8c4db3e12594978",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_ROSEWOODCORK_NAME"
+            },
+            {
+                "guid": "2a8606f2bf7f5224cadb8ae2c1d1b531",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_SALIXCORK_NAME"
+            },
+            {
+                "guid": "c3b22a46f99faba498bfbc7519cce88c",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_WALNUTCORK_NAME"
+            },
+            {
+                "guid": "441bec8771714944eb32ff53c082f8da",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_WITHEREDCORK_NAME"
+            },
+            {
+                "guid": "a164640364ccf3546b0b9a0ac82b59cf",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_APOGEEDAGGERS_NAME"
+            },
+            {
+                "guid": "d78f39987eaedcc42b938fc1763bba59",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_CORALDAGGERS_NAME"
+            },
+            {
+                "guid": "e24926f361bf385478653d34ac9f6a41",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_CRYOSTEELDAGGERS_NAME"
+            },
+            {
+                "guid": "3f851aff158a63042bd188b378bc3d81",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_PHANTOMDAGGERS_NAME"
+            },
+            {
+                "guid": "1ca6171b638ffdb49bda2f4cfcb2e564",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_PLASMADAGGERS_NAME"
+            },
+            {
+                "guid": "6dfc4e7a1624a9c4eaaf2ae75c336b5c",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_SERAI_NAME"
+            },
+            {
+                "guid": "b883d3f8ffbc78040ade7dc4675ac1c6",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_SHIMMERINGDAGGERS_NAME"
+            },
+            {
+                "guid": "aa8b7c8001ca94d4eaa65d1ffb58a5e2",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_SHROOMYSHIV_NAME"
+            },
+            {
+                "guid": "a27614e2379ef9e4dac1950a51b3f71d",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_STARSHARDS_NAME"
+            },
+            {
+                "guid": "0d86cee64cf8be44985fcee7a34c49f2",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_TRUESILVERDAGGERS_NAME"
+            },
+            {
+                "guid": "5d108fe330c777241bb2b7c5326acc54",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_ADAMANTINESTAFF_NAME"
+            },
+            {
+                "guid": "10d0cb7c4836f794bb6f4d965f2b76c8",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_COPPER_STAFF_NAME"
+            },
+            {
+                "guid": "70a7707a760f40046b71b4b2e111a708",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_CORALSTAFF_NAME"
+            },
+            {
+                "guid": "27a72590849651b4ba1cf80fe6be8d4a",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_EARTHSHINESTAFF_NAME"
+            },
+            {
+                "guid": "e93c519d3c18fa245937cc461e4de24d",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_IGNEOUSSTAFF_NAME"
+            },
+            {
+                "guid": "95ac264461a94a0458a14a39954e3afc",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_LUANASMIGHT_NAME"
+            },
+            {
+                "guid": "d25d22b957a9c5c478e188e1f03f7107",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_NEOBSIDIANSTAFF_NAME"
+            },
+            {
+                "guid": "c82873a6208c95241834faa4a0c90321",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_ORNATEBO_NAME"
+            },
+            {
+                "guid": "3e2210133b9ad0940bddde38c647e3e7",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_OSSEOUSSTAFF_NAME"
+            },
+            {
+                "guid": "f7d49514f7bfca34b942d95722b76a32",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_SHIMMERINGSTAFF_NAME"
+            },
+            {
+                "guid": "e27094f36cb7bb140b614b89fde60550",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_AMBER_STAFF_NAME"
+            },
+            {
+                "guid": "40b7062ac812c5d47bb1ff0df4987e8e",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_MOONGIRL_NAME"
+            },
+            {
+                "guid": "0a9e0ac0bb822b349af356af38ad6a5d",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_BAMBOOSLICER_NAME"
+            },
+            {
+                "guid": "5877570357bf9f441ae01cd06bccd9f4",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_CLOUDSWORD_NAME"
+            },
+            {
+                "guid": "16d199bda90813f40a28fd9203865374",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_CORALSWORD_NAME"
+            },
+            {
+                "guid": "7d6c888ffacc1cd4ab3ce414b294c67e",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_FIRMAMENTSEDGE_NAME"
+            },
+            {
+                "guid": "0dddb9e8063bbdd4fb724929ee784f38",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_CRYOSTEELBLADE_NAME"
+            },
+            {
+                "guid": "301554cfa6770af4d9e0791f01488999",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_PLASMABLADE_NAME"
+            },
+            {
+                "guid": "7ce9f696d3089434fbff10c7653d0026",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_SCRIMSHAWEDBLADE_NAME"
+            },
+            {
+                "guid": "10e93ab756357f142b3c6ef3ec7a7c4b",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_SHIMMERINGBLADE_NAME"
+            },
+            {
+                "guid": "71cfc6d93b292d3499c472b73e9daae1",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_SILVER_BLADE_NAME"
+            },
+            {
+                "guid": "8f96ab39454c54641812c57f7b332481",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_SOLENSLIGHT_NAME"
+            },
+            {
+                "guid": "4a1710ba97ae350428f18704e36fe234",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_SQUIRE_SWORD_NAME"
+            },
+            {
+                "guid": "e3098c0169021924a97713b57a009928",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_SUNBOY_NAME"
+            },
+            {
+                "guid": "cf9b748e2eabd464f8275924f4aafe5a",
+                "kind": "CharacterArmor",
+                "label": "ARMOR_TIER1_ARTY_NAME"
+            },
+            {
+                "guid": "168cd140db75edd48970c0e259ce6bbb",
+                "kind": "CharacterArmor",
+                "label": "ARMOR_TIER1_ZV_NAME"
+            },
+            {
+                "guid": "ad58824238281b0439c0942c5656244e",
+                "kind": "CharacterArmor",
+                "label": "ARMOR_TIER2_ARTY_NAME"
+            },
+            {
+                "guid": "5283122c49e715e40b7e301985097f98",
+                "kind": "CharacterArmor",
+                "label": "ARMOR_TIER2_ZV_NAME"
+            },
+            {
+                "guid": "1b0edcae28db0cf4ba0cd2ae0bea451b",
+                "kind": "CharacterArmor",
+                "label": "ARMOR_TIER3_ARTY_NAME"
+            },
+            {
+                "guid": "d51aaf5d5182a18478bbb5a2bcca1ce7",
+                "kind": "CharacterArmor",
+                "label": "ARMOR_TIER3_ZV_NAME"
+            },
+            {
+                "guid": "3a25961e8f4743e4096a98ea659d1a37",
+                "kind": "CharacterArmor",
+                "label": "ARMOR_TIER4_ARTY_NAME"
+            },
+            {
+                "guid": "239aff38c6e91734682eb9614bd4edb1",
+                "kind": "CharacterArmor",
+                "label": "ARMOR_TIER4_ZV_NAME"
+            },
+            {
+                "guid": "260de22072e6c82498265d6b53a654f6",
+                "kind": "CandyItem",
+                "label": "SNACK_HEALTHCANDY_NAME"
+            },
+            {
+                "guid": "c4574e240b47c58428b209521ee9e0f9",
+                "kind": "CandyItem",
+                "label": "SNACK_ATKCANDY_NAME"
+            },
+            {
+                "guid": "7bc71b1e09525f54da84c197dcd53830",
+                "kind": "CandyItem",
+                "label": "SNACK_MATKCANDY_NAME"
+            },
+            {
+                "guid": "668ff1b04f490d548bff429d15fa911c",
+                "kind": "Ingredient",
+                "label": "INGREDIENT_BUTTER_NAME"
+            },
+            {
+                "guid": "9c19b05565b47c3489c2d4f2e4d7a137",
+                "kind": "Ingredient",
+                "label": "INGREDIENT_CREAM_NAME"
+            },
+            {
+                "guid": "776ad181ef38de042a5d0e917c32ac05",
+                "kind": "Ingredient",
+                "label": "INGREDIENT_CORN_NAME"
+            },
+            {
+                "guid": "855a80b95fe371440baa6ad0cb1ade11",
+                "kind": "Ingredient",
+                "label": "INGREDIENT_SUGAR_NAME"
+            },
+            {
+                "guid": "eaab67376b7ffd648bb87d15b4a61624",
+                "kind": "RecipeUnlockItem",
+                "label": "RECIPEUNLOCK_BARBAPAPA_NAME"
+            },
+            {
+                "guid": "dc6b44ace87e9544e95a6f7c06752afc",
+                "kind": "RecipeUnlockItem",
+                "label": "RECIPEUNLOCK_CARAMELCORN_NAME"
+            },
+            {
+                "guid": "52fb8bad57c795f47b1dc132e5d76744",
+                "kind": "RecipeUnlockItem",
+                "label": "RECIPEUNLOCK_ICECREAM_NAME"
+            },
+            {
+                "guid": "b112118aabacf66478ac2e64f1e7ab22",
+                "kind": "RecipeUnlockItem",
+                "label": "RECIPEUNLOCK_MILKSHAKE_NAME"
+            },
+            {
+                "guid": "f7c88b94e1603e446bc3eae61d222a06",
+                "kind": "RecipeUnlockItem",
+                "label": "RECIPEUNLOCK_POPCORN_NAME"
+            },
+            {
+                "guid": "b757cad4d9fc96948a515e0edfa9bed4",
+                "kind": "Snack",
+                "label": "SNACK_POPCORN_NAME"
+            },
+            {
+                "guid": "a1267c59d1250234abd0933a3f576fba",
+                "kind": "Snack",
+                "label": "SNACK_ICECREAM_NAME"
+            },
+            {
+                "guid": "8d25c44f16c25b6449ce3b6761b12b19",
+                "kind": "Snack",
+                "label": "SNACK_MILKSHAKE_NAME"
+            },
+            {
+                "guid": "ee6cac94e1c262646ba26cb7d1d8e2cf",
+                "kind": "Snack",
+                "label": "SNACK_CARAMELCORN_NAME"
+            },
+            {
+                "guid": "1af4010e026e4be4284ccb2544ba7935",
+                "kind": "Snack",
+                "label": "SNACK_BARBAPAPA_NAME"
+            },
+            {
+                "guid": "b7a2ec3fea639a342ac63ed6f7caea5d",
+                "kind": "KeyItem",
+                "label": "KEYITEM_TICKET_NAME"
+            },
+            {
+                "guid": "fd64e65e25054b7408ae7eda38bfaff4",
+                "kind": "KeyItem",
+                "label": "KEYITEM_CERTIFICATELADDERSHIP_NAME"
+            },
+            {
+                "guid": "7809ab4074b589d488c337b83c4c0ca9",
+                "kind": "KeyItem",
+                "label": "KEYITEM_HORLOGE_CONCH_NAME"
+            },
+            {
+                "guid": "28c3abc00cf0891409cd4a793355b4f1",
+                "kind": "KeyItem",
+                "label": "KEYITEM_HORLOGE_PRISONKEY_NAME"
+            },
+            {
+                "guid": "9cfbb3e7c804e2e4d98fe70781abd872",
+                "kind": "KeyItem",
+                "label": "KEYITEM_SILKENTICKET_NAME"
+            },
+            {
+                "guid": "de08941593dedb44099a0cabb7436efa",
+                "kind": "KeyItem",
+                "label": "KEYITEM_TICKETTOCKET_NAME"
+            },
+            {
+                "guid": "e39eaf2b02f8e7049acea143ff550dd1",
+                "kind": "KeyItem",
+                "label": "KEYITEM_HORLOGE_CLOCK_NUMBER_01_NAME"
+            },
+            {
+                "guid": "f8203df7dcab9bd44861c9e830dc8674",
+                "kind": "KeyItem",
+                "label": "KEYITEM_HORLOGE_CLOCK_NUMBER_02_NAME"
+            },
+            {
+                "guid": "1fc76a8e1bc0e3f41ba3807cfc45017d",
+                "kind": "KeyItem",
+                "label": "KEYITEM_HORLOGE_CLOCK_NUMBER_03_NAME"
+            },
+            {
+                "guid": "de901c0b6c8d0094d8f5dd1ea26e71c6",
+                "kind": "KeyItem",
+                "label": "KEYITEM_HORLOGE_CLOCK_NUMBER_04_NAME"
+            },
+            {
+                "guid": "f7f36954964e877489d96e991230a45b",
+                "kind": "KeyItem",
+                "label": "KEYITEM_HORLOGE_CLOCK_NUMBER_05_NAME"
+            },
+            {
+                "guid": "cdca65c430ca5e04998eb0e8695cae85",
+                "kind": "KeyItem",
+                "label": "KEYITEM_HORLOGE_CLOCK_NUMBER_06_NAME"
+            },
+            {
+                "guid": "ac956eba6e579f848aee02eb658b33dc",
+                "kind": "KeyItem",
+                "label": "KEYITEM_HORLOGE_CLOCK_NUMBER_07_NAME"
+            },
+            {
+                "guid": "6e6f7ca67029923448d9d6d9e31dc947",
+                "kind": "KeyItem",
+                "label": "KEYITEM_HORLOGE_CLOCK_NUMBER_08_NAME"
+            },
+            {
+                "guid": "dd3a422a3dfa5344b9702021ed6ac60c",
+                "kind": "KeyItem",
+                "label": "KEYITEM_HORLOGE_CLOCK_NUMBER_09_NAME"
+            },
+            {
+                "guid": "fbd84af435c34244fb3b4464aef45195",
+                "kind": "KeyItem",
+                "label": "KEYITEM_HORLOGE_CLOCK_NUMBER_10_NAME"
+            },
+            {
+                "guid": "5bd43b3a3d847244c870c2b6814ed98c",
+                "kind": "KeyItem",
+                "label": "KEYITEM_HORLOGE_CLOCK_NUMBER_11_NAME"
+            },
+            {
+                "guid": "fd5af75069df2c5408441dbeb90201fd",
+                "kind": "KeyItem",
+                "label": "KEYITEM_HORLOGE_CLOCK_NUMBER_12_NAME"
+            },
+            {
+                "guid": "6e3ce16415db67f4a8056d66881d6181",
+                "kind": "KeyItem",
+                "label": "KEYITEM_WERETICKET_NAME"
+            },
+            {
+                "guid": "d833c79a74c7c8d4f95b37c67ec9155c",
+                "kind": "KeyItem",
+                "label": "KEYITEM_LFD_LOWERLEFTPIECE_NAME"
+            },
+            {
+                "guid": "062a38f08d1d5934b8e757e10a427765",
+                "kind": "KeyItem",
+                "label": "KEYITEM_LFD_ITEM_1_NAME"
+            },
+            {
+                "guid": "06a807e7b46a9e647a888ebe07694161",
+                "kind": "KeyItem",
+                "label": "KEYITEM_LFD_UPPERLEFTPIECE_NAME"
+            },
+            {
+                "guid": "d739951e2b3c27d4cb310ced2c7cae94",
+                "kind": "KeyItem",
+                "label": "KEYITEM_LFD_UPPERRIGHTPIECE_NAME"
+            },
+            {
+                "guid": "695e59a0692554a4d9b78c2b71660df3",
+                "kind": "KeyItem",
+                "label": "KEYITEM_POCKETGPI_1_NAME"
+            },
+            {
+                "guid": "b4cbc94f3dd3cf34395a76dab6ab6af5",
+                "kind": "KeyItem",
+                "label": "KEYITEM_PORTRAITPIECE_NAME"
+            },
+            {
+                "guid": "8ea68cba404a4f44f9ea2a675d08e68f",
+                "kind": "KeyItem",
+                "label": "KEYITEM_WOLFROCK_BRIDGEKEY_NAME"
+            },
+            {
+                "guid": "ae9e0747b6c1db345a3f469b498a525a",
+                "kind": "PortableGPIItem",
+                "label": "KEYITEM_LFD_TOWERA_MODEL_NAME"
+            },
+            {
+                "guid": "5b65b87eec94de14b8612852529d27bd",
+                "kind": "PortableGPIItem",
+                "label": "KEYITEM_LFD_TOWERB_MODEL_NAME"
+            },
+            {
+                "guid": "30062b9b74ae92f4c8c9c7b1c6c377d0",
+                "kind": "PortableGPIItem",
+                "label": "KEYITEM_LFD_TOWERC_MODEL_NAME"
+            },
+            {
+                "guid": "c761e178ca0909b4e8748e5380ea2d60",
+                "kind": "PortableGPIItem",
+                "label": "KEYITEM_LFD_ITEM_4_NAME"
+            },
+            {
+                "guid": "f10c31beaa95c45428487719046b649e",
+                "kind": "PortableGPIItem",
+                "label": "KEYITEM_POCKETBOUNCEPAD_NAME"
+            },
+            {
+                "guid": "da416957d4bcff14a837c513ec031f4d",
+                "kind": "PortableGPIItem",
+                "label": "KEYITEM_POCKETCRATE_NAME"
+            },
+            {
+                "guid": "421f8132b121d4945924818a93c3cf0b",
+                "kind": "PortableGPIItem",
+                "label": "KEYITEM_POCKETGRAPLOUPOLE_NAME"
+            },
+            {
+                "guid": "76ec6a5392aa0164c9180b28697b1b03",
+                "kind": "PortableGPIItem",
+                "label": "KEYITEM_POCKETLADDER1_NAME"
+            },
+            {
+                "guid": "be3469a710442874489840064614c672",
+                "kind": "PortableGPIItem",
+                "label": "KEYITEM_POCKETLEVER_NAME"
+            },
+            {
+                "guid": "557be26e12dc6f243887f737b5e650e5",
+                "kind": "PortableGPIItem",
+                "label": "KEYITEM_POCKETMIRROR_NAME"
+            },
+            {
+                "guid": "8c853cc735c3ec14a95bf5eb41dc3048",
+                "kind": "PortableGPIItem",
+                "label": "KEYITEM_POCKETPLATFORM1_NAME"
+            },
+            {
+                "guid": "632945897d2bfe8419815cad5a4af1fb",
+                "kind": "PortableGPIItem",
+                "label": "KEYITEM_POCKETPLATFORM2_NAME"
+            },
+            {
+                "guid": "46b9f8b2203c4b842918a7242499d603",
+                "kind": "PortableGPIItem",
+                "label": "KEYITEM_POCKETPLATFORM3_NAME"
+            },
+            {
+                "guid": "042dce447c098984eab2cbdebbe295dd",
+                "kind": "PortableGPIItem",
+                "label": "KEYITEM_POCKETPLATFORM4_NAME"
+            },
+            {
+                "guid": "e691d2be6540afe418b02eab3187f391",
+                "kind": "PortableGPIItem",
+                "label": "KEYITEM_POCKETRAIL1_NAME"
+            },
+            {
+                "guid": "73f217b886f86b04c802d19e988192cf",
+                "kind": "PortableGPIItem",
+                "label": "KEYITEM_POCKETRAIL1_NAME"
+            },
+            {
+                "guid": "30ac9d6bbcf48cc4db811a92977c94d0",
+                "kind": "PortableGPIItem",
+                "label": "KEYITEM_POCKETRAIL1_NAME"
+            },
+            {
+                "guid": "5d4e01ab0732fb54e87f395a70d61f30",
+                "kind": "PortableGPIItem",
+                "label": "KEYITEM_POCKETRAIL1_NAME"
+            },
+            {
+                "guid": "6f29a5a4324a22b4ca4c1aeb04b4a6fd",
+                "kind": "PortableGPIItem",
+                "label": "KEYITEM_POCKETRAIL1_NAME"
+            },
+            {
+                "guid": "1c379aeab1b4ae9498a4294ac63b0e68",
+                "kind": "PortableGPIItem",
+                "label": "KEYITEM_POCKETRAIL1_NAME"
+            },
+            {
+                "guid": "39ce723d710cfe54ebae254f4e2536e6",
+                "kind": "PortableGPIItem",
+                "label": "KEYITEM_POCKETRAIL1_NAME"
+            },
+            {
+                "guid": "d0a2a2039d902ec4f88869a863fcc8e1",
+                "kind": "PortableGPIItem",
+                "label": "KEYITEM_POCKETRAIL1_NAME"
+            },
+            {
+                "guid": "d50c1e998c1f16a43b44336b1a33d3e1",
+                "kind": "PortableGPIItem",
+                "label": "PORTABLEGPI_FLOOR_NAME"
+            },
+            {
+                "guid": "bad8f88b81d0a7d48a62207be617cc46",
+                "kind": "RelicItem",
+                "label": "RELIC_REFILLABLE_BUCKET_NAME"
+            },
+            {
+                "guid": "f139a8a3a11817143bf5cbd4364496b5",
+                "kind": "CharacterTrinket",
+                "label": "TRINKET_STARTY_NAME"
+            },
+            {
+                "guid": "53418e117d1955640867a806e0bbe4cb",
+                "kind": "CharacterTrinket",
+                "label": "TRINKET_ARTY_NAME"
+            },
+            {
+                "guid": "925551d018a682040a4d6a037542f886",
+                "kind": "CharacterTrinket",
+                "label": "TRINKET_GLASSCANNON_NAME"
+            },
+            {
+                "guid": "22acea7a99c30714bacd0227fca3aaa7",
+                "kind": "CharacterTrinket",
+                "label": "TRINKET_GREENPLUME_NAME"
+            },
+            {
+                "guid": "e1824edc05a997d4d9cbb4ab91b94070",
+                "kind": "CharacterTrinket",
+                "label": "TRINKET_ZALE_NAME"
+            },
+            {
+                "guid": "5c4a7b89bb46ff74d9621f52ea2ae19c",
+                "kind": "CharacterTrinket",
+                "label": "TRINKET_LEECHINGCIRCLET_NAME"
+            },
+            {
+                "guid": "ba4353cd893c7e043a891e3faca761de",
+                "kind": "CharacterTrinket",
+                "label": "TRINKET_VALERE_NAME"
+            },
+            {
+                "guid": "ed38c2e06a7af784c845d81ba5fbf6f5",
+                "kind": "CharacterTrinket",
+                "label": "TRINKET_SOULBOUNTCATALYST_NAME"
+            },
+            {
+                "guid": "613140d8090c27342835ab1ff888ff59",
+                "kind": "CharacterTrinket",
+                "label": "TRINKET_SPECSCARF_NAME"
+            },
+            {
+                "guid": "61e385de3e9177d429858416293bb25e",
+                "kind": "CharacterTrinket",
+                "label": "TRINKET_THIRDWIND_NAME"
+            },
+            {
+                "guid": "6514adc9ea81057458e731a9fd80dedf",
+                "kind": "ValuableItem",
+                "label": "RELIC_CLOWN_NOSE_NAME"
+            },
+            {
+                "guid": "ac18a6deaa15e70478329675f784cea4",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_TIER1_GEM_NAME"
+            },
+            {
+                "guid": "bea2fc904e159054d9d6bbb638cfc42c",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_TIER2_GEM_NAME"
+            },
+            {
+                "guid": "92220a93f5e442b40b6ecd4ce3deef1c",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_TIER3_GEM_NAME"
+            },
+            {
+                "guid": "846354c0a5204114d9b665d675088379",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_TIER4_GEM_NAME"
+            },
+            {
+                "guid": "54db1c782092f5c43b237a0cc3ea3ad7",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_TIER1_WRAPS_NAME"
+            },
+            {
+                "guid": "23c1a50406091ad4fa17a4fddca6c461",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_TIER2_WRAPS_NAME"
+            },
+            {
+                "guid": "ea4ba6d9191d7714290eb593cd40c16f",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_TIER3_WRAPS_NAME"
+            },
+            {
+                "guid": "90f970e845d80834c9809fe10c307fed",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_TIER4_WRAPS_NAME"
+            },
+            {
+                "guid": "53f74f0a51949894db7c49d5b021f310",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_TIER1_TORCH_NAME"
+            },
+            {
+                "guid": "3d4ca35096e0fa649b5bdd4b98fe8f09",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_TIER2_TORCH_NAME"
+            },
+            {
+                "guid": "2dec249e6de734c4ea9ce819c55be931",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_TIER3_TORCH_NAME"
+            },
+            {
+                "guid": "59fa58b847d8f5c4aa2bf6d5dcef9d30",
+                "kind": "CharacterWeapon",
+                "label": "WEAPON_TIER4_TORCH_NAME"
+            }
+        ],
+        "leader": "ZALE",
+        "level_guid": "62d9b9e11ce314a4da0c04eb812e696d",
+        "levels": [
+            {
+                "guid": "c73c842609a8b7241b537c6503b9e0c1",
+                "label": "CERULEAN_FISHINGLAKE",
+                "level_id": "Cerulean_FishingLake"
+            },
+            {
+                "guid": "f1f754c32cb8d5c489e1124505587759",
+                "label": "CERULEANEXPANSE",
+                "level_id": "CeruleanExpanse"
+            },
+            {
+                "guid": "99f13f9fc0109804bafbbeb74476388c",
+                "label": "CeruleanIsland_WorldMap2",
+                "level_id": "CeruleanIsland_WorldMap2"
+            },
+            {
+                "guid": "bccf3d95b7cdcc44696dd504d6ef7510",
+                "label": "FACTORY",
+                "level_id": "Factory"
+            },
+            {
+                "guid": "3148529996942724aac85141f9d5a42d",
+                "label": "LOSTONESHAMLET",
+                "level_id": "LostOnesHamlet"
+            },
+            {
+                "guid": "3aea0c635edd6d144b8c0deac0bc62d3",
+                "label": "REPINE",
+                "level_id": "Repine"
+            },
+            {
+                "guid": "bd479f112aec1984f9f997b4ca6da819",
+                "label": "CURSEDCHAPITEAU",
+                "level_id": "CursedBigTopDungeon"
+            },
+            {
+                "guid": "152a8e104ae4b8344b0179d897a3c017",
+                "label": "CURSEDCHAPITEAU",
+                "level_id": "CursedBigTopSummit"
+            },
+            {
+                "guid": "611ebafd2b3cbe744bcdf0ddd4ce4765",
+                "label": "FISHINGLAKE_1",
+                "level_id": "FishingLake_1"
+            },
+            {
+                "guid": "2c6e62d9cfd3c8645a4ed7c662678f24",
+                "label": "FISHINGLAKE_2",
+                "level_id": "FishingLake_2"
+            },
+            {
+                "guid": "bf1a4c972f625ee4490b18036ead0f6f",
+                "label": "FISHINGLAKE_3",
+                "level_id": "FishingLake_3"
+            },
+            {
+                "guid": "d7aadfa7ec1a5cb4c8d3e4ad5bd22466",
+                "label": "FOREST",
+                "level_id": "Forest"
+            },
+            {
+                "guid": "fd17e99bce6150a4d8884d5fad6846db",
+                "label": "HORLOGEVILLAGE",
+                "level_id": "HorlogeVillage"
+            },
+            {
+                "guid": "80bd18aa046e02b4f940eadcc57fee55",
+                "label": "LIGHTFORTRESS",
+                "level_id": "LightFortressDungeon"
+            },
+            {
+                "guid": "15e4b54727832d748882b0616fc10038",
+                "label": "PLAINS",
+                "level_id": "Plains"
+            },
+            {
+                "guid": "50a4aa71c8173b44f92297c0298ca6a2",
+                "label": "PRISON",
+                "level_id": "PrisonDungeon"
+            },
+            {
+                "guid": "8433f7afda223004c863a981d1487b75",
+                "label": "TOTWWORLDMAP",
+                "level_id": "Totw_Worldmap"
+            },
+            {
+                "guid": "dd47106f75c40474992dc7e3c894c91a",
+                "label": "WOLFROCK",
+                "level_id": "WolfRock"
+            },
+            {
+                "guid": "11810c4630980eb43abf7fecebfd5a6b",
+                "label": "ElderMistTrials",
+                "level_id": "ElderMistTrials"
+            },
+            {
+                "guid": "268236710c948574bb314f93530600d2",
+                "label": "ELDERMISTISLAND_FISHINGLAKE",
+                "level_id": "EvermistIsland_FishingLake"
+            },
+            {
+                "guid": "44a6644104e8b74489fc0ebcb89a5974",
+                "label": "EVERMISTISLAND_WORLDMAP",
+                "level_id": "EvermistIsland_WorldMap"
+            },
+            {
+                "guid": "7f99d660b270cd54abfd6eaeec28dca1",
+                "label": "EvermistYeet",
+                "level_id": "EvermistYeet"
+            },
+            {
+                "guid": "4d9b70c53db5b8c49bb5c60c6ef858bd",
+                "label": "ForbiddenCavern",
+                "level_id": "ForbiddenCavern"
+            },
+            {
+                "guid": "304315e8f18ddf149a746e9ecb9db201",
+                "label": "Mooncradle",
+                "level_id": "Mooncradle"
+            },
+            {
+                "guid": "72e9f2699f7c8394b93afa1d273ce67a",
+                "label": "MountainTrail",
+                "level_id": "MountainTrail"
+            },
+            {
+                "guid": "9f43991b3767a864690b34abc9aa005d",
+                "label": "FISHINGDUNGEON",
+                "level_id": "FishingDungeon"
+            },
+            {
+                "guid": "906d7dca48c969d4eb73743dc21d70e4",
+                "label": "FishingMasterIsland_Worldmap",
+                "level_id": "FishingMasterIsland_Worldmap"
+            },
+            {
+                "guid": "20fd3c19d96a9cb41b1db9841837e8e4",
+                "label": "FLESHMANCERLAIR",
+                "level_id": "FleshMancerLair"
+            },
+            {
+                "guid": "8c749f7ba23968b4fb157612f517dce6",
+                "label": "FleshMancerLairIsland_WorldMap2",
+                "level_id": "FleshMancerLairIsland_WorldMap2"
+            },
+            {
+                "guid": "3dab1b3e3a5221c40989f1c68cfcd352",
+                "label": "",
+                "level_id": "Void"
+            },
+            {
+                "guid": "073c33bec52ce3644a04d32e6df2e088",
+                "label": "INFINITEABYSS",
+                "level_id": "InfiniteAbyss"
+            },
+            {
+                "guid": "0b1208ccb771c77438ae7895a476d4c6",
+                "label": "InfiniteAbyssEntrance_WorldMap2",
+                "level_id": "InfiniteAbyssEntrance_WorldMap2"
+            },
+            {
+                "guid": "59273fa39ee19d540ac05b0b2759024a",
+                "label": "INFINITEABYSS",
+                "level_id": "InfiniteAbyssUnderWater_Worldmap2"
+            },
+            {
+                "guid": "b91f12c04bf187e4f912d5d1e62a1fed",
+                "label": "KILNMOUNTAIN",
+                "level_id": "KilnMountain"
+            },
+            {
+                "guid": "cc371a95315126f44a4b71f193cb89f7",
+                "label": "KILNMOUNTAIN_FISHINGLAKE",
+                "level_id": "KilnMountain_FishingLake"
+            },
+            {
+                "guid": "a49bd5a6ea8e2f442957f98f3a97724c",
+                "label": "KilnMountain_WorldMap",
+                "level_id": "KilnMountain_WorldMap"
+            },
+            {
+                "guid": "4e88619fdd6b68440921d81755541d1b",
+                "label": "AutumnHills",
+                "level_id": "AutumnHills"
+            },
+            {
+                "guid": "66299b28257ea224ca45113c4ff6f45d",
+                "label": "BAMBOOCREEK",
+                "level_id": "BambooCreek"
+            },
+            {
+                "guid": "dcf312952e0135546888c4aba495042b",
+                "label": "ClockworkCastle",
+                "level_id": "ClockworkCastle"
+            },
+            {
+                "guid": "cdda6d8e9433a2e43b5f78d1732db12e",
+                "label": "GlacialPeak",
+                "level_id": "GlacialPeak"
+            },
+            {
+                "guid": "3cd46afe466424b41a5fa858f91aab0d",
+                "label": "MesaHike",
+                "level_id": "MesaHike"
+            },
+            {
+                "guid": "95d062bc998f1de4eb9b65af8e1cea6c",
+                "label": "MesaIsland_FishingLake",
+                "level_id": "MesaIsland_FishingLake"
+            },
+            {
+                "guid": "ab639b159ef5ba542a722cdffa8c63b9",
+                "label": "MesaIsland_WorldMap",
+                "level_id": "MesaIsland_WorldMap"
+            },
+            {
+                "guid": "7f36e70224f47d344a794e3648fe630b",
+                "label": "SongShroomMarsh",
+                "level_id": "SongShroomMarsh"
+            },
+            {
+                "guid": "b452511d901b5714596bc6b0e1213771",
+                "label": "",
+                "level_id": "OuterSpace"
+            },
+            {
+                "guid": "c21e018ccdb21a742a0e3f01ba65fa04",
+                "label": "QUEENSTHRONE",
+                "level_id": "QueensThrone"
+            },
+            {
+                "guid": "38800af3e9815644b833e21a978715fb",
+                "label": "",
+                "level_id": "QueensThronePath_Wmap2"
+            },
+            {
+                "guid": "1d032eb44bfacfa46ae7dbb34d2f5eb1",
+                "label": "",
+                "level_id": "RomayaIslandUnderwater_Worldmap"
+            },
+            {
+                "guid": "ae2db6201e474bd42b1d51ca1867e7f8",
+                "label": "ROMAYATOTEMSISLAND",
+                "level_id": "RomayaTotemsIsland"
+            },
+            {
+                "guid": "e4c07aea4cb9e7144ad789dadae9fe36",
+                "label": "ROMAYATOTEMSISLAND_WORLDMAP",
+                "level_id": "RomayaTotemsIsland_Worldmap"
+            },
+            {
+                "guid": "3914dcaa548d2f3488777a5b5339a5c8",
+                "label": "ESTRISTAEAREA",
+                "level_id": "EstristaeArea"
+            },
+            {
+                "guid": "b7fc775a8024a9b45b71c254c435e160",
+                "label": "HUNTERTOWER",
+                "level_id": "HunterTower"
+            },
+            {
+                "guid": "64f90e3c655fe3b44931b9b8e17bd973",
+                "label": "SacrosanctSpireIsland_Worldmap2",
+                "level_id": "SacrosanctSpireIsland_Worldmap2"
+            },
+            {
+                "guid": "4f7eb8930f8443346a1dcca19734fa49",
+                "label": "TEMPLE",
+                "level_id": "Temple"
+            },
+            {
+                "guid": "adc3d53fe3e2f114086b8c0b4db69ded",
+                "label": "TOWER1",
+                "level_id": "Tower1"
+            },
+            {
+                "guid": "ce5791e22e8ed5e4b8a9ed4768ae4fae",
+                "label": "TOWER3",
+                "level_id": "Tower3"
+            },
+            {
+                "guid": "38847e9bbcd7e324c83c7ecae6026c5b",
+                "label": "Island_A",
+                "level_id": "Island_A"
+            },
+            {
+                "guid": "0b5141ec4ffe9204c92b488045953671",
+                "label": "Island_B",
+                "level_id": "Island_B"
+            },
+            {
+                "guid": "166b6bd265d2bfe4e8b477cda9e18f54",
+                "label": "Island_C",
+                "level_id": "Island_C"
+            },
+            {
+                "guid": "539d52ad02b071c45837d1329f8cbcc5",
+                "label": "SeaOfNightmare_WorldMap",
+                "level_id": "SeaOfNightmare_WorldMap"
+            },
+            {
+                "guid": "3d1c3e6c6c2511743ac0278f551d299c",
+                "label": "StormCallerIsland",
+                "level_id": "StormCallerIsland"
+            },
+            {
+                "guid": "9b7059c7728114141ae39763ded8131f",
+                "label": "TheVespertineDungeon",
+                "level_id": "TheVespertineDungeon"
+            },
+            {
+                "guid": "a5a717291748ab240bf9d9feee9dd854",
+                "label": "",
+                "level_id": "SeaOfStars_EntranceZone"
+            },
+            {
+                "guid": "24ef382489bc7b14fbe8ca67a6ce6615",
+                "label": "",
+                "level_id": "SeaOfStars_ExitZone"
+            },
+            {
+                "guid": "708d7a64b2bd2994787402375b2fe9f5",
+                "label": "SEAOFSTARS",
+                "level_id": "SeaOfStars"
+            },
+            {
+                "guid": "395cc3fd87109404983b80bae853aef6",
+                "label": "SeaOfStarsEntrance_WorldMap",
+                "level_id": "SeaOfStarsEntrance_WorldMap"
+            },
+            {
+                "guid": "9ddf8402fdc5c1e4ebab8d58d9aadb18",
+                "label": "Crypt",
+                "level_id": "Crypt"
+            },
+            {
+                "guid": "fe2cfebc0cf6bc540892964ac8db2274",
+                "label": "Mirth",
+                "level_id": "Mirth"
+            },
+            {
+                "guid": "9f18232e36db5ab49b8138a9cd389d61",
+                "label": "SETTLERISLAND_FISHINGLAKE",
+                "level_id": "SettlerIsland_FishingLake"
+            },
+            {
+                "guid": "0cae2c8f6a8712b48a115c0f1f589f9f",
+                "label": "SettlersIsland_WorldMap",
+                "level_id": "SettlersIsland_WorldMap"
+            },
+            {
+                "guid": "fcc4099bd2aabfd4a8001999ffbbd282",
+                "label": "SKYBASE",
+                "level_id": "Skybase"
+            },
+            {
+                "guid": "12dd52cd13f6c034f9d43cec8349542f",
+                "label": "SkybaseIsland_worldmap2",
+                "level_id": "SkybaseIsland_worldmap2"
+            },
+            {
+                "guid": "266a901e65780e94fba5cd7c25b58957",
+                "label": "AirElementalSkyland",
+                "level_id": "AirElementalSkyland"
+            },
+            {
+                "guid": "9ed0e7229b30c6c458f6b8bf1d210e68",
+                "label": "SkyGiantsVillage",
+                "level_id": "SkyGiantsVillage"
+            },
+            {
+                "guid": "8b791879952662f41bcdd034fd8bb105",
+                "label": "SKYLAND_FISHINGLAKE",
+                "level_id": "Skyland_FishingLake"
+            },
+            {
+                "guid": "393dc3f393b27034b8d08699d3dd2198",
+                "label": "SkylandsWorldMap",
+                "level_id": "SkylandsWorldMap"
+            },
+            {
+                "guid": "17089a0830a73bc4ea5c7457b3b1001d",
+                "label": "SKYSHRINE",
+                "level_id": "SkyShrineArrival"
+            },
+            {
+                "guid": "f25152a99bdd7af4c8e454c8e2089d72",
+                "label": "SHRINE",
+                "level_id": "Shrine"
+            },
+            {
+                "guid": "f6cf83f526e66dc449b269503af9b0ac",
+                "label": "SKYSHRINEBRIDGE",
+                "level_id": "SkyShrineBridge"
+            },
+            {
+                "guid": "ae8723b9b3892ac4b968cd4e94f56b39",
+                "label": "SKYSHRINEISLAND_WORLDMAP",
+                "level_id": "SkyShrineIsland_Wmap"
+            },
+            {
+                "guid": "763e6cf37dffb6b46a2d842bf01c24fe",
+                "label": "PORTTOWNBRISK",
+                "level_id": "Brisk"
+            },
+            {
+                "guid": "f72210f7fb65b104783a8e12ad861a57",
+                "label": "PORTTOWNBRISK",
+                "level_id": "BriskNew"
+            },
+            {
+                "guid": "36d8c0b7f6372704b88a40a23c0f44f9",
+                "label": "PORTTOWNBRISK",
+                "level_id": "BriskReno"
+            },
+            {
+                "guid": "745f076f7188dfa4d93d4ffed10232ca",
+                "label": "PORTTOWNBRISK",
+                "level_id": "BriskRuin"
+            },
+            {
+                "guid": "dab5e0be1025fa7449bd4b5141b58dad",
+                "label": "CoralCascade",
+                "level_id": "CoralCascades"
+            },
+            {
+                "guid": "82bae1e8b6e104d49bc8b33882fe2b0b",
+                "label": "Elevator",
+                "level_id": "Elevator"
+            },
+            {
+                "guid": "3b993f74cdeaf56438be6b8b49cee4f5",
+                "label": "WindTunnelsMines",
+                "level_id": "Mines"
+            },
+            {
+                "guid": "77a7111e97c4dab449722b724cdc8d3f",
+                "label": "Moorland",
+                "level_id": "Moorland"
+            },
+            {
+                "guid": "3ce107d45e213f14aa34c1f8211f118a",
+                "label": "StonemasonsOutpost",
+                "level_id": "Outpost"
+            },
+            {
+                "guid": "b3d251f726c4a9444b1051ea8509d8e2",
+                "label": "Peninsula",
+                "level_id": "Peninsula"
+            },
+            {
+                "guid": "fe9391010c824484482f880773a93bca",
+                "label": "ShallowMire",
+                "level_id": "ShallowMire"
+            },
+            {
+                "guid": "3e47733808442934790e2680ad5e537b",
+                "label": "FishingLake",
+                "level_id": "FishingLake"
+            },
+            {
+                "guid": "7599a352eced4434cb9baddbcb9a2a79",
+                "label": "FISHINGLAKEDEMO",
+                "level_id": "SleeperIsland_FishingLake02"
+            },
+            {
+                "guid": "2ece6083a535e0549a116c98429ea0ac",
+                "label": "SleeperIsland_WorldMap",
+                "level_id": "SleeperIsland_WorldMap"
+            },
+            {
+                "guid": "02b4d6511eeaf81428fc06320bb08cb8",
+                "label": "WizardLab",
+                "level_id": "WizardLab"
+            },
+            {
+                "guid": "3e7c595932b2b3d418289273c55c2b73",
+                "label": "YeetGolem",
+                "level_id": "YeetGolem"
+            },
+            {
+                "guid": "fb4400642a79a054eae45338b95cafc4",
+                "label": "SOLSTICESHRINE_EVERMISTISLAND",
+                "level_id": "SolsticeShrine_1"
+            },
+            {
+                "guid": "57ceab9812ed92a4484a9770b1fcb12d",
+                "label": "SOLSTICESHRINE_2",
+                "level_id": "SolsticeShrine_2"
+            },
+            {
+                "guid": "df9010f4aa864bc4f8869e7ab8718651",
+                "label": "SOLSTICESHRINE_3",
+                "level_id": "SolsticeShrine_3"
+            },
+            {
+                "guid": "957dee480c114164791b7e4bd11e5406",
+                "label": "SolsticeShrine3Island",
+                "level_id": "SolsticeShrine3Island"
+            },
+            {
+                "guid": "94c4b80ff673d254ebb24c5381e707a4",
+                "label": "SOLSTICESHRINE_4",
+                "level_id": "SolsticeShrine_4"
+            },
+            {
+                "guid": "d2b91d36343d3d6408170bf6464c1f94",
+                "label": "SolsticeShrine4Island",
+                "level_id": "SolsticeShrine4Island"
+            },
+            {
+                "guid": "b7623e9b62b19454f94efc52c6703908",
+                "label": "SOLSTICESHRINE_5",
+                "level_id": "SolsticeShrine_5"
+            },
+            {
+                "guid": "ad0c87455bdeebd468a5705164af5ff6",
+                "label": "SolsticeShrine_5_Worldmap2",
+                "level_id": "SolsticeShrine_5_Worldmap2"
+            },
+            {
+                "guid": "296d1eb4ec1119a4b8caddf908550206",
+                "label": "SPEEDBALLNETWORKISLAND",
+                "level_id": "SpeedBallNetworkIsland"
+            },
+            {
+                "guid": "3519a8637095065439030db063ed4707",
+                "label": "SpeedBallNetworkIsland_Worldmap2",
+                "level_id": "SpeedBallNetworkIsland_Worldmap2"
+            },
+            {
+                "guid": "80a506beccf36334c993347380e1615b",
+                "label": "SUNKENRUINS_A",
+                "level_id": "SunkenRuins_A"
+            },
+            {
+                "guid": "32c3f7e1af90adc47b6cd55ec21aa114",
+                "label": "SUNKENRUINS_A_WORLDMAP",
+                "level_id": "SunkenRuins_A_Worldmap"
+            },
+            {
+                "guid": "5bc92ee0441f8cd4890eb17121101b3b",
+                "label": "SUNKENRUINS_B",
+                "level_id": "SunkenRuins_B"
+            },
+            {
+                "guid": "c4c012da25e1a5d4b98015b13ada1bed",
+                "label": "SUNKENRUINS_B_WORLDMAP",
+                "level_id": "SunkenRuins_B_Worldmap"
+            },
+            {
+                "guid": "afad5ada60d9dde48b9ad335802844b1",
+                "label": "SUNKENRUINS_C",
+                "level_id": "SunkenRuins_C"
+            },
+            {
+                "guid": "9130eefd894594e47af96337c20d5539",
+                "label": "SUNKENRUINS_C_WORLDMAP",
+                "level_id": "SunkenRuins_C_Worldmap"
+            },
+            {
+                "guid": "c18b78dc0b656804ebc94675c865ed3c",
+                "label": "SUNKENRUINS_BOSSLAIR",
+                "level_id": "SunkenRuins_BossLair"
+            },
+            {
+                "guid": "3653d69b3e96cf042a8f28347975b35d",
+                "label": "SUNKENRUINS_BOSSLAIR",
+                "level_id": "SunkenRuins_BossLair_UnderwaterWorldMap"
+            },
+            {
+                "guid": "3e881de25187b7643921b99859f0c5ab",
+                "label": "TodPuzzleIsland_Worldmap",
+                "level_id": "TodPuzzleIsland_Worldmap"
+            },
+            {
+                "guid": "e0ab7a22509804c409342eaf41194eee",
+                "label": "TREKTOPLANETCENTER",
+                "level_id": "TrekToPlanetCenter"
+            },
+            {
+                "guid": "5fe793054914c1844b3eb661749c230b",
+                "label": "TREKTOPLANETCENTER",
+                "level_id": "TrekToPlanetCenter_Worldmap"
+            },
+            {
+                "guid": "71dc51e52c9b55c4e900e847c58b6fa4",
+                "label": "UNDERGROUNDOUTPOST",
+                "level_id": "UndergroundOutpost"
+            },
+            {
+                "guid": "7dc8d2e347041064e8f937928ddac92b",
+                "label": "UNDERGROUNDOUTPOST",
+                "level_id": "UndergroundOutpost_WorldMap2"
+            },
+            {
+                "guid": "f1a3d633f8079654398f8266fc9feffb",
+                "label": "Vespertine",
+                "level_id": "Vespertine"
+            },
+            {
+                "guid": "c745185ed7d354c44ba6583104f33e12",
+                "label": "Vespertine",
+                "level_id": "VespertineWorldMap"
+            },
+            {
+                "guid": "bfe9060167f8f0b42ac1c56a554f16a5",
+                "label": "ArchivistRoom",
+                "level_id": "ArchivistRoom"
+            },
+            {
+                "guid": "0744d673327506e4e8027ef029e5aaf2",
+                "label": "DOCARRIA LAKE",
+                "level_id": "DocarriVillage"
+            },
+            {
+                "guid": "d5b7e69786d85e247841e4a7cf7aeb40",
+                "label": "JunglePath",
+                "level_id": "JunglePath"
+            },
+            {
+                "guid": "019daeeea33fa8040b9b9014e751c473",
+                "label": "JungleRuins",
+                "level_id": "JungleRuins"
+            },
+            {
+                "guid": "eaa70cf38c2284242b6d14fdc0b244e0",
+                "label": "MossyCache",
+                "level_id": "MossyCache"
+            },
+            {
+                "guid": "6f2f5960c60f58d4c8d7761e950f604c",
+                "label": "SacredGrove",
+                "level_id": "SacredGrove"
+            },
+            {
+                "guid": "74b641ff0864f0d4f956c8c0eb3fe905",
+                "label": "TormentPeak",
+                "level_id": "TormentPeak"
+            },
+            {
+                "guid": "4ff210855e1d0334c831d0b04a868dce",
+                "label": "WatcherIsland_FishingLake",
+                "level_id": "WatcherIsland_FishingLake"
+            },
+            {
+                "guid": "8e28a25e09e9a714884d9d60800f61e2",
+                "label": "WatcherIsland_WorldMap",
+                "level_id": "WatcherIsland_WorldMap"
+            },
+            {
+                "guid": "6089fb6bc29dbfe4a8ef1be0245a27ee",
+                "label": "WaterTemple",
+                "level_id": "WaterTemple"
+            },
+            {
+                "guid": "312c0bfdf8b290c48aa32787ad19f0b0",
+                "label": "",
+                "level_id": "WaterTemple_Underwater_Worldmap"
+            },
+            {
+                "guid": "6723e28c5b46a6442908c6aa755f3c6e",
+                "label": "WorldMap_Section_0-0",
+                "level_id": "WorldMap_Section_0-0"
+            },
+            {
+                "guid": "caf83cbca598b454abaf4c71f7bb9d7b",
+                "label": "WorldMap_Section_0-1",
+                "level_id": "WorldMap_Section_0-1"
+            },
+            {
+                "guid": "c69dbc8ce330f6c4cab0ada9d51e2901",
+                "label": "WorldMap_Section_0-2",
+                "level_id": "WorldMap_Section_0-2"
+            },
+            {
+                "guid": "90eaa2f22c3bf5142870696d2857222b",
+                "label": "WorldMap_Section_1-0",
+                "level_id": "WorldMap_Section_1-0"
+            },
+            {
+                "guid": "1f81b2cb41bbe3c42aaafa2d1db07a2a",
+                "label": "WorldMap_Section_1-1",
+                "level_id": "WorldMap_Section_1-1"
+            },
+            {
+                "guid": "e02f597bdfc87244ab8d7232bb96ef85",
+                "label": "WorldMap_Section_1-2",
+                "level_id": "WorldMap_Section_1-2"
+            },
+            {
+                "guid": "5d47d8c4d2f6d104f90ed16e75064c48",
+                "label": "WorldMap_Section_2-0",
+                "level_id": "WorldMap_Section_2-0"
+            },
+            {
+                "guid": "a0ead11281854c543bb5f977401a7d0d",
+                "label": "WorldMap_Section_2-1",
+                "level_id": "WorldMap_Section_2-1"
+            },
+            {
+                "guid": "98c1da9dfad90d0418bf87658c58350c",
+                "label": "WorldMap_Section_2-2",
+                "level_id": "WorldMap_Section_2-2"
+            },
+            {
+                "guid": "4776b2f6ccdb0fe4195c6c0d89206875",
+                "label": "PLANET1",
+                "level_id": "WorldMap"
+            },
+            {
+                "guid": "87f3c0b8e8e6cb34daf39ec5cfdeae70",
+                "label": "PLANET2",
+                "level_id": "WorldMap2"
+            },
+            {
+                "guid": "f250028943f22a8458d51d63a7ac18c0",
+                "label": "",
+                "level_id": "WorldMap2_Entrance"
+            },
+            {
+                "guid": "75a16b768d23caf4987bfe1515b04c57",
+                "label": "CursedWood",
+                "level_id": "CursedWood"
+            },
+            {
+                "guid": "737979d8a1b9e6c4a82d7eb776953244",
+                "label": "Docks",
+                "level_id": "Docks"
+            },
+            {
+                "guid": "26f7b5623e872ee4598a42790a4084ab",
+                "label": "FerrymanOutpost",
+                "level_id": "FerrymanOutpost"
+            },
+            {
+                "guid": "f66543e45ee80264085b007f8f59d56a",
+                "label": "FloodedGraveyard",
+                "level_id": "FloodedGraveyard"
+            },
+            {
+                "guid": "cde2d0e58e143e3449f0d23cdffb668c",
+                "label": "HALFSUNKENTOWER",
+                "level_id": "HalfSunkenTower"
+            },
+            {
+                "guid": "b200a767bf5c84540a96a2e5c69e2147",
+                "label": "HauntedMansion",
+                "level_id": "HauntedMansion"
+            },
+            {
+                "guid": "62d9b9e11ce314a4da0c04eb812e696d",
+                "label": "Lucent",
+                "level_id": "Lucent"
+            },
+            {
+                "guid": "b89ab83751fbf624fa75610d9d5391ad",
+                "label": "NecromancerLair",
+                "level_id": "NecromancerLair"
+            },
+            {
+                "guid": "f510d0f6212e43142ab2b575f2a8eac9",
+                "label": "WraithIsland_FishingLake",
+                "level_id": "WraithIsland_FishingLake"
+            },
+            {
+                "guid": "6af03e62cfe16894abff669a974a15cc",
+                "label": "WraithIsland_WorldMap",
+                "level_id": "WraithIsland_WorldMap"
+            },
+            {
+                "guid": "44a416e48c8d7d345b5e4507eb27e4de",
+                "label": "TitleScreen",
+                "level_id": "TitleScreen"
+            }
+        ],
+        "main_character": "ZALE",
+        "party": [
+            "ZALE",
+            "VALERE",
+            "GARL"
+        ],
+        "party_progress": {
+            "level": 6,
+            "total_xp": 1281,
+            "unspent_xp": 251
+        },
+        "party_resources": {
+            "combo_points": 3000,
+            "max_combo_points": 3,
+            "ult_points": 0
+        },
+        "paused": 0,
+        "roster_downed": 0,
+        "roster_hp_total": 1086,
+        "upgrade_step": {
+            "hp": 6,
+            "matk": 2,
+            "mdef": 3,
+            "patk": 2,
+            "pdef": 3,
+            "sp": 1
+        },
+        "valere_hp_percent": 100.0,
+        "valere_levelups": [
+            {
+                "hp": 3,
+                "matk": 2,
+                "mdef": 1,
+                "patk": 1,
+                "pdef": 2,
+                "sp": 1
+            },
+            {
+                "hp": 4,
+                "matk": 1,
+                "mdef": 2,
+                "patk": 2,
+                "pdef": 1,
+                "sp": 0
+            },
+            {
+                "hp": 6,
+                "matk": 2,
+                "mdef": 3,
+                "patk": 2,
+                "pdef": 3,
+                "sp": 0
+            },
+            {
+                "hp": 4,
+                "matk": 2,
+                "mdef": 3,
+                "patk": 2,
+                "pdef": 3,
+                "sp": 0
+            },
+            {
+                "hp": 6,
+                "matk": 2,
+                "mdef": 3,
+                "patk": 3,
+                "pdef": 3,
+                "sp": 1
+            },
+            {
+                "hp": 4,
+                "matk": 2,
+                "mdef": 3,
+                "patk": 3,
+                "pdef": 3,
+                "sp": 0
+            },
+            {
+                "hp": 6,
+                "matk": 3,
+                "mdef": 3,
+                "patk": 2,
+                "pdef": 3,
+                "sp": 0
+            },
+            {
+                "hp": 4,
+                "matk": 2,
+                "mdef": 3,
+                "patk": 3,
+                "pdef": 3,
+                "sp": 1
+            },
+            {
+                "hp": 6,
+                "matk": 2,
+                "mdef": 3,
+                "patk": 3,
+                "pdef": 3,
+                "sp": 0
+            },
+            {
+                "hp": 4,
+                "matk": 3,
+                "mdef": 3,
+                "patk": 2,
+                "pdef": 3,
+                "sp": 0
+            },
+            {
+                "hp": 6,
+                "matk": 2,
+                "mdef": 3,
+                "patk": 3,
+                "pdef": 3,
+                "sp": 2
+            },
+            {
+                "hp": 4,
+                "matk": 2,
+                "mdef": 3,
+                "patk": 3,
+                "pdef": 3,
+                "sp": 0
+            },
+            {
+                "hp": 7,
+                "matk": 4,
+                "mdef": 3,
+                "patk": 3,
+                "pdef": 3,
+                "sp": 0
+            },
+            {
+                "hp": 5,
+                "matk": 3,
+                "mdef": 3,
+                "patk": 4,
+                "pdef": 3,
+                "sp": 0
+            },
+            {
+                "hp": 7,
+                "matk": 3,
+                "mdef": 3,
+                "patk": 4,
+                "pdef": 3,
+                "sp": 2
+            },
+            {
+                "hp": 5,
+                "matk": 4,
+                "mdef": 3,
+                "patk": 3,
+                "pdef": 3,
+                "sp": 0
+            },
+            {
+                "hp": 7,
+                "matk": 3,
+                "mdef": 3,
+                "patk": 4,
+                "pdef": 3,
+                "sp": 0
+            },
+            {
+                "hp": 5,
+                "matk": 3,
+                "mdef": 2,
+                "patk": 4,
+                "pdef": 0,
+                "sp": 2
+            },
+            {
+                "hp": 7,
+                "matk": 4,
+                "mdef": 0,
+                "patk": 3,
+                "pdef": 2,
+                "sp": 0
+            },
+            {
+                "hp": 5,
+                "matk": 3,
+                "mdef": 1,
+                "patk": 4,
+                "pdef": 0,
+                "sp": 0
+            },
+            {
+                "hp": 7,
+                "matk": 3,
+                "mdef": 0,
+                "patk": 4,
+                "pdef": 2,
+                "sp": 0
+            },
+            {
+                "hp": 5,
+                "matk": 4,
+                "mdef": 2,
+                "patk": 3,
+                "pdef": 0,
+                "sp": 0
+            },
+            {
+                "hp": 7,
+                "matk": 3,
+                "mdef": 0,
+                "patk": 4,
+                "pdef": 2,
+                "sp": 0
+            },
+            {
+                "hp": 8,
+                "matk": 4,
+                "mdef": 1,
+                "patk": 5,
+                "pdef": 0,
+                "sp": 0
+            },
+            {
+                "hp": 6,
+                "matk": 5,
+                "mdef": 0,
+                "patk": 4,
+                "pdef": 2,
+                "sp": 2
+            },
+            {
+                "hp": 8,
+                "matk": 4,
+                "mdef": 2,
+                "patk": 5,
+                "pdef": 0,
+                "sp": 0
+            },
+            {
+                "hp": 6,
+                "matk": 4,
+                "mdef": 0,
+                "patk": 5,
+                "pdef": 2,
+                "sp": 0
+            },
+            {
+                "hp": 8,
+                "matk": 5,
+                "mdef": 2,
+                "patk": 4,
+                "pdef": 0,
+                "sp": 0
+            },
+            {
+                "hp": 6,
+                "matk": 4,
+                "mdef": 0,
+                "patk": 5,
+                "pdef": 2,
+                "sp": 0
+            }
+        ],
+        "valere_max_hp": 75,
+        "valere_max_sp": 12,
+        "valere_trinket0_mods": [
+            {
+                "amount": 0,
+                "kind": "PercentageBasicAttackDamageHealModifier",
+                "stat": 1041865114
+            }
+        ],
+        "valere_trinket1_mods": [
+            {
+                "amount": 4,
+                "kind": "PlayerAddStatModifier",
+                "stat": 3
+            }
+        ],
+        "valere_upgrades": [
+            {
+                "count": 1,
+                "stat": 0
+            },
+            {
+                "count": 0,
+                "stat": 1
+            },
+            {
+                "count": 3,
+                "stat": 3
+            },
+            {
+                "count": 1,
+                "stat": 4
+            },
+            {
+                "count": 0,
+                "stat": 5
+            },
+            {
+                "count": 0,
+                "stat": 6
+            }
+        ],
+        "zale_hp_percent": 100.0,
+        "zale_levelups": [
+            {
+                "hp": 3,
+                "matk": 2,
+                "mdef": 1,
+                "patk": 1,
+                "pdef": 2,
+                "sp": 1
+            },
+            {
+                "hp": 4,
+                "matk": 1,
+                "mdef": 2,
+                "patk": 2,
+                "pdef": 1,
+                "sp": 0
+            },
+            {
+                "hp": 4,
+                "matk": 2,
+                "mdef": 3,
+                "patk": 2,
+                "pdef": 3,
+                "sp": 1
+            },
+            {
+                "hp": 6,
+                "matk": 2,
+                "mdef": 3,
+                "patk": 2,
+                "pdef": 3,
+                "sp": 0
+            },
+            {
+                "hp": 4,
+                "matk": 3,
+                "mdef": 3,
+                "patk": 2,
+                "pdef": 3,
+                "sp": 1
+            },
+            {
+                "hp": 6,
+                "matk": 3,
+                "mdef": 3,
+                "patk": 2,
+                "pdef": 3,
+                "sp": 0
+            },
+            {
+                "hp": 4,
+                "matk": 2,
+                "mdef": 3,
+                "patk": 3,
+                "pdef": 3,
+                "sp": 0
+            },
+            {
+                "hp": 6,
+                "matk": 3,
+                "mdef": 3,
+                "patk": 2,
+                "pdef": 3,
+                "sp": 0
+            },
+            {
+                "hp": 4,
+                "matk": 3,
+                "mdef": 3,
+                "patk": 3,
+                "pdef": 3,
+                "sp": 0
+            },
+            {
+                "hp": 6,
+                "matk": 2,
+                "mdef": 3,
+                "patk": 3,
+                "pdef": 3,
+                "sp": 0
+            },
+            {
+                "hp": 4,
+                "matk": 3,
+                "mdef": 3,
+                "patk": 2,
+                "pdef": 3,
+                "sp": 1
+            },
+            {
+                "hp": 6,
+                "matk": 3,
+                "mdef": 3,
+                "patk": 3,
+                "pdef": 3,
+                "sp": 0
+            },
+            {
+                "hp": 5,
+                "matk": 3,
+                "mdef": 3,
+                "patk": 4,
+                "pdef": 3,
+                "sp": 0
+            },
+            {
+                "hp": 7,
+                "matk": 4,
+                "mdef": 3,
+                "patk": 3,
+                "pdef": 3,
+                "sp": 0
+            },
+            {
+                "hp": 5,
+                "matk": 4,
+                "mdef": 3,
+                "patk": 3,
+                "pdef": 3,
+                "sp": 1
+            },
+            {
+                "hp": 7,
+                "matk": 3,
+                "mdef": 3,
+                "patk": 4,
+                "pdef": 3,
+                "sp": 0
+            },
+            {
+                "hp": 5,
+                "matk": 4,
+                "mdef": 3,
+                "patk": 3,
+                "pdef": 3,
+                "sp": 0
+            },
+            {
+                "hp": 7,
+                "matk": 4,
+                "mdef": 0,
+                "patk": 3,
+                "pdef": 2,
+                "sp": 2
+            },
+            {
+                "hp": 5,
+                "matk": 3,
+                "mdef": 2,
+                "patk": 4,
+                "pdef": 0,
+                "sp": 0
+            },
+            {
+                "hp": 7,
+                "matk": 4,
+                "mdef": 0,
+                "patk": 3,
+                "pdef": 1,
+                "sp": 0
+            },
+            {
+                "hp": 5,
+                "matk": 4,
+                "mdef": 2,
+                "patk": 3,
+                "pdef": 0,
+                "sp": 0
+            },
+            {
+                "hp": 7,
+                "matk": 3,
+                "mdef": 0,
+                "patk": 4,
+                "pdef": 2,
+                "sp": 0
+            },
+            {
+                "hp": 5,
+                "matk": 4,
+                "mdef": 2,
+                "patk": 3,
+                "pdef": 0,
+                "sp": 0
+            },
+            {
+                "hp": 6,
+                "matk": 5,
+                "mdef": 0,
+                "patk": 4,
+                "pdef": 1,
+                "sp": 0
+            },
+            {
+                "hp": 8,
+                "matk": 4,
+                "mdef": 2,
+                "patk": 5,
+                "pdef": 0,
+                "sp": 2
+            },
+            {
+                "hp": 6,
+                "matk": 5,
+                "mdef": 0,
+                "patk": 4,
+                "pdef": 2,
+                "sp": 0
+            },
+            {
+                "hp": 8,
+                "matk": 5,
+                "mdef": 2,
+                "patk": 4,
+                "pdef": 0,
+                "sp": 0
+            },
+            {
+                "hp": 6,
+                "matk": 4,
+                "mdef": 0,
+                "patk": 5,
+                "pdef": 2,
+                "sp": 0
+            },
+            {
+                "hp": 8,
+                "matk": 5,
+                "mdef": 2,
+                "patk": 4,
+                "pdef": 0,
+                "sp": 0
+            }
+        ],
+        "zale_max_hp": 66,
+        "zale_max_sp": 14,
+        "zale_trinket0_mods": [],
+        "zale_trinket1_mods": [],
+        "zale_upgrades": [
+            {
+                "count": 0,
+                "stat": 0
+            },
+            {
+                "count": 3,
+                "stat": 1
+            },
+            {
+                "count": 0,
+                "stat": 3
+            },
+            {
+                "count": 0,
+                "stat": 4
+            },
+            {
+                "count": 2,
+                "stat": 5
+            },
+            {
+                "count": 0,
+                "stat": 6
+            }
+        ]
+    }
+}

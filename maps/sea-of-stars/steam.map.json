@@ -1,0 +1,1226 @@
+{
+  "label": "Sea of Stars (Steam) — world, party, gear, derived",
+  "contract": { "id": "sea-of-stars", "version": "2.0" },
+  "process": "SeaOfStars.exe",
+  "module": "GameAssembly.dll",
+  "probe": { "string": "PlayableCharacterData" },
+
+  "watches": [
+    {
+      "name": "level_guid",
+      "tier": "tier1",
+      "chain": ["0x38E5B60", "0xB8", "0x10", "LevelManager::currentLevelInfo", "LoadedLevelInfo::level"],
+      "type": { "string": "il2cpp" },
+      "rate_hz": 2
+    },
+
+    {
+      "name": "levels",
+      "tier": "collection",
+      "base": {
+        "tier": "tier1",
+        "chain": ["0x38E5B60", "0xB8", "0x10", "LevelManager::levelDefinitionPerLevel", 0]
+      },
+      "count": ["0x20"],
+      "items": ["0x18"],
+      "first": "0x20",
+      "stride": 24,
+      "element": [],
+      "fields": {
+        "guid": { "chain": ["0x8"], "type": { "string": "il2cpp" } },
+        "level_id": { "chain": ["0x10", "LevelDefinition::levelId"], "type": { "string": "il2cpp" } },
+        "label": { "chain": ["0x10", "0x28"], "type": { "string": "il2cpp" } }
+      },
+      "max": 256,
+      "rate_hz": 0.05
+    },
+
+    {
+      "name": "in_combat",
+      "tier": "tier1",
+      "chain": ["0x38E5A00", "0xB8", "0x10", "CombatManager::currentEncounter"],
+      "type": "u64",
+      "rate_hz": 4
+    },
+
+    {
+      "name": "cutscene_count",
+      "tier": "tier1",
+      "chain": ["0x38E5940", "0xB8", "0x10", "CutsceneManager::cutsceneCount"],
+      "type": "i32",
+      "rate_hz": 4
+    },
+
+    {
+      "name": "dialog_boxes",
+      "tier": "tier1",
+      "chain": ["0x38E54C0", "0xB8", "0x10", "NewDialogManager::openedDialogBoxes", "0x20"],
+      "type": "i32",
+      "rate_hz": 4
+    },
+
+    {
+      "name": "paused",
+      "tier": "tier1",
+      "chain": ["0x38E5460", "0xB8", "0x10", "PauseManager::isPaused"],
+      "type": "i32",
+      "rate_hz": 4
+    },
+
+    {
+      "name": "party",
+      "tier": "collection",
+      "base": {
+        "tier": "tier1",
+        "chain": ["0x38E5600", "0xB8", "0x10", "PlayerPartyManager::currentPartyLineup", "PartyLineup::currentParty", 0]
+      },
+      "count": ["0x18"],
+      "items": ["0x10"],
+      "first": "0x20",
+      "stride": 8,
+      "element": ["CharacterDefinitionId::characterId"],
+      "type": { "string": "il2cpp" },
+      "max": 8,
+      "rate_hz": 2
+    },
+
+    {
+      "name": "combat_party",
+      "tier": "collection",
+      "base": {
+        "tier": "tier1",
+        "chain": ["0x38E5600", "0xB8", "0x10", "PlayerPartyManager::currentPartyLineup", "PartyLineup::combatParty", 0]
+      },
+      "count": ["0x18"],
+      "items": ["0x10"],
+      "first": "0x20",
+      "stride": 8,
+      "element": ["CharacterDefinitionId::characterId"],
+      "type": { "string": "il2cpp" },
+      "max": 8,
+      "rate_hz": 2
+    },
+
+    {
+      "name": "leader",
+      "tier": "tier1",
+      "chain": ["0x38E5600", "0xB8", "0x10", "PlayerPartyManager::currentPartyLineup", "PartyLineup::leader"],
+      "type": { "string": "il2cpp" },
+      "rate_hz": 2
+    },
+
+    {
+      "name": "main_character",
+      "tier": "tier1",
+      "chain": ["0x38E5600", "0xB8", "0x10", "PlayerPartyManager::currentPartyLineup", "PartyLineup::mainCharacter"],
+      "type": { "string": "il2cpp" },
+      "rate_hz": 2
+    },
+
+    {
+      "name": "party_progress",
+      "tier": "record",
+      "base": {
+        "tier": "tier1",
+        "chain": ["0x38E5860", "0xB8", "0x10", "CharacterStatsManager::basePartyProgressData", 0]
+      },
+      "fields": {
+        "level": { "chain": ["PartyData::currentLevel"], "type": "i32" },
+        "total_xp": { "chain": ["PartyData::totalXP"], "type": "i32" },
+        "unspent_xp": { "chain": ["PartyData::unspentXP"], "type": "i32" }
+      },
+      "rate_hz": 1
+    },
+
+    {
+      "name": "upgrade_step",
+      "tier": "record",
+      "base": {
+        "tier": "tier1",
+        "chain": ["0x38E5860", "0xB8", "0x10", 0]
+      },
+      "fields": {
+        "hp": { "chain": ["CharacterStatsManager::hpPerUpgrade"], "type": "i32" },
+        "sp": { "chain": ["CharacterStatsManager::skillPointsPerUpgrade"], "type": "i32" },
+        "patk": { "chain": ["CharacterStatsManager::physicalAttackPerUpgrade"], "type": "i32" },
+        "pdef": { "chain": ["CharacterStatsManager::physicalDefensePerUpgrade"], "type": "i32" },
+        "matk": { "chain": ["CharacterStatsManager::magicalAttackPerUpgrade"], "type": "i32" },
+        "mdef": { "chain": ["CharacterStatsManager::magicalDefensePerUpgrade"], "type": "i32" }
+      },
+      "rate_hz": 0.5
+    },
+
+    {
+      "name": "party_resources",
+      "tier": "record",
+      "base": {
+        "tier": "tier1",
+        "chain": ["0x38E5860", "0xB8", "0x10", 0]
+      },
+      "fields": {
+        "combo_points": { "chain": ["CharacterStatsManager::comboPoints"], "type": "i32" },
+        "max_combo_points": { "chain": ["CharacterStatsManager::maxComboPoints"], "type": "i32" },
+        "ult_points": { "chain": ["CharacterStatsManager::ultPoints"], "type": "i32" }
+      },
+      "rate_hz": 4
+    },
+
+    {
+      "name": "characters",
+      "tier": "collection",
+      "base": {
+        "tier": "tier1",
+        "chain": ["0x38E5860", "0xB8", "0x10", "CharacterStatsManager::allCharacterData", 0]
+      },
+      "count": ["0x18"],
+      "items": ["0x10"],
+      "first": "0x20",
+      "stride": 8,
+      "element": [0, 0],
+      "fields": {
+        "id": { "chain": ["PlayableCharacterData::characterId"], "type": { "string": "il2cpp" } },
+        "hp": { "chain": ["PlayableCharacterData::currentHP"], "type": "i32" },
+        "sp": { "chain": ["PlayableCharacterData::currentSP"], "type": "i32" },
+        "boost_level": { "chain": ["PlayableCharacterData::boostLevel"], "type": "i32" },
+
+        "class_id": { "chain": ["PlayableCharacterData::currentClass", "AbstractPlayableCharacterClass::classId"], "type": { "string": "il2cpp" } },
+        "base_hp": { "chain": ["PlayableCharacterData::currentClass", "AbstractPlayableCharacterClass::hp"], "type": "i32" },
+        "base_sp": { "chain": ["PlayableCharacterData::currentClass", "AbstractPlayableCharacterClass::baseMaxSkillPoints"], "type": "i32" },
+        "base_patk": { "chain": ["PlayableCharacterData::currentClass", "AbstractPlayableCharacterClass::basePhysicalAttack"], "type": "i32" },
+        "base_matk": { "chain": ["PlayableCharacterData::currentClass", "AbstractPlayableCharacterClass::baseMagicAttack"], "type": "i32" },
+        "base_pdef": { "chain": ["PlayableCharacterData::currentClass", "AbstractPlayableCharacterClass::basePhysicalDefense"], "type": "i32" },
+        "base_mdef": { "chain": ["PlayableCharacterData::currentClass", "AbstractPlayableCharacterClass::baseMagicDefense"], "type": "i32" },
+
+        "weapon": { "chain": ["PlayableCharacterData::currentClass", "AbstractPlayableCharacterClass::equippedWeapon", "0x28"], "type": { "string": "il2cpp" } },
+        "weapon_patk": { "chain": ["PlayableCharacterData::currentClass", "AbstractPlayableCharacterClass::equippedWeapon", "CharacterWeapon::physicalAttack"], "type": "i32" },
+        "weapon_matk": { "chain": ["PlayableCharacterData::currentClass", "AbstractPlayableCharacterClass::equippedWeapon", "CharacterWeapon::magicalAttack"], "type": "i32" },
+        "armor": { "chain": ["PlayableCharacterData::currentClass", "AbstractPlayableCharacterClass::equippedArmor", "0x28"], "type": { "string": "il2cpp" } },
+        "armor_pdef": { "chain": ["PlayableCharacterData::currentClass", "AbstractPlayableCharacterClass::equippedArmor", "CharacterArmor::physicalDefense"], "type": "i32" },
+        "armor_mdef": { "chain": ["PlayableCharacterData::currentClass", "AbstractPlayableCharacterClass::equippedArmor", "CharacterArmor::magicalDefense"], "type": "i32" },
+        "trinket_1": { "chain": ["PlayableCharacterData::currentClass", "AbstractPlayableCharacterClass::equippedTrinkets", "0x10", "0x20", "0x28"], "type": { "string": "il2cpp" } },
+        "trinket_2": { "chain": ["PlayableCharacterData::currentClass", "AbstractPlayableCharacterClass::equippedTrinkets", "0x10", "0x28", "0x28"], "type": { "string": "il2cpp" } },
+        "group_trinket": { "chain": ["PlayableCharacterData::currentClass", "AbstractPlayableCharacterClass::equippedGroupTrinket", "0x28"], "type": { "string": "il2cpp" } }
+      },
+      "max": 16,
+      "rate_hz": 4
+    },
+
+    {
+      "name": "inventory",
+      "tier": "collection",
+      "base": {
+        "tier": "tier1",
+        "chain": ["0x38E5BA0", "0xB8", "0x10", "InventoryManager::ownedInventoryItems", "0x20", 0]
+      },
+      "count": ["0x20"],
+      "items": ["0x18"],
+      "first": "0x20",
+      "stride": 24,
+      "element": [],
+      "fields": {
+        "guid": { "chain": ["0x8"], "type": { "string": "il2cpp" } },
+        "qty": { "chain": ["0x10"], "type": "i32" }
+      },
+      "max": 256,
+      "rate_hz": 1
+    },
+
+    {
+      "name": "item_catalog",
+      "tier": "collection",
+      "base": {
+        "tier": "tier1",
+        "chain": ["0x38E5BA0", "0xB8", "0x10", "InventoryManager::allInventoryItemData", 0]
+      },
+      "count": ["0x20"],
+      "items": ["0x18"],
+      "first": "0x20",
+      "stride": 24,
+      "element": [],
+      "fields": {
+        "guid": { "chain": ["0x8"], "type": { "string": "il2cpp" } },
+        "label": { "chain": ["0x10", "0x28"], "type": { "string": "il2cpp" } },
+        "kind": { "chain": ["0x10", 0, "0x10"], "type": { "string": { "encoding": "utf8", "deref": true } } }
+      },
+      "max": 512,
+      "rate_hz": 0.05
+    },
+
+    {
+      "name": "enemies",
+      "tier": "collection",
+      "base": {
+        "tier": "tier1",
+        "chain": ["0x38E5A00", "0xB8", "0x10", "CombatManager::currentEncounter", "Encounter::enemyTargets", 0]
+      },
+      "count": ["0x18"],
+      "items": ["0x10"],
+      "first": "0x20",
+      "stride": 8,
+      "element": [0, 0],
+      "fields": {
+        "hp": { "chain": ["EnemyCombatTarget::currentHP"], "type": "i32" },
+        "max_hp": { "chain": ["CombatTarget::owner", "EnemyCombatActor::enemyData", "EnemyCharacterData::hp"], "type": "i32" },
+        "label": { "chain": ["CombatTarget::owner", "EnemyCombatActor::enemyData", "0x50"], "type": { "string": "il2cpp" } },
+        "level": { "chain": ["CombatTarget::owner", "EnemyCombatActor::enemyData", "EnemyCharacterData::enemyLevel"], "type": "i32" },
+        "patk": { "chain": ["CombatTarget::owner", "EnemyCombatActor::enemyData", "EnemyCharacterData::basePhysicalAttack"], "type": "i32" },
+        "pdef": { "chain": ["CombatTarget::owner", "EnemyCombatActor::enemyData", "EnemyCharacterData::basePhysicalDefense"], "type": "i32" },
+        "matk": { "chain": ["CombatTarget::owner", "EnemyCombatActor::enemyData", "EnemyCharacterData::baseMagicAttack"], "type": "i32" },
+        "mdef": { "chain": ["CombatTarget::owner", "EnemyCombatActor::enemyData", "EnemyCharacterData::baseMagicDefense"], "type": "i32" }
+      },
+      "max": 16,
+      "rate_hz": 4
+    },
+
+    {
+      "name": "encounter_xp",
+      "tier": "tier1",
+      "chain": ["0x38E5A00", "0xB8", "0x10", "CombatManager::currentEncounter", "Encounter::xpGained"],
+      "type": "i32",
+      "rate_hz": 2
+    },
+
+    {
+      "name": "garl_levelups",
+      "tier": "collection",
+      "base": {
+        "tier": "tier1",
+        "chain": ["0x38E5860", "0xB8", "0x10", "CharacterStatsManager::allCharacterData", "0x10", "0x30",
+                  "PlayableCharacterData::currentClass",
+                  "BasePlayableCharacterClass::levelUpTable", "AbstractLevelUpTable::levelUpStats", 0]
+      },
+      "count": ["0x18"],
+      "items": ["0x10"],
+      "first": "0x20",
+      "stride": 8,
+      "element": [0, 0],
+      "fields": {
+        "hp": { "chain": ["LevelUpStatsSet::hp"], "type": "i32" },
+        "sp": { "chain": ["LevelUpStatsSet::sp"], "type": "i32" },
+        "patk": { "chain": ["LevelUpStatsSet::pa"], "type": "i32" },
+        "pdef": { "chain": ["LevelUpStatsSet::pd"], "type": "i32" },
+        "matk": { "chain": ["LevelUpStatsSet::ma"], "type": "i32" },
+        "mdef": { "chain": ["LevelUpStatsSet::md"], "type": "i32" }
+      },
+      "max": 40,
+      "rate_hz": 0.5
+    },
+
+    {
+      "name": "garl_upgrades",
+      "tier": "collection",
+      "base": {
+        "tier": "tier1",
+        "chain": ["0x38E5860", "0xB8", "0x10", "CharacterStatsManager::allCharacterData", "0x10", "0x30",
+                  "PlayableCharacterData::currentClass",
+                  "BasePlayableCharacterClass::levelUpUpgradesByStat", 0]
+      },
+      "count": ["0x20"],
+      "items": ["0x18"],
+      "first": "0x20",
+      "stride": 16,
+      "element": [],
+      "fields": {
+        "stat": { "chain": ["0x8"], "type": "i32" },
+        "count": { "chain": ["0xC"], "type": "i32" }
+      },
+      "max": 16,
+      "rate_hz": 1
+    },
+
+    {
+      "name": "garl_trinket0_mods",
+      "tier": "collection",
+      "base": {
+        "tier": "tier1",
+        "chain": ["0x38E5860", "0xB8", "0x10", "CharacterStatsManager::allCharacterData", "0x10", "0x30",
+                  "PlayableCharacterData::currentClass",
+                  "AbstractPlayableCharacterClass::trinketModifiersHandler", "0x10", "0x20",
+                  "GearPieceModifiersHandler::appliedModifiers", 0]
+      },
+      "count": ["0x18"],
+      "items": ["0x10"],
+      "first": "0x20",
+      "stride": 8,
+      "element": [0, 0],
+      "fields": {
+        "kind": { "chain": [0, "0x10"], "type": { "string": { "encoding": "utf8", "deref": true } } },
+        "stat": { "chain": ["PlayerAddStatModifier::statToAlter"], "type": "i32" },
+        "amount": { "chain": ["PlayerAddStatModifier::modifier"], "type": "i32" }
+      },
+      "max": 8,
+      "rate_hz": 1
+    },
+
+    {
+      "name": "garl_trinket1_mods",
+      "tier": "collection",
+      "base": {
+        "tier": "tier1",
+        "chain": ["0x38E5860", "0xB8", "0x10", "CharacterStatsManager::allCharacterData", "0x10", "0x30",
+                  "PlayableCharacterData::currentClass",
+                  "AbstractPlayableCharacterClass::trinketModifiersHandler", "0x10", "0x28",
+                  "GearPieceModifiersHandler::appliedModifiers", 0]
+      },
+      "count": ["0x18"],
+      "items": ["0x10"],
+      "first": "0x20",
+      "stride": 8,
+      "element": [0, 0],
+      "fields": {
+        "kind": { "chain": [0, "0x10"], "type": { "string": { "encoding": "utf8", "deref": true } } },
+        "stat": { "chain": ["PlayerAddStatModifier::statToAlter"], "type": "i32" },
+        "amount": { "chain": ["PlayerAddStatModifier::modifier"], "type": "i32" }
+      },
+      "max": 8,
+      "rate_hz": 1
+    },
+
+    {
+      "name": "valere_levelups",
+      "tier": "collection",
+      "base": {
+        "tier": "tier1",
+        "chain": ["0x38E5860", "0xB8", "0x10", "CharacterStatsManager::allCharacterData", "0x10", "0x38",
+                  "PlayableCharacterData::currentClass",
+                  "BasePlayableCharacterClass::levelUpTable", "AbstractLevelUpTable::levelUpStats", 0]
+      },
+      "count": ["0x18"],
+      "items": ["0x10"],
+      "first": "0x20",
+      "stride": 8,
+      "element": [0, 0],
+      "fields": {
+        "hp": { "chain": ["LevelUpStatsSet::hp"], "type": "i32" },
+        "sp": { "chain": ["LevelUpStatsSet::sp"], "type": "i32" },
+        "patk": { "chain": ["LevelUpStatsSet::pa"], "type": "i32" },
+        "pdef": { "chain": ["LevelUpStatsSet::pd"], "type": "i32" },
+        "matk": { "chain": ["LevelUpStatsSet::ma"], "type": "i32" },
+        "mdef": { "chain": ["LevelUpStatsSet::md"], "type": "i32" }
+      },
+      "max": 40,
+      "rate_hz": 0.5
+    },
+
+    {
+      "name": "valere_upgrades",
+      "tier": "collection",
+      "base": {
+        "tier": "tier1",
+        "chain": ["0x38E5860", "0xB8", "0x10", "CharacterStatsManager::allCharacterData", "0x10", "0x38",
+                  "PlayableCharacterData::currentClass",
+                  "BasePlayableCharacterClass::levelUpUpgradesByStat", 0]
+      },
+      "count": ["0x20"],
+      "items": ["0x18"],
+      "first": "0x20",
+      "stride": 16,
+      "element": [],
+      "fields": {
+        "stat": { "chain": ["0x8"], "type": "i32" },
+        "count": { "chain": ["0xC"], "type": "i32" }
+      },
+      "max": 16,
+      "rate_hz": 1
+    },
+
+    {
+      "name": "valere_trinket0_mods",
+      "tier": "collection",
+      "base": {
+        "tier": "tier1",
+        "chain": ["0x38E5860", "0xB8", "0x10", "CharacterStatsManager::allCharacterData", "0x10", "0x38",
+                  "PlayableCharacterData::currentClass",
+                  "AbstractPlayableCharacterClass::trinketModifiersHandler", "0x10", "0x20",
+                  "GearPieceModifiersHandler::appliedModifiers", 0]
+      },
+      "count": ["0x18"],
+      "items": ["0x10"],
+      "first": "0x20",
+      "stride": 8,
+      "element": [0, 0],
+      "fields": {
+        "kind": { "chain": [0, "0x10"], "type": { "string": { "encoding": "utf8", "deref": true } } },
+        "stat": { "chain": ["PlayerAddStatModifier::statToAlter"], "type": "i32" },
+        "amount": { "chain": ["PlayerAddStatModifier::modifier"], "type": "i32" }
+      },
+      "max": 8,
+      "rate_hz": 1
+    },
+
+    {
+      "name": "valere_trinket1_mods",
+      "tier": "collection",
+      "base": {
+        "tier": "tier1",
+        "chain": ["0x38E5860", "0xB8", "0x10", "CharacterStatsManager::allCharacterData", "0x10", "0x38",
+                  "PlayableCharacterData::currentClass",
+                  "AbstractPlayableCharacterClass::trinketModifiersHandler", "0x10", "0x28",
+                  "GearPieceModifiersHandler::appliedModifiers", 0]
+      },
+      "count": ["0x18"],
+      "items": ["0x10"],
+      "first": "0x20",
+      "stride": 8,
+      "element": [0, 0],
+      "fields": {
+        "kind": { "chain": [0, "0x10"], "type": { "string": { "encoding": "utf8", "deref": true } } },
+        "stat": { "chain": ["PlayerAddStatModifier::statToAlter"], "type": "i32" },
+        "amount": { "chain": ["PlayerAddStatModifier::modifier"], "type": "i32" }
+      },
+      "max": 8,
+      "rate_hz": 1
+    },
+
+    {
+      "name": "zale_levelups",
+      "tier": "collection",
+      "base": {
+        "tier": "tier1",
+        "chain": ["0x38E5860", "0xB8", "0x10", "CharacterStatsManager::allCharacterData", "0x10", "0x60",
+                  "PlayableCharacterData::currentClass",
+                  "BasePlayableCharacterClass::levelUpTable", "AbstractLevelUpTable::levelUpStats", 0]
+      },
+      "count": ["0x18"],
+      "items": ["0x10"],
+      "first": "0x20",
+      "stride": 8,
+      "element": [0, 0],
+      "fields": {
+        "hp": { "chain": ["LevelUpStatsSet::hp"], "type": "i32" },
+        "sp": { "chain": ["LevelUpStatsSet::sp"], "type": "i32" },
+        "patk": { "chain": ["LevelUpStatsSet::pa"], "type": "i32" },
+        "pdef": { "chain": ["LevelUpStatsSet::pd"], "type": "i32" },
+        "matk": { "chain": ["LevelUpStatsSet::ma"], "type": "i32" },
+        "mdef": { "chain": ["LevelUpStatsSet::md"], "type": "i32" }
+      },
+      "max": 40,
+      "rate_hz": 0.5
+    },
+
+    {
+      "name": "zale_upgrades",
+      "tier": "collection",
+      "base": {
+        "tier": "tier1",
+        "chain": ["0x38E5860", "0xB8", "0x10", "CharacterStatsManager::allCharacterData", "0x10", "0x60",
+                  "PlayableCharacterData::currentClass",
+                  "BasePlayableCharacterClass::levelUpUpgradesByStat", 0]
+      },
+      "count": ["0x20"],
+      "items": ["0x18"],
+      "first": "0x20",
+      "stride": 16,
+      "element": [],
+      "fields": {
+        "stat": { "chain": ["0x8"], "type": "i32" },
+        "count": { "chain": ["0xC"], "type": "i32" }
+      },
+      "max": 16,
+      "rate_hz": 1
+    },
+
+    {
+      "name": "zale_trinket0_mods",
+      "tier": "collection",
+      "base": {
+        "tier": "tier1",
+        "chain": ["0x38E5860", "0xB8", "0x10", "CharacterStatsManager::allCharacterData", "0x10", "0x60",
+                  "PlayableCharacterData::currentClass",
+                  "AbstractPlayableCharacterClass::trinketModifiersHandler", "0x10", "0x20",
+                  "GearPieceModifiersHandler::appliedModifiers", 0]
+      },
+      "count": ["0x18"],
+      "items": ["0x10"],
+      "first": "0x20",
+      "stride": 8,
+      "element": [0, 0],
+      "fields": {
+        "kind": { "chain": [0, "0x10"], "type": { "string": { "encoding": "utf8", "deref": true } } },
+        "stat": { "chain": ["PlayerAddStatModifier::statToAlter"], "type": "i32" },
+        "amount": { "chain": ["PlayerAddStatModifier::modifier"], "type": "i32" }
+      },
+      "max": 8,
+      "rate_hz": 1
+    },
+
+    {
+      "name": "zale_trinket1_mods",
+      "tier": "collection",
+      "base": {
+        "tier": "tier1",
+        "chain": ["0x38E5860", "0xB8", "0x10", "CharacterStatsManager::allCharacterData", "0x10", "0x60",
+                  "PlayableCharacterData::currentClass",
+                  "AbstractPlayableCharacterClass::trinketModifiersHandler", "0x10", "0x28",
+                  "GearPieceModifiersHandler::appliedModifiers", 0]
+      },
+      "count": ["0x18"],
+      "items": ["0x10"],
+      "first": "0x20",
+      "stride": 8,
+      "element": [0, 0],
+      "fields": {
+        "kind": { "chain": [0, "0x10"], "type": { "string": { "encoding": "utf8", "deref": true } } },
+        "stat": { "chain": ["PlayerAddStatModifier::statToAlter"], "type": "i32" },
+        "amount": { "chain": ["PlayerAddStatModifier::modifier"], "type": "i32" }
+      },
+      "max": 8,
+      "rate_hz": 1
+    },
+
+    {
+      "name": "garl_max_hp",
+      "tier": "derived",
+      "type": "i32",
+      "value": {
+        "add": [
+          {
+            "watch": "characters",
+            "index": 2,
+            "field": "base_hp"
+          },
+          {
+            "sum": {
+              "watch": "garl_levelups",
+              "field": "hp",
+              "take": {
+                "sub": [
+                  {
+                    "watch": "party_progress",
+                    "field": "level"
+                  },
+                  {
+                    "const": 1
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "mul": [
+              {
+                "sum": {
+                  "watch": "garl_upgrades",
+                  "field": "count",
+                  "where": [
+                    {
+                      "field": "stat",
+                      "eq": 0
+                    }
+                  ]
+                }
+              },
+              {
+                "watch": "upgrade_step",
+                "field": "hp"
+              }
+            ]
+          },
+          {
+            "sum": {
+              "watch": "garl_trinket0_mods",
+              "field": "amount",
+              "where": [
+                {
+                  "field": "kind",
+                  "eq": "PlayerAddStatModifier"
+                },
+                {
+                  "field": "stat",
+                  "eq": 0
+                }
+              ]
+            }
+          },
+          {
+            "sum": {
+              "watch": "garl_trinket1_mods",
+              "field": "amount",
+              "where": [
+                {
+                  "field": "kind",
+                  "eq": "PlayerAddStatModifier"
+                },
+                {
+                  "field": "stat",
+                  "eq": 0
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "rate_hz": 2.0
+    },
+
+    {
+      "name": "garl_max_sp",
+      "tier": "derived",
+      "type": "i32",
+      "value": {
+        "add": [
+          {
+            "watch": "characters",
+            "index": 2,
+            "field": "base_sp"
+          },
+          {
+            "sum": {
+              "watch": "garl_levelups",
+              "field": "sp",
+              "take": {
+                "sub": [
+                  {
+                    "watch": "party_progress",
+                    "field": "level"
+                  },
+                  {
+                    "const": 1
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "mul": [
+              {
+                "sum": {
+                  "watch": "garl_upgrades",
+                  "field": "count",
+                  "where": [
+                    {
+                      "field": "stat",
+                      "eq": 1
+                    }
+                  ]
+                }
+              },
+              {
+                "watch": "upgrade_step",
+                "field": "sp"
+              }
+            ]
+          },
+          {
+            "sum": {
+              "watch": "garl_trinket0_mods",
+              "field": "amount",
+              "where": [
+                {
+                  "field": "kind",
+                  "eq": "PlayerAddStatModifier"
+                },
+                {
+                  "field": "stat",
+                  "eq": 1
+                }
+              ]
+            }
+          },
+          {
+            "sum": {
+              "watch": "garl_trinket1_mods",
+              "field": "amount",
+              "where": [
+                {
+                  "field": "kind",
+                  "eq": "PlayerAddStatModifier"
+                },
+                {
+                  "field": "stat",
+                  "eq": 1
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "rate_hz": 2.0
+    },
+
+    {
+      "name": "valere_max_hp",
+      "tier": "derived",
+      "type": "i32",
+      "value": {
+        "add": [
+          {
+            "watch": "characters",
+            "index": 3,
+            "field": "base_hp"
+          },
+          {
+            "sum": {
+              "watch": "valere_levelups",
+              "field": "hp",
+              "take": {
+                "sub": [
+                  {
+                    "watch": "party_progress",
+                    "field": "level"
+                  },
+                  {
+                    "const": 1
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "mul": [
+              {
+                "sum": {
+                  "watch": "valere_upgrades",
+                  "field": "count",
+                  "where": [
+                    {
+                      "field": "stat",
+                      "eq": 0
+                    }
+                  ]
+                }
+              },
+              {
+                "watch": "upgrade_step",
+                "field": "hp"
+              }
+            ]
+          },
+          {
+            "sum": {
+              "watch": "valere_trinket0_mods",
+              "field": "amount",
+              "where": [
+                {
+                  "field": "kind",
+                  "eq": "PlayerAddStatModifier"
+                },
+                {
+                  "field": "stat",
+                  "eq": 0
+                }
+              ]
+            }
+          },
+          {
+            "sum": {
+              "watch": "valere_trinket1_mods",
+              "field": "amount",
+              "where": [
+                {
+                  "field": "kind",
+                  "eq": "PlayerAddStatModifier"
+                },
+                {
+                  "field": "stat",
+                  "eq": 0
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "rate_hz": 2.0
+    },
+
+    {
+      "name": "valere_max_sp",
+      "tier": "derived",
+      "type": "i32",
+      "value": {
+        "add": [
+          {
+            "watch": "characters",
+            "index": 3,
+            "field": "base_sp"
+          },
+          {
+            "sum": {
+              "watch": "valere_levelups",
+              "field": "sp",
+              "take": {
+                "sub": [
+                  {
+                    "watch": "party_progress",
+                    "field": "level"
+                  },
+                  {
+                    "const": 1
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "mul": [
+              {
+                "sum": {
+                  "watch": "valere_upgrades",
+                  "field": "count",
+                  "where": [
+                    {
+                      "field": "stat",
+                      "eq": 1
+                    }
+                  ]
+                }
+              },
+              {
+                "watch": "upgrade_step",
+                "field": "sp"
+              }
+            ]
+          },
+          {
+            "sum": {
+              "watch": "valere_trinket0_mods",
+              "field": "amount",
+              "where": [
+                {
+                  "field": "kind",
+                  "eq": "PlayerAddStatModifier"
+                },
+                {
+                  "field": "stat",
+                  "eq": 1
+                }
+              ]
+            }
+          },
+          {
+            "sum": {
+              "watch": "valere_trinket1_mods",
+              "field": "amount",
+              "where": [
+                {
+                  "field": "kind",
+                  "eq": "PlayerAddStatModifier"
+                },
+                {
+                  "field": "stat",
+                  "eq": 1
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "rate_hz": 2.0
+    },
+
+    {
+      "name": "zale_max_hp",
+      "tier": "derived",
+      "type": "i32",
+      "value": {
+        "add": [
+          {
+            "watch": "characters",
+            "index": 8,
+            "field": "base_hp"
+          },
+          {
+            "sum": {
+              "watch": "zale_levelups",
+              "field": "hp",
+              "take": {
+                "sub": [
+                  {
+                    "watch": "party_progress",
+                    "field": "level"
+                  },
+                  {
+                    "const": 1
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "mul": [
+              {
+                "sum": {
+                  "watch": "zale_upgrades",
+                  "field": "count",
+                  "where": [
+                    {
+                      "field": "stat",
+                      "eq": 0
+                    }
+                  ]
+                }
+              },
+              {
+                "watch": "upgrade_step",
+                "field": "hp"
+              }
+            ]
+          },
+          {
+            "sum": {
+              "watch": "zale_trinket0_mods",
+              "field": "amount",
+              "where": [
+                {
+                  "field": "kind",
+                  "eq": "PlayerAddStatModifier"
+                },
+                {
+                  "field": "stat",
+                  "eq": 0
+                }
+              ]
+            }
+          },
+          {
+            "sum": {
+              "watch": "zale_trinket1_mods",
+              "field": "amount",
+              "where": [
+                {
+                  "field": "kind",
+                  "eq": "PlayerAddStatModifier"
+                },
+                {
+                  "field": "stat",
+                  "eq": 0
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "rate_hz": 2.0
+    },
+
+    {
+      "name": "zale_max_sp",
+      "tier": "derived",
+      "type": "i32",
+      "value": {
+        "add": [
+          {
+            "watch": "characters",
+            "index": 8,
+            "field": "base_sp"
+          },
+          {
+            "sum": {
+              "watch": "zale_levelups",
+              "field": "sp",
+              "take": {
+                "sub": [
+                  {
+                    "watch": "party_progress",
+                    "field": "level"
+                  },
+                  {
+                    "const": 1
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "mul": [
+              {
+                "sum": {
+                  "watch": "zale_upgrades",
+                  "field": "count",
+                  "where": [
+                    {
+                      "field": "stat",
+                      "eq": 1
+                    }
+                  ]
+                }
+              },
+              {
+                "watch": "upgrade_step",
+                "field": "sp"
+              }
+            ]
+          },
+          {
+            "sum": {
+              "watch": "zale_trinket0_mods",
+              "field": "amount",
+              "where": [
+                {
+                  "field": "kind",
+                  "eq": "PlayerAddStatModifier"
+                },
+                {
+                  "field": "stat",
+                  "eq": 1
+                }
+              ]
+            }
+          },
+          {
+            "sum": {
+              "watch": "zale_trinket1_mods",
+              "field": "amount",
+              "where": [
+                {
+                  "field": "kind",
+                  "eq": "PlayerAddStatModifier"
+                },
+                {
+                  "field": "stat",
+                  "eq": 1
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "rate_hz": 2.0
+    },
+
+    {
+      "name": "garl_hp_percent",
+      "tier": "derived",
+      "type": "f32",
+      "value": {
+        "mul": [
+          {
+            "const": 100
+          },
+          {
+            "div": [
+              {
+                "watch": "characters",
+                "index": 2,
+                "field": "hp"
+              },
+              {
+                "watch": "garl_max_hp"
+              }
+            ]
+          }
+        ]
+      },
+      "rate_hz": 4.0
+    },
+
+    {
+      "name": "valere_hp_percent",
+      "tier": "derived",
+      "type": "f32",
+      "value": {
+        "mul": [
+          {
+            "const": 100
+          },
+          {
+            "div": [
+              {
+                "watch": "characters",
+                "index": 3,
+                "field": "hp"
+              },
+              {
+                "watch": "valere_max_hp"
+              }
+            ]
+          }
+        ]
+      },
+      "rate_hz": 4.0
+    },
+
+    {
+      "name": "zale_hp_percent",
+      "tier": "derived",
+      "type": "f32",
+      "value": {
+        "mul": [
+          {
+            "const": 100
+          },
+          {
+            "div": [
+              {
+                "watch": "characters",
+                "index": 8,
+                "field": "hp"
+              },
+              {
+                "watch": "zale_max_hp"
+              }
+            ]
+          }
+        ]
+      },
+      "rate_hz": 4.0
+    },
+
+    {
+      "name": "attack_rating",
+      "tier": "derived",
+      "type": "i32",
+      "each": "characters",
+      "value": {
+        "add": [
+          {
+            "item": "base_patk"
+          },
+          {
+            "item": "weapon_patk"
+          }
+        ]
+      },
+      "rate_hz": 2.0
+    },
+
+    {
+      "name": "defense_rating",
+      "tier": "derived",
+      "type": "i32",
+      "each": "characters",
+      "value": {
+        "add": [
+          {
+            "item": "base_pdef"
+          },
+          {
+            "item": "armor_pdef"
+          }
+        ]
+      },
+      "rate_hz": 2.0
+    },
+
+    {
+      "name": "roster_hp_total",
+      "tier": "derived",
+      "type": "i32",
+      "value": {
+        "sum": {
+          "watch": "characters",
+          "field": "hp"
+        }
+      },
+      "rate_hz": 2.0
+    },
+
+    {
+      "name": "roster_downed",
+      "tier": "derived",
+      "type": "u32",
+      "value": {
+        "count": {
+          "watch": "characters",
+          "where": [
+            {
+              "field": "hp",
+              "eq": 0
+            }
+          ]
+        }
+      },
+      "rate_hz": 2.0
+    }
+  ]
+}
