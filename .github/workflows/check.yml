@@ -11,8 +11,8 @@ on:
   pull_request:
 
 env:
-  # `scry schema` first appears on this branch. Replace with the release tag that ships it.
-  SCRY_REF: feat/contract-identity
+  # The first release that ships `scry schema`.
+  SCRY_REF: v0.1.0-alpha.4
 
 jobs:
   check:
