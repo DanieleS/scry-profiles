@@ -52,3 +52,32 @@ jobs:
         run: npm test
         env:
           SCRY: ${{ github.workspace }}/.scry/target/release/scry
+
+      # Only what passed every check above is published. Hosts read index.json from Pages and
+      # download only the profiles for the executable they are about to attach to.
+      - name: Build the registry
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: npm run registry
+
+      - uses: actions/upload-pages-artifact@v3
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        with:
+          path: site/
+
+  publish:
+    needs: check
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    # One deploy at a time, and a newer push waits rather than cancelling one half-way.
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4

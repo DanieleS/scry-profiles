@@ -80,6 +80,21 @@ Comparisons ignore annotations (`title`, `description`, `$id`, `x-*`, …) and `
 profile's safety cap on a collection rather than part of its shape, and which a view has to clamp
 against regardless. So a contract schema may be annotated by hand after it is generated.
 
+## How hosts get profiles
+
+Every push to `main` that passes the checks publishes the registry to GitHub Pages, at
+<https://danieles.github.io/scry-profiles/>: an `index.json` and every profile under the same path it
+has here. Each index entry names the profile's file, the executable it matches (`match.process`),
+its build version when it pins one (`match.version`), its contract, its label and its sha256.
+
+A host does not download the whole registry. When it is about to attach to a game it reads the index,
+takes the entries whose `process` names that executable, and downloads only those, checking each
+against its hash. Vibepollo does this; its own profiles folder still wins, for trying a profile
+before it is published. `npm run registry` builds the same thing into `site/` locally.
+
+A registry profile must have a `match.process` and a `contract` with an id; the build refuses one
+without, because no host could pick it, or no client could draw it.
+
 ## Adding a profile for a new build
 
 The common case: the game patched, the offsets moved, the values did not.
