@@ -33,7 +33,7 @@ maps/<id>/<name>.map.json                    il2cpp2scry input a profile was gen
 | Contract | Profiles | Fixtures |
 |---|---|---|
 | `sea-of-stars` 2.0 (43 watches) | `steam.json` | `steam-first-tick.json` |
-| `ff7-rebirth` 1.1 (10 watches) | `steam.json` | `steam-battle.json` (1.0 and 1.1) |
+| `ff7-rebirth` 1.2 (13 watches) | `steam.json` | `steam-battle.json` (1.0 and 1.1), `steam-menu.json` (1.2) |
 
 The Sea of Stars profile came from Ratatoskr's `telemetry-views/fixtures`, where it had been living
 with the integer `contractVersion: 2`; here it declares `sea-of-stars` 2.0 instead, and nothing else
@@ -41,11 +41,17 @@ in it changed. Its capture was recorded with **scry 0.1.0-alpha.2** — before 0
 before `contract` existed — which is why its `attached` event carries `contract_version: 2` and no
 `contract`. The `values` are what matter to the check, and they are unaffected.
 
-The Final Fantasy VII Rebirth profile needs **scry 0.1.0-alpha.6**: its character and party tables
-are fixed-length collections (`len`), and its inventory and battle-HUD widgets are internal watches
-(`emit: false`) that only feed the gil total and the target's HP and stagger. Everything it reads
+The Final Fantasy VII Rebirth profile needs **scry 0.1.0-alpha.7**: its character and party tables
+are fixed-length collections (`len`), its inventory and battle-HUD widgets are internal watches
+(`emit: false`) that only feed the gil total and the target's HP and stagger, and since 1.2 it reads
+an Unreal name (`location`, through the name table in `fname_pool`). Everything it reads
 sits at a fixed offset in `ff7rebirth_.exe`, so a patch that moves the executable's data moves every
-offset with it. The battle values come from the HUD: the party's ATB and Limit gauges, and the
+offset with it. The game state and the player come from the engine's game instance, not from
+`GWorld`: while the main menu is open `GWorld` is the menu's own rendering world, which has no game
+state. `player` is only a position; the game keeps no value for the region or the place it names on
+the save screen, and works them out from the location volume that position is inside. And since 1.2
+`battle_hud` says whether a battle is on: the last enemy bar shown can stay visible after the fight,
+so the bars alone keep reporting a battle until the next one. The battle values come from the HUD: the party's ATB and Limit gauges, and the
 locked-on enemy's HP and stagger as the game draws them, so `target_hp_pct` is a percentage because
 the game shows no number. Since 1.1 it also emits `enemy_bars`, the sixteen enemy bars of the HUD
 with each one's visibility and the enemy name it shows: the locked-on enemy is the bar whose

@@ -1,17 +1,22 @@
 {
-  "label": "FINAL FANTASY VII REBIRTH (Steam 1.0.0.5) — state, party, gil, battle HUD",
-  "contract": { "id": "ff7-rebirth", "version": "1.1" },
+  "label": "FINAL FANTASY VII REBIRTH (Steam 1.0.0.5) — state, place, party, gil, battle HUD",
+  "contract": { "id": "ff7-rebirth", "version": "1.2" },
   "match": {
     "process": "ff7rebirth_.exe",
     "module": "ff7rebirth_.exe",
     "probe": "2F 00 53 00 63 00 72 00 69 00 70 00 74 00 2F 00 45 00 6E 00 64 00 47 00 61 00 6D 00 65 00"
+  },
+  "fname_pool": {
+    "blocks": { "tier": "tier1", "module": "ff7rebirth_.exe", "offsets": ["0x90D3C10"] },
+    "entry_align": 4,
+    "header_at": 4
   },
   "watches": [
     {
       "tier": "tier1",
       "name": "game_state",
       "module": "ff7rebirth_.exe",
-      "offsets": ["0x8F30420", "0x150", "0x278"],
+      "offsets": ["0x8F4B580", "0xE50", "0x38", "0x0", "0x30", "0x20", "0x20", "0x150", "0x278"],
       "type": "u8",
       "rate_hz": 4.0
     },
@@ -19,8 +24,31 @@
       "tier": "tier1",
       "name": "game_pause",
       "module": "ff7rebirth_.exe",
-      "offsets": ["0x8F30420", "0x150", "0x3B0"],
+      "offsets": ["0x8F4B580", "0xE50", "0x38", "0x0", "0x30", "0x20", "0x20", "0x150", "0x3B0"],
       "type": "u32",
+      "rate_hz": 4.0
+    },
+    {
+      "tier": "tier1",
+      "name": "location",
+      "module": "ff7rebirth_.exe",
+      "offsets": ["0x8F4B580", "0xE50", "0x38", "0x0", "0x30", "0x20", "0x20", "0x150", "0x304"],
+      "type": { "string": "fname" },
+      "rate_hz": 1.0
+    },
+    {
+      "tier": "record",
+      "name": "player",
+      "base": {
+        "tier": "tier1",
+        "module": "ff7rebirth_.exe",
+        "offsets": ["0x8F4B580", "0xE50", "0x38", "0x0", "0x30", "0x2A8", "0x138", "0x0"]
+      },
+      "fields": {
+        "x": { "offsets": ["0x11C"], "type": "f32" },
+        "y": { "offsets": ["0x120"], "type": "f32" },
+        "z": { "offsets": ["0x124"], "type": "f32" }
+      },
       "rate_hz": 4.0
     },
     {
@@ -98,6 +126,14 @@
         "limit": { "offsets": ["0xB10", "0x2A8"], "type": "f32" }
       },
       "max": 3,
+      "rate_hz": 4.0
+    },
+    {
+      "tier": "tier1",
+      "name": "battle_hud",
+      "module": "ff7rebirth_.exe",
+      "offsets": ["0x91D8468", "0x38", "0x50", "0x180", "0xC3"],
+      "type": "u8",
       "rate_hz": 4.0
     },
     {

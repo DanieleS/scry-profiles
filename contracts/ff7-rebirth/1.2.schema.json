@@ -1,0 +1,271 @@
+{
+  "$id": "urn:scry:contract:ff7-rebirth:1.2",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "properties": {
+    "battle_hud": {
+      "description": "The ESlateVisibility of the battle HUD's party panel (Status_C, the widget party_gauges reads): 1 (Collapsed) in the field, and expected to be a shown value (0 Visible, 3 HitTestInvisible or 4 SelfHitTestInvisible) while a battle is on. Read it as \"in battle\" when it is neither 1 nor 2 (Hidden). Unlike the enemy bars it does not outlast the fight. The field value is confirmed; the battle value is not captured yet.",
+      "maximum": 255,
+      "minimum": 0,
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "characters": {
+      "description": "One record per character, always nine. The first five are Cloud, Barret, Tifa, Aerith and Red XIII; the order of the other four is not mapped yet. party holds indices into this list. At the title screen, before a save is loaded, every record reads level 1 with hp_max 0.",
+      "items": {
+        "properties": {
+          "exp": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "hp": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "hp_max": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "level": {
+            "maximum": 255,
+            "minimum": 0,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "mp": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "mp_max": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "exp",
+          "hp",
+          "hp_max",
+          "level",
+          "mp",
+          "mp_max"
+        ],
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "maxItems": 9,
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "enemy_bars": {
+      "description": "The pool of sixteen enemy status bars on the battle HUD, in a fixed pool order. visibility is the widget's ESlateVisibility: 0 for the bar on screen (the locked-on enemy), 1 for a collapsed one. name is the enemy's display name as the bar shows it (e.g. \"Orco A\"); a bar that was never used reads \"\" and a collapsed one may keep the name it last showed, so pick the element whose visibility is 0. After a battle the last bar shown can keep visibility 0, with the HP and stagger it had, until the next battle: use battle_hud to tell a battle from the field.",
+      "items": {
+        "properties": {
+          "name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "visibility": {
+            "maximum": 255,
+            "minimum": 0,
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "name",
+          "visibility"
+        ],
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "maxItems": 16,
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "game_pause": {
+      "description": "EndGameState.GamePause: non-zero while the game is paused (the system menu, including mid-battle).",
+      "maximum": 4294967295,
+      "minimum": 0,
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "game_state": {
+      "description": "EndGameState.GameState, the EGameState enum: 0 NONE, 1 BOOT, 4 TITLE, 5 INIT_PERSISTENT, 6 GAME_IDLE, 7 PAUSE_IDLE, 8 MENU_IDLE, 9 UNINIT_PERSISTENT, 10 PAUSE_IDLE_STARTCHAPTER. Seen in practice: 6 at the title screen and in play, 8 with the system menu open, battle included. It does not tell the title screen from play; there every characters record reads level 1 with hp_max 0, gil reads 2000 and play_time_s keeps running.",
+      "maximum": 255,
+      "minimum": 0,
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "gil": {
+      "description": "Gil. null if no gil entry is among the first 64 inventory slots. Reads 2000 at the title screen.",
+      "maximum": 2147483647,
+      "minimum": -2147483648,
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "location": {
+      "description": "EndGameState.ActiveLocation, the level the game is in, as an Unreal name: \"0005-TITLB\" at the title screen, \"0001-WORLD\" anywhere in the open world, a field level's own name (e.g. \"1230-MYTHM\") elsewhere. It is an identifier, not display text, and does not change between the regions and places of the open world: those come from player.",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "party": {
+      "description": "The active party, leader first: three indices into characters, 16 for an empty slot.",
+      "items": {
+        "maximum": 255,
+        "minimum": 0,
+        "type": [
+          "integer",
+          "null"
+        ]
+      },
+      "maxItems": 3,
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "party_gauges": {
+      "description": "The battle HUD gauges of the three active-party slots, in party order. atb runs from 0 to atb_max (3000), two segments of 1500 each; limit runs from 0 to 1. Outside battle they hold whatever the HUD last showed.",
+      "items": {
+        "properties": {
+          "atb": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "atb_max": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "limit": {
+            "type": [
+              "number",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "atb",
+          "atb_max",
+          "limit"
+        ],
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "maxItems": 3,
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "play_time_s": {
+      "description": "Play time in seconds, as the save and the main menu show it (they print it as hours:minutes:seconds). It also runs at the title screen.",
+      "maximum": 4294967295,
+      "minimum": 0,
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "player": {
+      "description": "The position of the pawn the player controls, in Unreal world units (centimetres): the root component's location, x and y across the map and z up. The game names the region and the place the player is in (the save screen's \"Prateria / Fattoria di Oliver\") from the location volume this point is inside; it keeps no value for either.",
+      "properties": {
+        "x": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "y": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "z": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "x",
+        "y",
+        "z"
+      ],
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "target_hp_pct": {
+      "description": "HP of the locked-on enemy, 0 to 100, as the HUD bar shows it (the game shows no number). null when no enemy bar is on screen. After a battle the bar this reads can keep visibility 0, with the HP and stagger it had, until the next battle: use battle_hud to tell a battle from the field.",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "target_stagger_pct": {
+      "description": "Stagger gauge of the locked-on enemy, 0 to 100. null when no enemy bar is on screen. After a battle the bar this reads can keep visibility 0, with the HP and stagger it had, until the next battle: use battle_hud to tell a battle from the field.",
+      "type": [
+        "number",
+        "null"
+      ]
+    }
+  },
+  "title": "ff7-rebirth 1.2",
+  "type": "object",
+  "x-contract": {
+    "id": "ff7-rebirth",
+    "version": "1.2"
+  }
+}
