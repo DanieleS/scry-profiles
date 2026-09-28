@@ -33,12 +33,25 @@ maps/<id>/<name>.map.json                    il2cpp2scry input a profile was gen
 | Contract | Profiles | Fixtures |
 |---|---|---|
 | `sea-of-stars` 2.0 (43 watches) | `steam.json` | `steam-first-tick.json` |
+| `ff7-rebirth` 1.0 (9 watches) | `steam.json` | `steam-battle.json` |
 
 The Sea of Stars profile came from Ratatoskr's `telemetry-views/fixtures`, where it had been living
 with the integer `contractVersion: 2`; here it declares `sea-of-stars` 2.0 instead, and nothing else
 in it changed. Its capture was recorded with **scry 0.1.0-alpha.2** — before 0.1.0-alpha.3, and so
 before `contract` existed — which is why its `attached` event carries `contract_version: 2` and no
 `contract`. The `values` are what matter to the check, and they are unaffected.
+
+The Final Fantasy VII Rebirth profile needs **scry 0.1.0-alpha.6**: its character and party tables
+are fixed-length collections (`len`), and its inventory and battle-HUD widgets are internal watches
+(`emit: false`) that only feed the gil total and the target's HP and stagger. Everything it reads
+sits at a fixed offset in `ff7rebirth_.exe`, so a patch that moves the executable's data moves every
+offset with it. The battle values come from the HUD: the party's ATB and Limit gauges, and the
+locked-on enemy's HP and stagger as the game draws them, so `target_hp_pct` is a percentage because
+the game shows no number. They reach the HUD through fixed slots in a set of widgets whose order
+the game decides when it builds the HUD. That order held for the session the profile was written
+in; if the game ever builds the HUD in another order, those slots hold other widgets, and
+`party_gauges` and the two `target_*` values read wrong numbers or `null` until the slots are found
+again.
 
 ## The version rule
 
