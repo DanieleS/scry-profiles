@@ -11,8 +11,9 @@ on:
   pull_request:
 
 env:
-  # The first release that ships `scry schema`.
-  SCRY_REF: v0.1.0-alpha.4
+  # The first release with fixed-length collections (`len`), internal watches (`emit: false`) and
+  # 8- and 16-bit types, which the ff7-rebirth profile needs.
+  SCRY_REF: v0.1.0-alpha.6
 
 jobs:
   check:
