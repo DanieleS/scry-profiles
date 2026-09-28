@@ -1,6 +1,6 @@
 {
   "label": "FINAL FANTASY VII REBIRTH (Steam 1.0.0.5) — state, party, gil, battle HUD",
-  "contract": { "id": "ff7-rebirth", "version": "1.0" },
+  "contract": { "id": "ff7-rebirth", "version": "1.1" },
   "match": {
     "process": "ff7rebirth_.exe",
     "module": "ff7rebirth_.exe",
@@ -120,6 +120,27 @@
       },
       "max": 16,
       "rate_hz": 4.0
+    },
+    {
+      "tier": "collection",
+      "name": "enemy_bars",
+      "base": {
+        "tier": "tier1",
+        "module": "ff7rebirth_.exe",
+        "offsets": ["0x91D8468", "0x38", "0x50", "0x200"]
+      },
+      "len": 16,
+      "stride": "0x10",
+      "element": [0, 0],
+      "fields": {
+        "visibility": { "offsets": ["0xC3"], "type": "u8" },
+        "name": {
+          "offsets": ["0x558", "0x28", "0x28", "0x108", "0x8", "0x30", "0x128"],
+          "type": { "string": { "encoding": "utf16", "deref": true } }
+        }
+      },
+      "max": 16,
+      "rate_hz": 2.0
     },
     {
       "tier": "derived",

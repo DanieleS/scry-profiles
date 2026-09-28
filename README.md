@@ -33,7 +33,7 @@ maps/<id>/<name>.map.json                    il2cpp2scry input a profile was gen
 | Contract | Profiles | Fixtures |
 |---|---|---|
 | `sea-of-stars` 2.0 (43 watches) | `steam.json` | `steam-first-tick.json` |
-| `ff7-rebirth` 1.0 (9 watches) | `steam.json` | `steam-battle.json` |
+| `ff7-rebirth` 1.1 (10 watches) | `steam.json` | `steam-battle.json` (1.0 and 1.1) |
 
 The Sea of Stars profile came from Ratatoskr's `telemetry-views/fixtures`, where it had been living
 with the integer `contractVersion: 2`; here it declares `sea-of-stars` 2.0 instead, and nothing else
@@ -47,10 +47,13 @@ are fixed-length collections (`len`), and its inventory and battle-HUD widgets a
 sits at a fixed offset in `ff7rebirth_.exe`, so a patch that moves the executable's data moves every
 offset with it. The battle values come from the HUD: the party's ATB and Limit gauges, and the
 locked-on enemy's HP and stagger as the game draws them, so `target_hp_pct` is a percentage because
-the game shows no number. They reach the HUD through fixed slots in a set of widgets whose order
+the game shows no number. Since 1.1 it also emits `enemy_bars`, the sixteen enemy bars of the HUD
+with each one's visibility and the enemy name it shows: the locked-on enemy is the bar whose
+`visibility` is 0 (a derived watch can only produce numbers, so the name cannot be picked out for
+you). They reach the HUD through fixed slots in a set of widgets whose order
 the game decides when it builds the HUD. That order held for the session the profile was written
-in; if the game ever builds the HUD in another order, those slots hold other widgets, and
-`party_gauges` and the two `target_*` values read wrong numbers or `null` until the slots are found
+in and after a restart of the game; if the game ever builds the HUD in another order, those slots hold other widgets, and
+`party_gauges`, `enemy_bars` and the two `target_*` values read wrong numbers or `null` until the slots are found
 again.
 
 ## The version rule
