@@ -11,9 +11,10 @@ on:
   pull_request:
 
 env:
-  # The first release that reads Unreal names (`fname`), which the ff7-rebirth profile needs, along
-  # with fixed-length collections, internal watches and 8- and 16-bit types.
-  SCRY_REF: v0.1.0-alpha.7
+  # The first release that filters a collection (`where`), which the ff7-rebirth profile needs to
+  # keep only the location volumes the player stands in, along with Unreal names (`fname`),
+  # fixed-length collections, internal watches and 8- and 16-bit types.
+  SCRY_REF: v0.1.0-alpha.8
 
 jobs:
   check:
