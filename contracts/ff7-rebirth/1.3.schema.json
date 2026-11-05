@@ -1,0 +1,370 @@
+{
+  "$id": "urn:scry:contract:ff7-rebirth:1.3",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "properties": {
+    "battle_hud": {
+      "maximum": 255,
+      "minimum": 0,
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "characters": {
+      "items": {
+        "properties": {
+          "exp": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "hp": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "hp_max": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "level": {
+            "maximum": 255,
+            "minimum": 0,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "mp": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "mp_max": {
+            "maximum": 2147483647,
+            "minimum": -2147483648,
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "exp",
+          "hp",
+          "hp_max",
+          "level",
+          "mp",
+          "mp_max"
+        ],
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "maxItems": 9,
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "enemy_bars": {
+      "items": {
+        "properties": {
+          "name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "visibility": {
+            "maximum": 255,
+            "minimum": 0,
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "name",
+          "visibility"
+        ],
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "maxItems": 16,
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "game_pause": {
+      "maximum": 4294967295,
+      "minimum": 0,
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "game_state": {
+      "maximum": 255,
+      "minimum": 0,
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "gil": {
+      "maximum": 2147483647,
+      "minimum": -2147483648,
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "location": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "locations": {
+      "items": {
+        "properties": {
+          "id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "kind": {
+            "maximum": 255,
+            "minimum": 0,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "max_x": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "max_y": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "max_z": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "min_x": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "min_y": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "min_z": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "scale_x": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "scale_y": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "scale_z": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "state": {
+            "maximum": 255,
+            "minimum": 0,
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "kind",
+          "max_x",
+          "max_y",
+          "max_z",
+          "min_x",
+          "min_y",
+          "min_z",
+          "name",
+          "scale_x",
+          "scale_y",
+          "scale_z",
+          "state"
+        ],
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "maxItems": 1024,
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "party": {
+      "items": {
+        "maximum": 255,
+        "minimum": 0,
+        "type": [
+          "integer",
+          "null"
+        ]
+      },
+      "maxItems": 3,
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "party_gauges": {
+      "items": {
+        "properties": {
+          "atb": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "atb_max": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "limit": {
+            "type": [
+              "number",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "atb",
+          "atb_max",
+          "limit"
+        ],
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "maxItems": 3,
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "play_time_s": {
+      "maximum": 4294967295,
+      "minimum": 0,
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "player": {
+      "properties": {
+        "x": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "y": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "z": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "x",
+        "y",
+        "z"
+      ],
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "target_hp_pct": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "target_stagger_pct": {
+      "type": [
+        "number",
+        "null"
+      ]
+    }
+  },
+  "title": "ff7-rebirth 1.3",
+  "type": "object",
+  "x-contract": {
+    "id": "ff7-rebirth",
+    "version": "1.3"
+  }
+}

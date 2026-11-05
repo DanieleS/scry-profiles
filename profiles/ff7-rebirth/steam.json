@@ -1,6 +1,6 @@
 {
   "label": "FINAL FANTASY VII REBIRTH (Steam 1.0.0.5) — state, place, party, gil, battle HUD",
-  "contract": { "id": "ff7-rebirth", "version": "1.2" },
+  "contract": { "id": "ff7-rebirth", "version": "1.3" },
   "match": {
     "process": "ff7rebirth_.exe",
     "module": "ff7rebirth_.exe",
@@ -50,6 +50,40 @@
         "z": { "offsets": ["0x124"], "type": "f32" }
       },
       "rate_hz": 4.0
+    },
+    {
+      "tier": "collection",
+      "name": "locations",
+      "base": {
+        "tier": "tier1",
+        "module": "ff7rebirth_.exe",
+        "offsets": ["0x91D84C0", "0x8"]
+      },
+      "count": ["0x8"],
+      "items": ["0x0"],
+      "stride": 8,
+      "element": [0, 0],
+      "fields": {
+        "state": { "offsets": ["0x2A0"], "type": "u8" },
+        "kind": { "offsets": ["0x27C"], "type": "u8" },
+        "id": { "offsets": ["0x270"], "type": { "string": "fname" } },
+        "name": { "offsets": ["0x2D0"], "type": { "string": "fname" } },
+        "min_x": { "offsets": ["0x138", "0x488", "0xA8", "0x60"], "type": "f32" },
+        "min_y": { "offsets": ["0x138", "0x488", "0xA8", "0x64"], "type": "f32" },
+        "min_z": { "offsets": ["0x138", "0x488", "0xA8", "0x68"], "type": "f32" },
+        "max_x": { "offsets": ["0x138", "0x488", "0xA8", "0x6C"], "type": "f32" },
+        "max_y": { "offsets": ["0x138", "0x488", "0xA8", "0x70"], "type": "f32" },
+        "max_z": { "offsets": ["0x138", "0x488", "0xA8", "0x74"], "type": "f32" },
+        "scale_x": { "offsets": ["0x138", "0x134"], "type": "f32" },
+        "scale_y": { "offsets": ["0x138", "0x138"], "type": "f32" },
+        "scale_z": { "offsets": ["0x138", "0x13C"], "type": "f32" }
+      },
+      "where": [
+        { "field": "state", "ne": 0 },
+        { "field": "kind", "eq": 0 }
+      ],
+      "max": 1024,
+      "rate_hz": 1.0
     },
     {
       "tier": "tier1",

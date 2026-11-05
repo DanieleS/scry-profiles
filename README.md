@@ -33,7 +33,7 @@ maps/<id>/<name>.map.json                    il2cpp2scry input a profile was gen
 | Contract | Profiles | Fixtures |
 |---|---|---|
 | `sea-of-stars` 2.0 (43 watches) | `steam.json` | `steam-first-tick.json` |
-| `ff7-rebirth` 1.2 (13 watches) | `steam.json` | `steam-battle.json` (1.0 and 1.1), `steam-menu.json` (1.2) |
+| `ff7-rebirth` 1.3 (14 watches) | `steam.json` | `steam-battle.json` (1.0 and 1.1), `steam-menu.json` (1.2), `steam-corel-to-mine.json` (1.3) |
 
 The Sea of Stars profile came from Ratatoskr's `telemetry-views/fixtures`, where it had been living
 with the integer `contractVersion: 2`; here it declares `sea-of-stars` 2.0 instead, and nothing else
